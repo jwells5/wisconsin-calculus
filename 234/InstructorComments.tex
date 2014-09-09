@@ -1,0 +1,141 @@
+% !TEX Program = XeLaTeX
+% Time-stamp: Sat Jan  4 04:56:21 2014
+\documentclass[11pt]{amsbook}
+
+\input ../preamble
+\input ../free-macros
+\input ../gans.tex
+
+\newcommand\version{0.9}
+\newcommand\semester{Spring 2014}
+
+\begin{document}
+\begin{center}
+  \bfseries\color{badgerred}
+  Comments on the MIU math 234 text
+  \\
+  \mdseries\itshape
+  January 2014
+\end{center}
+The MIU calculus texts were produced as part of the math department's MIU project,
+(which allowed us to hire three faculty).
+
+The overall goal has been to produce a text that can be used to allow students to
+learn third semester calculus by understanding what is going on rather than by trying
+to memorize a list of mysterious formulas.  If you are used to teaching out of
+Thomas\&co, then you will find that the math 234 text is different in some aspects.
+The reasons for those differences are explained below.   The choices were made after
+consultation with faculty in a large number of client departments (stats, econ,
+zoology, chemistry, college of engineering).  
+The text is a work in
+progress and any contributions, suggestions, corrections you may have are welcome.
+
+\section*{vectors}
+Vectors is an orphaned topic.  It used to be part of the calculus AP/BC exam,
+but five or six years ago the college board cut it from the AP calc curriculum. 
+We still have to give math 222 credit to high school students who pass the AP/BC
+exam, and for consistency we also give 222 transfer credit to students who took
+calc 2 somewhere, even if they didn't cover vectors.  So there will be a group
+of students in math 234 who do not know what a dot product is.  That's why the
+notes have a chapter 1 on vectors.  It will be review for most students, but
+others will really need it.  
+
+The second chapter on parametric curves is there partially to practice vectors
+(problem 4, page 32 on finding the tangent to the twisted cubic, and seeing
+where it intersects the $xy$ plane will separate the beginners from the advanced
+students.) 
+
+\section*{functions}
+In one variable calculus students have already seen examples of functions (ad
+nauseum).  For more than one variable they haven't, so we do some here, mainly
+linear and quadratic functions.
+
+Quadratic functions will show up again later in the 2nd derivative test.  The
+traditional way of presenting the 2nd derivative test boils down to memorizing
+something about the signs of $A$ and $AC-B^2$, where $A$, $B$, $C$ are the 2nd
+derivatives at a critical point.  Students do not understand why it works, and in the
+long run will not retain anything of value from this.  Instead we explain the 2nd
+order Taylor expansion, and classify the possible 2nd order terms.  Since the
+students don't know linear algebra we stick to quadratic forms in two variables which
+you can classify by completing the square.  This square completion is done in chapter
+3.
+
+\section*{partial derivatives}
+The text spends almost no time doing anything like $\epsilon$-$\delta$ proofs or
+definitions on continuity.  Some of this is necessary, but I don't think math 234 is
+the place to study functions that are not Frechet differentiable even though they
+have partial derivatives everywhere.  
+
+The key concept is the linear approximation formula
+\[
+  f(x+\Delta x, y+\Delta y) = f(x,y) + \pdd fx(x,y)\,\Delta x + \pdd fy (x,y)\,
+  \Delta y + \dots
+\]
+which says that when $x$ and $y$ change, the change in
+$f(x, y)$ consists of two terms, one caused by the change in $x$, and the other by
+the change in $y$.  
+\begin{itemize}
+\item If students understand this then the same idea should help them understand
+  the chain rule for differentiating $f(x(t), y(t))$;
+\item students should know how to take the second derivative of $f(x(t), y(t))$,
+  without relying on unexplained ``derivative trees.''
+\item If you write the formula in vector form you can identify the gradient as
+  direction of steepest increase;
+\end{itemize}
+The standard textbooks introduce ``directional derivatives'' and use the
+notation $D_\vu f(x)$, where $\vu$ is a unit vector.  It stands for
+$\vu\dpp\nabla f(x) = \frac{d}{dt}f(\vx+t\vu)|_{t=0}$.  It is like the
+manifolds definition of the differential $df(x)$ as an element of the cotangent
+space, but you don't really need it anywhere, and it just ends up being another
+formula students memorize without a lot of understanding.
+
+\section*{maxima and minima}
+You can't really prove that every function attains its max\&min on a compact set,
+but by examples you can sort of explain the statement.  If a function is given
+as the product of a bunch of simple functions then its zero set is easy to
+describe, and students should able to explain in words why self intersections of
+the zero set are critical points, and why each bounded component of the region
+$\{f\neq0\}$ contains at least one critical point.  In the second derivative test I
+asked the students to classify the second order terms into definite or
+indefinite, and for saddle points factor the quadratic part to identify the two
+tangent lines to the level set (all this to show that they understood something
+of what was going on and that they had not memorized some random procedure).
+
+\section*{Lagrange multipliers}
+The econ department is a big fan.  The text contains a
+bold lie, namely that there is no interpretation of the Lagrange multiplier.  I
+will fix that in future versions of the text.
+
+\section*{integrals}
+Setting up an integral is at least as important as computing one, so I think the
+section on ``densities'' and the examples about moments of inertia are important.
+But they shouldn't be formulas that students memorize.  E.g.~students should not
+memorize that the moment of inertia about the $z$-axis is $I_z=\frac12\iiint
+(x^2+y^2)dV$, and then be asked to compute that integral;  instead they should know
+how to derive the formula for $I_z$ from basic principles.
+
+Engineers have told us that students coming out of 234 can do fancy triple integrals,
+but they don't know how to combine all the kinetic energies of small pieces of a
+moving solid into an integral.  I.e., they can compute a triple integral but they
+don't understand what the answer means.
+
+\section*{vector calculus}
+Again, by going through the material at great
+speed one can force the students to memorize a lot of formulas for the various
+integrals.  At the end they should however also know how to compute the work or flux
+integrals of a constant vector field across a line segment, without having to set up
+a parametrization for the line segment (I think that very simple question tests if
+the students actually understood anything).
+
+This chapter is not in final form, and could use more worked problems, which I will add
+to a future version.  For now there are some sample problems posted at  
+\begin{center}
+  \footnotesize
+  \url{http://www.math.wisc.edu/~angenent/234.2013f/final/reviewproblems.html}
+\end{center}
+
+Our client departments expect that students will get a ``superficial understanding,''
+or ``a first introduction to'' vector calculus in math 234.  Students in the physical
+sciences and engineering who need more should take math 321 (I say this in lecture).
+\end{document}
+% vim: fdc=2 fdm=expr 

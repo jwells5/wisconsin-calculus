@@ -1,0 +1,77 @@
+%! To typeset this document use ''pdflatex free234''
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[landscape]{geometry}
+
+\usepackage{graphicx,color}
+\definecolor{darkgreen}{rgb}{0.0,0.5,0.0}
+\usepackage{hyperref}
+\hypersetup{colorlinks, 
+            citecolor=black,
+            filecolor=black,
+            linkcolor=blue,
+            urlcolor=darkgreen,
+            bookmarksopen=true,
+            pdftex}
+
+\usepackage{url}
+
+\setlength{\columnsep}{36pt}
+\setcounter{tocdepth}{2}
+
+\usepackage{eucal}
+
+
+\input{free-macros234.tex}
+
+
+\begin{document}
+
+\title{Animations in GraphCalc.exe}
+\maketitle
+
+You can download the graphing calculator for windows at the following website
+\begin{center}
+  \url{http://www.graphcalc.com}
+\end{center}
+Follow the instructions on the ``download'' page of that site.
+
+To plot an animation, or a moving graph of a function of two variables
+$y=f(x, t)$ you go through these steps:
+\begin{itemize}
+\item Open the graphing calculator, and select the \textsf{graph 1} tab.
+  You will see an $xy$ plane, and a list of ten equations you can enter.
+
+\item On the line \textsf{y1} enter an equation (e.g.\ \verb|y=x^3-3*x|,
+  which is how you have to enter $y=x^3-3x$) and mark the checkbox next to
+  it.  The graph should appear.
+
+\item To start an animation you have to enter the function of two variables
+  $y=f(x, t)$. \emph{ The windows graphing calculator requires you to call the
+  time variable $n$ instead of anything else.}  You could enter
+  \verb|n^3-3*n+(3*n^2-3)*(x-n)| on the line for \textsf{y2}.
+
+  Nothing happens.
+
+
+\item To make the animation appear you now click on \textsf{2D Graph} in
+  the toolbar at the top of the window, select \textsf{Analysis} and then
+  select \textsf{N-Slider}.
+
+  A window shows up with a slider and three boxes in which you can enter
+  numbers.  If you entered the \textsf{y1} and \textsf{y2} from above, then
+  you could now choose \verb|-2|, \verb|0.1|, and \verb|2| for the
+  \textsf{Min}, \textsf{Step}, and \textsf{Max}.  Hit \textsf{animate} and
+  the Movie should appear.
+\end{itemize}
+
+Note: how did I pick \textsf{y2}? Well, the tangent to the graph of
+$y=f(x)$ at the point on the graph with $x=n$ has equation
+\[
+y = f(n) + f'(n) (x-n)
+\]
+as you know from math 221.  I just applied this to $f(x) = x^3-3x$.  You
+could practice differentiating by choosing your own functions $f$.
+\end{document}

@@ -1,0 +1,35 @@
+TYPESETTING.  
+
+I have been typsetting this using the Texlive 2011 distribution (and also the
+ similar Mactex 2011 distribution, which is based on texlive).
+
+To get the document as they were used in math 221, fall 2012, you need to
+install the Linux Libertine and Linux Biolinum fonts on your computer.  These
+are public domain fonts and can be obtained from http://www.linuxlibertine.org/
+To use these fonts in Latex you have to typset the document using XeTeX (or
+really xelatex).  In particular, from a command line (in a terminal), typeset
+the document with the command "xelatex free221".
+
+If you want to use the standard (ams)latex fonts comment the relevant lines in
+the file "preamble.tex" and typeset using "pdflatex free221"
+
+THE DRAWINGS.
+
+All figures are located in the directory called "figures" They are mostly of two
+kinds: those that were drawn using Inkscape (www.inkscape.org), and those that
+were programmed in python.
+
+For the inkscape drawings the svg version is the main version of the drawing.
+When done with the drawing you should also save the drawing from within Inkscape
+as a pdf file, which can then be imported into the latex document.  Here there
+are two options depending on how you want to handle the text in the drawing.
+Best is to create a pdf_tex file (this option appears when you save as pdf in
+Inkscape), and then "\input" the pdf_tex file into your latex document.  If you
+don't want latex to take care of the text in the drawing, then you can save as
+pdf and include the pdf using \includegraphics{}.
+
+Some drawings were programmed in Python and postscript following an idea of Joel
+Robbin.  Each drawing is made by writing and then running a little python script
+that describes the drawing.  The file graphics.py contains the necessary
+functions that help python produce a pdf file with the drawing and a latex file
+with the annotations.

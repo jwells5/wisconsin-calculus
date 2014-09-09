@@ -1,0 +1,125 @@
+%!TEX root = ./free234.tex
+\chapter{Space Curves}
+\section{Arc length and the arc length derivative}
+Recall definition of arc length
+\begin{equation}
+  \label{eq:arclength-def}
+  s = \int \|\vr'(t)\|\; dt.
+\end{equation}
+and arc length derivative:
+\begin{equation}
+  \frac{df}{ds} \isdef
+  \lim_{\Delta t\to 0} 
+  \frac{f(t+\Delta t) - f(t)}{s(t+\Delta t) - s(t)}
+  \label{eq:arc-length-deriv-def}
+\end{equation}
+To compute use:
+\begin{equation}
+  \frac{df}{ds} = \frac{1}{\|\vr'(t)\|} \frac{df(t)}{dt}.
+  \label{eq:arclenght-deriv}
+\end{equation}
+\section{Curvature}
+\begin{equation}
+  \vT = \frac{d\vr}{ds} = \frac{\vr'(t)}{\|\vr'(t)\|}
+  \label{eq:unit-tangent-def}
+\end{equation}
+\begin{equation}
+  \frac{d\vT}{ds} = \kappa\; \vN 
+  \label{eq:first-Serret-Frenet}
+\end{equation}
+\begin{equation}
+  \frac{d\vN}{ds} = -\kappa\vT + \tau\; \vB 
+  \label{eq:second-Serret-Frenet}
+\end{equation}
+where
+\[
+\vB= \vT\cp\vN.
+\]
+\begin{equation}
+  \frac{d\vB}{ds} = -\tau\; \vN 
+  \label{eq:third-Serret-Frenet}
+\end{equation}
+
+\section{Osculating plane}
+
+\section{Special cases: 2D}
+\begin{equation}
+  \kappa = \frac{y''}{\bigl(1+(y')^2\bigr)^{3/2}}
+  \label{eq:curvature-of-graph}
+\end{equation}
+\begin{equation}
+  \kappa = \frac{d\theta}{ds}
+  \label{eq:curvature-is-deriv-of-tangentangle}
+\end{equation}
+\section{Problems}
+What problems can one ask here?  
+
+\begin{multicols}{2}
+\problem Compute the curvature, torsion, tangent, normal and binormal for the
+following curves
+
+\subprob The parabola: $\vx(t) = \tvek t^2 \\ t\ttor$.
+
+\subprob Neil's parabola: $\tvek t^2\\ t^3\ttor$.
+
+\subprob The helix: $\vr(\theta) =\vek\cos \theta \\ \sin \theta\\ a\theta\tor$
+($a>0$ is a constant).
+
+\problem 
+\subprob Compute the curvature at the point $(x, e^x)$ of the graph of
+$y=e^x$.
+\answer
+$k(x) = \dfrac{e^x} {\bigl(1+e^{2x}\bigr)^{3/2}}$.
+\endanswer
+
+\subprob Which point on the graph of $y=e^x$ has the largest curvature?
+\answer $k'(x) = \dfrac{e^x} {\bigl(1+e^{2x}\bigr)^{5/2}}
+\bigl(1-2e^{2x}\bigr)$, so the maximal curvature (smallest radius of
+curvature) occurs when $x=-\frac{1} {2}\ln{2}$.
+\endanswer
+
+\problem Show: a curve is plane if and only if its torsion vanishes ($\tau =
+0$).
+
+\problem Express $\vr'\cp\vr''$ in terms of $\kappa, \tau, \vT, \vN, \vB$ and
+$\|\vr'\|$.
+
+\problem Let $A(h)$ be the area of the triangle with vertices $\vr(t-h)$,
+$\vr(t)$ and $\vr(t+h)$.  Compute $\DS \lim_{h\to 0} \frac{A(h)}{h^3}$.
+Hint: use a Taylor expansion
+$\vr(t+h) = \vr(t) + h\vr'(t) + \frac{h^2}{2}\vr''(t) + o(h^2)$.
+\end{multicols}
+
+
+\section{Line integrals}
+\begin{equation}
+\int_C f(\vx) ds
+\stackrel{\rm def}{=}
+\lim _{\Delta s_i\to0}
+\sum_{i=1}^N f(\vx_i) \Delta s_i
+\end{equation}
+
+Theorem:
+\begin{equation}
+\int_C f(x, y) ds = \int_a^b f(\vx(t)) \nm{\vx'(t)}\; dt
+\end{equation}
+
+
+Definition:
+\begin{equation}
+  \int_C P(x, y, z)dx + Q(x, y, z)dy + R(x, y, z)dz
+  =
+  \int_a^b \bigl\{P(x, y, z)\frac{dx}{dt} +
+                  Q(x, y, z)\frac{dy}{dt} +
+                  R(x, y, z)\frac{dz}{dt}\bigr\} dt
+  \label{eq:integral-of-one-form}
+\end{equation}
+
+
+
+
+
+
+
+
+

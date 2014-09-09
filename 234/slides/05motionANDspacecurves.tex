@@ -1,0 +1,62 @@
+%% Time-stamp:  Wed Jun 12 16:35:21 2013
+\documentclass{amsart}
+\input ../../preamble.tex
+\begin{document}
+
+
+\section{Vectors}
+
+\subsection{Geometric description of vectors}
+\label{sec:geometric-description-of-vectors}
+A vector is an arrow connecting two points.  If the points are $A$ and $B$ then we
+call the vector $\tpv AB$. If we translate a vector $\tpv AB$ \emph{without turning
+it} then we say that the resulting vector $\tpv CD$ is the same vector as the
+original vector $\tpv AB$.
+\begin{figure}[h]\centering
+  \input ../figures/005equalvectors.tex
+  \caption{$\tpv AB$ and $\tpv CD$ represent the same vector}
+\end{figure}
+
+\subsection{Arithmetic of vectors}
+\label{sec:arithmetic-of-vectors}
+To add two vectors $\tpv AB$ and $\tpv PQ$ we first translate the vector $\tpv PQ$ so
+that its initial point becomes $B$; let the result of this translation be the vector
+$\tpv BC$.  Then the sum of $\tpv AB$ and $\tpv PQ$ is $\tpv AC$: in a formula,
+\[
+\tpv AB + \tpv PQ = \tpv AB + \tpv BC = \tpv AC.
+\]
+
+\begin{figure}[h]
+  \def\figfont{\sffamily\footnotesize\color{darkbluegreen}\centering}
+  \def\addingvectorsCapA{\parbox{1in}{\figfont%
+  to add\\
+  two vectors\dots}}
+  \def\addingvectorsCapB{\parbox{1in}{\figfont%
+  \dots move one vector until its initial point\dots}}
+  \def\addingvectorsCapC{\parbox{1in}{\figfont%
+  \dots is the end point of the other\dots} }
+  \def\addingvectorsCapD{\parbox{1in}{\figfont%
+  \dots and combine them.} }
+\input figures/005adding-vectors.pdf_tex
+\end{figure}
+A different way of adding two vectors $\tpv AB$ and $\tpv PQ$ is to move the vectors
+around until they have the same initial point.  Two vectors with a common initial
+point form two sides of a parallelogram (see
+Figure~\ref{fig:adding-vectors-parallelogram}) and the sum of the two vectors is the
+diagonal of that parallelogram.
+\begin{figure}[h]
+  \input figures/005adding-vectors-parallelogram.pdf_tex
+  \caption{{\bfseries Using a parallelogram to add vectors. }
+  To find $\tpv AB  + \tpv AD$ we move the vector $\tpv AD$ so that its initial point
+  is at $B$, i.e.~the endpoint of $\tpv AB$.  This gives us a 
+  parallelogram $ABCD$, where $\tpv AD = \tpv BC$.  Therefore $\tpv AB+\tpv AD = \tpv
+  AB+\tpv BC = \tpv AC$ }
+  \label{fig:adding-vectors-parallelogram}
+\end{figure}
+
+
+
+
+
+\end{document}
+

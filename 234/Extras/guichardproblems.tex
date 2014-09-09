@@ -1,0 +1,1779 @@
+\chapter{From Guichard's Problem Collection}
+
+\section{Partial Differentiation} %{{{1
+\begin{multicols}{2}
+
+
+
+Determine the equations and shapes of the cross-sections when
+$x=0$, $y=0$, $x=y$, and describe the level curves.
+Use a three-dimensional graphing tool to graph the surface.
+\problem Let $f(x,y)=(x-y)^2$.  %{{{2
+\answer
+$z=y^2$, $z=x^2$, $z=0$, lines of slope 1
+\endanswer
+
+\problem Let $f(x,y)=|x|+|y|$.  %{{{2
+\answer
+$z=|y|$, $z=|x|$, $z=2|x|$, diamonds
+\endanswer
+
+\problem Let $f(x,y)=e^{-(x^2+y^2)}\sin(x^2+y^2)$.  %{{{2
+\answer
+$z=e^{-y^2}\sin(y^2)$, $z=e^{-x^2}\sin(x^2)$, 
+$z=e^{-2x^2}\sin(2x^2)$, circles
+\endanswer
+
+\problem Let $f(x,y)=\sin(x-y)$.  %{{{2
+\answer
+$z=-\sin(y)$, $z=\sin(x)$, 
+$z=0$, lines of slope 1
+\endanswer
+
+\problem Let $f(x,y)=(x^2-y^2)^2$.  %{{{2
+\answer
+$z=y^4$, $z=x^4$, 
+$z=0$, hyperbolas
+\endanswer
+
+
+
+
+
+
+
+Determine whether each limit exists. If it does, find the limit
+and prove that it is the limit; if it does not, explain how you know.
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{x^2\over x^2+y^2}$ %{{{2
+\answer
+No limit; use $x=0$ and $y=0$.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{xy\over x^2+y^2}$ %{{{2
+\answer
+No limit; use $x=0$ and $x=y$.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{xy\over 2x^2+y^2}$ %{{{2
+\answer
+No limit; use $x=0$ and $x=y$.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{x^4-y^4\over x^2+y^2}$ %{{{2
+\answer
+Limit is zero.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{\sin(x^2+y^2)\over x^2+y^2}$ %{{{2
+\answer
+Limit is 1.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{xy\over \sqrt{2x^2+y^2}}$ %{{{2
+\answer
+Limit is zero.
+\endanswer
+
+\problem $\DS\lim_{(x,y)\to(0,0)} {e^{-x^2-y^2}-1\over x^2+y^2}$ %{{{2
+
+\problem $\DS\lim_{(x,y)\to(0,0)}{x^3+y^3\over x^2+y^2}$ %{{{2
+
+\problem Does the function $\DS f(x,y)={x-y\over 1+x+y}$  %{{{2
+have any discontinuities?  What about 
+$\DS f(x,y)={x-y\over 1+x^2+y^2}$?  Explain.
+
+
+
+
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)=\cos(x^2y)+y^3$. %{{{2
+\answer
+$-2xy\sin(x^2y)$, $-x^2\sin(x^2y)+3y^2$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)={xy\over x^2+y}$. %{{{2
+\answer
+$(y^2-x^2y)/(x^2+y)^2$, $x^3/(x^2+y)^2$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)=e^{x^2+y^2}$. %{{{2
+\answer
+$2xe^{x^2+y^2}$, $2ye^{x^2+y^2}$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)=xy\ln(xy)$. %{{{2
+\answer
+$y\ln(xy)+y$, $x\ln(xy)+x$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)=\sqrt{1-x^2-y^2}$. %{{{2
+\answer
+$-x/\sqrt{1-x^2-y^2}$, $-y/\sqrt{1-x^2-y^2}$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)=x\tan(y)$. %{{{2
+\answer
+$\tan y$, $x\sec^2 y$
+\endanswer
+
+\problem Find $f_x$ and $f_y$ where $\DS f(x,y)={1\over xy}$. %{{{2
+\answer
+$-1/(x^2y)$, $-1/(xy^2)$
+\endanswer
+
+\problem Find an equation for the plane tangent to  %{{{2
+$\DS 2x^2+3y^2-z^2=4$ at
+$(1,1,-1)$. 
+\answer
+$z=-2(x-1)-3(y-1)-1$
+\endanswer
+
+\problem Find an equation for the plane tangent to  %{{{2
+$\DS f(x,y)=\sin(xy)$ at
+$(\pi,1/2,1)$. 
+\answer
+$z=1$
+\endanswer
+
+\problem Find an equation for the plane tangent to  %{{{2
+$\DS f(x,y)=x^2+y^3$ at
+$(3,1,10)$. 
+\answer
+$z=6(x-3)+3(y-1)+10$
+\endanswer
+
+\problem Find an equation for the plane tangent to  %{{{2
+$\DS f(x,y)=x\ln(xy)$ at
+$(2,1/2,0)$. 
+\label{ex:ln tan plane}
+\answer
+$z=(x-2)+4(y-1/2)$
+\endanswer
+
+\problem Find an equation for the line normal to  %{{{2
+$\DS x^2+4y^2=2z$ at
+$(2,1,4)$. 
+\answer
+$\vr (t)=\langle 2,1,4\rangle+t\langle 2,4,-1\rangle$
+\endanswer
+
+
+\problem Explain in your own words why, when taking a partial derivative %{{{2
+of a function of multiple variables, we can treat the variables not
+being differentiated as constants.
+
+\problem Consider a differentiable function, $f(x,y)$.  Give physical %{{{2
+interpretations of the meanings of $f_x(a,b)$ and $f_y(a,b)$ as they
+relate to the graph of $f$.
+
+\problem In much the same way that we used the tangent line to %{{{2
+approximate the value of a function from single variable calculus,
+we can use the tangent plane to approximate a function from
+multivariable calculus.  Consider the tangent plane found in
+Exercise~\ref{ex:ln tan plane}. Use this plane to approximate
+$f(1.98, .4)$.
+
+\problem Suppose that one of your colleagues has calculated the partial %{{{2
+derivatives of a given function, and reported to you that
+$f_x(x,y)=2x+3y$ and that $f_y(x,y)=4x+6y$.  Do you believe them?
+Why or why not?  If not, what answer might you have accepted for
+$f_y$?
+
+\problem Suppose $f(t)$ and $g(t)$ are single variable differentiable %{{{2
+functions.  Find $\partial z/\partial x$ and
+$\partial z/\partial y$ for each of the following two variable functions.
+
+\begin{itemize}
+\item[a.] $z=f(x)g(y)$
+\item[b.] $z=f(xy)$
+\item[c.] $z=f(x/y)$
+\end{itemize}
+
+
+
+
+
+
+\problem Use the chain rule to compute $dz/dt$ for %{{{2
+$z=\sin(x^2+y^2)$, $x=t^2+3$, $y=t^3$.
+\answer
+$4xt\cos(x^2+y^2)+6yt^2\cos(x^2+y^2)$
+\endanswer
+
+\problem Use the chain rule to compute $dz/dt$ for %{{{2
+$z=x^2y$, $x=\sin(t)$, $y=t^2+1$.
+\answer
+$2xy\cos t+2x^2t$
+\endanswer
+
+\problem Use the chain rule to compute $\partial z/\partial s$ and  %{{{2
+$\partial z/\partial t$ for
+$z=x^2y$, $x=\sin(st)$, $y=t^2+s^2$.
+\answer
+$2xyt\cos(st)+2x^2s$, $2xys\cos(st)+2x^2t$
+\endanswer
+
+\problem Use the chain rule to compute $\partial z/\partial s$ and  %{{{2
+$\partial z/\partial t$ for
+$z=x^2y^2$, $x=st$, $y=t^2-s^2$.
+\answer
+$2xy^2t-4yx^2s$, $2xy^2s+4yx^2t$
+\endanswer
+
+\problem Use the chain rule to compute $\partial z/\partial x$ and  %{{{2
+$\partial z/\partial y$ for $2x^2+3y^2-2z^2=9$.
+\answer
+$x/z$, $3y/(2z)$
+\endanswer
+
+\problem Use the chain rule to compute $\partial z/\partial x$ and  %{{{2
+$\partial z/\partial y$ for $2x^2+y^2+z^2=9$.
+\answer
+$-2x/z$, $-y/z$
+\endanswer
+
+
+\problem Find $\frac{dy}{dx}$ in each case both by Implicit %{{{2
+Differentiation and by the Implicit Function Theorem.
+
+\begin{enumerate}
+\item $x^3+y^3+3xy=6$
+\item $\sin(xy)=4$
+\item $e^{x}+xy+\ln(y)=12$
+\end{enumerate}
+
+\problem Describe the points on the unit circle, $x^2+y^2=1$, where we %{{{2
+{\em cannot\/} define one variable in terms of the other.
+
+\problem Describe the points on the unit sphere, $x^2+y^2+z^2=1$, where %{{{2
+we {\em cannot} define one of the variables in terms of the other two.
+
+
+
+
+
+\problem Find $D_\vu f$ for $\DS f=x^2+xy+y^2$ in the direction of $\vu %{{{2
+=\langle 2,1\rangle$ at the point $(1,1)$.  \answer $9\sqrt5/5$
+\endanswer
+
+\problem Find $D_\vu f$ for $\DS f=\sin(xy)$ in the direction of $\vu %{{{2
+=\langle -1,1\rangle$ at the point $(3,1)$.  \answer $\sqrt2\cos3$
+\endanswer
+
+\problem Find $D_\vu f$ for $\DS f=e^x\cos(y)$ in the direction 30 degrees %{{{2
+from the positive $x$ axis at the point $(1,\pi/4)$.  \answer
+$e\sqrt2(\sqrt3-1)/4$
+\endanswer
+
+\problem The temperature of a thin plate in the $x$-$y$ plane is $\DS %{{{2
+T=x^2+y^2$. How fast does temperature change at the point $(1,5)$ moving in
+a direction 30 degrees from the positive $x$ axis?  \answer $\sqrt3+5$
+\endanswer
+
+\problem Suppose the density of a thin plate at $(x,y)$ is $\DS %{{{2
+1/\sqrt{x^2+y^2+1}$. Find the rate of change of the density at $(2,1)$ in a
+direction $\pi/3$ radians from the positive $x$ axis.  \answer
+$-\sqrt6(2+\sqrt3)/72$
+\endanswer
+
+\problem Suppose the electric potential at $(x,y)$ is %{{{2
+$\DS\ln\sqrt{x^2+y^2}$. Find the rate of change of the potential at $(3,4)$
+toward the origin and also in a direction at a right angle to the direction
+toward the origin.
+\answer $-1/5$, $0$
+\endanswer
+
+\problem A plane perpendicular to the $x$-$y$ plane contains the point %{{{2
+$(2,1,8)$ on the paraboloid $z=x^2+4y^2$. The cross-section of the
+paraboloid created by this plane has slope 0 at this point. Find an
+equation of the plane.  \answer $4(x-2)+8(y-1)=0$
+\endanswer
+
+\problem A plane perpendicular to the $x$-$y$ plane contains the point %{{{2
+$(3,2,2)$ on the paraboloid $36z=4x^2+9y^2$. The cross-section of the
+paraboloid created by this plane has slope 0 at this point.  Find an
+equation of the plane.  \answer $2(x-3)+3(y-2)=0$
+\endanswer
+
+\problem Suppose the temperature at $(x,y,z)$ is given by $\DS %{{{2
+T=xy+\sin(yz)$. In what direction should you go from the point $(1,1,1)$ to
+decrease the temperature as quickly as possible? What is the rate of change
+of temperature in this direction?  \answer $\langle
+-1,-1-\cos1,-\cos1\rangle$, $-\sqrt{2+2\cos1+2\cos^21}$
+\endanswer
+
+\problem Suppose the temperature at $(x,y,z)$ is given by $\DS T=xyz$. In %{{{2
+what direction can you go from the point $(1,1,1)$ to maintain the same
+temperature?  \answer Any direction perpendicular to $\nab T=\langle
+1,1,1\rangle$, for example, $\langle -1,1,0\rangle$
+\endanswer
+
+\problem Find an equation for the plane tangent to $\DS x^2-3y^2+z^2=7$ at %{{{2
+$(1,1,3)$.  \answer $2(x-1)-6(y-1)+6(z-3)=0$
+\endanswer
+
+\problem Find an equation for the plane tangent to $\DS xyz=6$ at %{{{2
+$(1,2,3)$.  \answer $6(x-1)+3(y-2)+2(z-3)=0$
+\endanswer
+
+\problem Find an equation for the line normal to $\DS x^2+2y^2+4z^2=26 $ at %{{{2
+$(2,-3,-1)$.  \answer $\langle 2+4t,-3-12t,-1-8t\rangle$
+\endanswer
+
+\problem Find an equation for the line normal to $\DS x^2+y^2+9z^2=56$ at %{{{2
+$(4,2,-2)$.  \answer $\langle 4+8t,2+4t,-2-36t\rangle$
+\endanswer
+
+\problem Find an equation for the line normal to $\DS x^2+5y^2-z^2=0$ at %{{{2
+$(4,2,6)$.  \answer $\langle 4+8t,2+20t,6-12t\rangle$
+\endanswer
+
+\problem Find the directions in which the directional derivative of %{{{2
+$f(x,y)=x^2+\sin(xy)$ at the point $(1,0)$ has the value 1.
+
+\problem A bug is crawling on the surface of a hot plate, the temperature %{{{2
+of which at the point $x$ units to the right of the lower left corner and
+$y$ units up from the lower left corner is given by $T(x,y)=100-x^2-3y^3$.
+
+
+\subprob If the bug is at the point $(2,1)$, in what direction should it
+move to cool off the fastest?  How fast will the temperature drop in this
+direction?
+
+\subprob If the bug is at the point $(1,3)$, in what direction should it
+move in order to maintain its temperature?
+
+
+\problem Suppose that $g(x,y)=y-x^2$.  Find the gradient at the point $(-1, %{{{2
+3)$.  Sketch the level curve to the graph of $g$ when $g(x,y)=2$, and plot
+both the tangent line and the gradient vector at the point $(-1,3)$. (Make
+your sketch large).  What do you notice, geometrically?
+
+\problem The gradient $\nab(f)$ is a vector valued function of two %{{{2
+variables.  Prove the following gradient rules.  Assume $f(x,y)$ and
+$g(x,y)$ are differentiable functions.
+
+\subprob $\nab(fg)=f\nab(g)+g\nab(f)$
+
+\subprob $\nab(f/g)=(g\nab f - f \nab g)/g^2$
+
+\subprob $\nab((f(x,y))^n)=nf(x,y)^{n-1}\nab f$
+
+
+
+
+
+\problem Let $\DS f=xy/(x^2+y^2)$; compute $f_{xx}$, $f_{yx}$, and %{{{2
+$f_{yy}$.  \answer $f_{xx}=(2x^3y-6xy^3)/(x^2+y^2)^3$,
+$f_{yy}=(2xy^3-6x^3y)/(x^2+y^2)^3$
+\endanswer
+
+\problem Find all first and second partial derivatives of $x^3y^2+y^5$. %{{{2
+\answer $f_x=3x^2y^2$, $f_y=2x^3y+5y^4$, $f_{xx}=6xy^2$,
+$f_{yy}=2x^3+20y^3$, $f_{xy}=6x^2y$
+\endanswer
+
+\problem Find all first and second partial derivatives of $4x^3+xy^2+10$. %{{{2
+\answer $f_x=12x^2+y^2$, $f_y=2xy$, $f_{xx}=24x$, $f_{yy}=2x$, $f_{xy}=2y$
+\endanswer
+
+\problem Find all first and second partial derivatives of $x\sin y$. %{{{2
+\answer $f_x=\sin y$, $f_y=x\cos y$, $f_{xx}=0$, $f_{yy}=-x\sin y$,
+$f_{xy}=\cos y$
+\endanswer
+
+\problem Find all first and second partial derivatives of %{{{2
+$\sin(3x)\cos(2y)$.
+
+\problem Find all first and second partial derivatives of $e^{x+y^2}$. %{{{2
+
+\problem Find all first and second partial derivatives of %{{{2
+$\ln\sqrt{x^3+y^4}$.
+
+\problem Find all first and second partial derivatives of $z$ with respect %{{{2
+to $x$ and $y$ if $x^2+4y^2+16z^2-64=0$.
+
+\problem Find all first and second partial derivatives of $z$ with respect %{{{2
+to $x$ and $y$ if $xy+yz+xz=1$.
+
+\problem How many third-order derivatives does a function of 2 variables %{{{2
+have?  How many of these are distinct?
+
+\problem How many $n$th order derivatives does a function of 2 variables %{{{2
+have?  How many of these are distinct?
+
+\problem Let $\alpha$ and $k$ be constants.  Prove that the function %{{{2
+$u(x,t)=e^{-\alpha^2k^2t}\sin(kx)$ is a solution to the heat equation
+$u_t=\alpha^2u_{xx}$
+
+\problem Let $a$ be a constant.  Prove that $u=\sin(x-at)+\ln(x+at)$ is a %{{{2
+solution to the wave equation $u_{tt}=a^2u_{xx}$.
+
+\problem Let $f(x,y)$ be a continuous differentiable function.  Analyze the %{{{2
+level curves near a critical value if that critical value is a max or a
+min.  What if the level curve is a saddle point?
+
+
+
+
+
+\problem Find all local maximum and minimum points of $f=x^2+4y^2-2x+8y-1$. %{{{2
+\answer minimum at $(1,-1)$
+\endanswer
+
+\problem Find all local maximum and minimum points of $f=x^2-y^2+6x-10y+2$. %{{{2
+\answer none
+\endanswer
+
+\problem Find all local maximum and minimum points of $f=xy$.  \answer none %{{{2
+\endanswer
+
+\problem Find all local maximum and minimum points of $f=9+4x-y-2x^2-3y^2$. %{{{2
+\answer maximum at $(1,-1/6)$
+\endanswer
+
+\problem Find all local maximum and minimum points of $f=x^2+4xy+y^2-6y+1$. %{{{2
+\answer none
+\endanswer
+
+\problem Find all local maximum and minimum points of %{{{2
+$f=x^2-xy+2y^2-5x+6y-9$.  \answer minimum at $(2,-1)$
+\endanswer
+
+\problem A six-sided rectangular box is to hold $1/2$ cubic meter; what %{{{2
+shape should the box be to minimize surface area?  \answer a cube $1/\root
+3 \of {2}$ on a side
+\endanswer
+
+\problem The post office will accept packages whose combined length and %{{{2
+girth is at most 130 inches (girth is the maximum distance around the
+package perpendicular to the length). What is the largest volume that can
+be sent in a rectangular box?  \answer $65/3\times 65/3\times 130/3$
+\endanswer
+
+\problem The bottom of a rectangular box costs twice as much per unit area %{{{2
+as the sides and top. Find the shape for a given volume that will minimize
+cost.  \answer It has a square base, and is one and one half times as tall
+as wide.  If the volume is $V$ the dimensions are $\root 3 \of {2V/3}\times
+\root 3 \of {2V/3}\times \root 3\of {9V/4}$.
+\endanswer
+
+\problem Using the methods of this section, find the shortest distance from %{{{2
+the origin to the plane $x+y+z=10$.  \answer $\sqrt{100/3}$
+\endanswer
+
+\problem Using the methods of this section, find the shortest distance from %{{{2
+the point $(x_0,y_0,z_0)$ to the plane $ax+by+cz=d$.  You may assume that
+$c\not=0$; use of Maple or similar software is recommended.  \answer
+$|ax_0+by_0+cz_0-d|/\sqrt{a^2+b^2+c^2}$
+\endanswer
+
+\problem A trough is to be formed by bending up two sides of a long metal %{{{2
+rectangle so that the cross-section of the trough is an isosceles
+trapezoid, as in figure~\ref{fig:trough}. If the width of the metal sheet
+is 2 meters, how should it be bent to maximize the volume of the trough?
+\answer The sides and bottom should all be $2/3$ meter, and the sides
+should be bent up at angle $\pi/3$.
+\endanswer
+
+\problem Given the three points $(1,4)$, $(5,2)$, and $(3,-2)$, %{{{2
+$\DS(x-1)^2+(y-4)^2+(x-5)^2+(y-2)^2+(x-3)^2+(y+2)^2$ is the sum of the
+squares of the distances from point $(x,y)$ to the three points. Find $x$
+and $y$ so that this quantity is minimized.  \answer $(3,4/3)$
+\endanswer
+
+\problem Suppose that $f(x,y)=x^2+y^2+kxy$. Find and classify the critical %{{{2
+points, and discuss how they change when $k$ takes on different values.
+
+\problem Find the shortest distance from the point $(0,b)$ to the parabola %{{{2
+$y=x^2$.
+
+\problem Find the shortest distance from the point $(0,0,b)$ to the %{{{2
+paraboloid $z=x^2+y^2$.
+
+\problem Consider the function $f(x,y)=x^3-3x^2y$. %{{{2
+
+\subprob Show that $(0,0)$ is the only critical point of $f$.
+
+\subprob Show that the discriminant test is inconclusive for $f$.
+
+\subprob Determine the traces of $f$ obtained by setting $x=k$ for various
+values of $k$.
+
+\subprob What kind of critical point is $(0,0)$?
+
+
+\problem Find the volume of the largest rectangular box with edges parallel %{{{2
+to the axes that can be inscribed in the ellipsoid $2x^2+72y^2+18z^2=288$.
+
+
+
+
+
+\problem A six-sided rectangular box is to hold $1/2$ cubic meter; what %{{{2
+shape should the box be to minimize surface area?  \answer a cube
+\endanswer
+
+\problem The post office will accept packages whose combined length and %{{{2
+girth are at most 130 inches (girth is the maximum distance around the
+package perpendicular to the length). What is the largest volume that can
+be sent in a rectangular box?  \answer $65/3\times 65/3\times 130/3$
+\endanswer
+
+\problem The bottom of a rectangular box costs twice as much per unit area %{{{2
+as the sides and top. Find the shape for a given volume that will minimize
+cost.  \answer It has a square base, and is one and one half times as tall
+as wide.  If the volume is $V$ the dimensions are $\root 3 \of {2V/3}\times
+\root 3 \of {2V/3}\times \root 3\of {9V/4}$.
+\endanswer
+
+\problem Using Lagrange multipliers, find the shortest distance from the %{{{2
+point $(x_0,y_0,z_0)$ to the plane $ax+by+cz=d$.  \answer
+$|ax_0+by_0+cz_0-d|/\sqrt{a^2+b^2+c^2}$
+\endanswer
+
+\problem Find all points on the surface $xy-z^2+1=0$ that are closest to %{{{2
+the origin.  \answer $(0,0,1)$, $(0,0,-1)$
+\endanswer
+
+\problem The material for the bottom of an aquarium costs half as much as %{{{2
+the high strength glass for the four sides. Find the shape of the cheapest
+aquarium that hold a given volume $V$.  \answer $\root 3\of{4V}\times\root
+3\of{4V}\times\root 3\of{V/16}$
+\endanswer
+
+\problem The plane $x-y+z=2$ intersects the cylinder $x^2+y^2=4$ in an %{{{2
+ellipse. Find the points on the ellipse closest to and farthest from the
+origin.  \answer Farthest: $(-\sqrt2,\sqrt2,2+2\sqrt2)$; closest:
+$(2,0,0)$, $(0,-2,0)$
+\endanswer
+
+\end{multicols}
+\section{Vector Functions} %{{{1
+
+\begin{multicols}{2}
+
+
+\problem Investigate the following curves %{{{2
+
+\subprob $\vr =\tvek \sin t\\ \cos t\\ \cos 8t\ttor$.
+\hfill
+\subprob
+$\vr =\tvek t\cos t\\ t\sin t\\ t\ttor$.
+
+\subprob
+$\vr =\tvek t\\ t^2\\ \cos t\ttor$.
+\hfill
+\subprob
+$\vr =\tvek \cos(20t)\sqrt{1-t^2}\\ \sin(20t)\sqrt{1-t^2}\\ t\ttor$
+
+\problem Find a vector function for the curve of intersection of %{{{2
+$x^2+y^2=9$ and $y+z=2$.
+\answer
+$\tvek 3\cos t\\  3\sin t\\  2-3\sin t\ttor$
+\endanswer
+
+\problem A bug is crawling outward along the spoke of a wheel that lies along a %{{{2
+radius of the wheel. The bug is crawling at 1 unit per second and the wheel is
+rotating at 1 radian per second. Suppose the wheel lies in the $y$-$z$ plane
+with center at the origin, and at time $t=0$ the spoke lies along the positive
+$y$ axis. Find a vector function $\vr (t)$ for the position of the bug at
+time $t$.
+\answer
+$\tvek 0,t\cos t,t\sin t\ttor$
+\endanswer
+
+\problem What is the difference between the parametric curves %{{{2
+$\vu(t)=\tvek t\\ t\\ t^2 \ttor$, $\vv(t)=\tvek t^2\\ t^2\\ t^4 \ttor$, and
+$\vw(t)=\tvek \sin(t)\\ \sin(t)\\ \sin^2(t) \ttor$ as $t$
+runs over all real numbers?
+
+\problem Plot each of the curves below in 2 dimensions, projected onto each of %{{{2
+the three standard planes (the $x$-$y$, $x$-$z$, and $y$-$z$ planes).
+
+\begin{itemize}
+\item[a.] $\vv(t)=\tvek t\\  t^3\\  t^2 \ttor$,  $t$ ranges over all real numbers
+\item[b.] $.f(t)=\tvek t^2\\  t-1\\  t^2+5 \ttor$  for $0\leq t \leq 3$
+\end{itemize}
+
+\problem Given points $A=(a_1, a_2, a_3)$ and $B=(b_1, b_2, b_3)$ give %{{{2
+parametric equations for the line {\em segment} connecting $A$ and
+$B$. Be sure to give appropriate $t$ values.
+
+\problem With a parametric plot and a set of $t$ values, we can associate %{{{2
+a `direction'.  For example, the curve $\tvek \cos t\\ \sin t
+\ttor$ is the unit circle traced counterclockwise.  How can we amend
+a set of given parametric equations and $t$ values to get the same
+curve, only traced backwards?
+
+
+
+
+\problem Find $\vr '$ and $\vT$ for %{{{2
+$\vr  = \langle t^2,1,t\rangle$.
+\answer
+$\langle 2t,0,1\rangle$, $\vr '/\sqrt{1+4t^2}$
+\endanswer
+
+\problem Find $\vr '$ and $\vT$ for %{{{2
+$\vr  = \langle \cos t, \sin 2t, t^2\rangle$.
+\answer
+$\langle -\sin t, 2\cos 2t,2t\rangle$,
+$\vr '/\sqrt{\sin^2t + 4\cos^2(2t)+4t^2}$
+\endanswer
+
+\problem Find $\vr '$ and $\vT$ for %{{{2
+$\vr  = \langle \cos(e^t),\sin(e^t),\sin t\rangle$.
+\answer
+$\langle -e^t\sin(e^t),e^t\cos(e^t),\cos t\rangle$,
+$\vr '/\sqrt{e^{2t}+\cos^2 t}$
+\endanswer
+
+\problem Find a vector function for the line tangent to the helix %{{{2
+$\langle \cos t,\sin t, t\rangle$ when $t=\pi/4$.
+\answer
+$\langle \sqrt2/2,\sqrt2/2,\pi/4\rangle+
+t\langle -\sqrt2/2,\sqrt2/2,1\rangle$
+\endanswer
+
+\problem Find a vector function for the line tangent to  %{{{2
+$\langle \cos t,\sin t, \cos 4t \rangle$ when $t=\pi/3$.
+\answer
+$\langle 1/2,\sqrt3/2,-1/2\rangle+
+t\langle -\sqrt3/2,1/2,2\sqrt3\rangle$
+\endanswer
+
+\problem Find the cosine of the angle between the curves $\langle %{{{2
+0,t^2,t\rangle$ and $\langle \cos(\pi t/2),\sin(\pi t/2), t\rangle$
+where they intersect.
+\answer
+$2/\sqrt5/\sqrt{4+\pi^2}$
+\endanswer
+
+\problem Find the cosine of the angle between the curves $\langle %{{{2
+\cos t,-\sin(t)/4,\sin t\rangle$ and $\langle \cos t,\sin t, \sin(2t)\rangle$
+where they intersect.
+\answer
+$7\sqrt{5}\sqrt{17}/85$, $-9\sqrt{5}\sqrt{17}/85$
+\endanswer
+
+\problem Suppose that $|\vr (t)|=k$, for some constant $k$. This %{{{2
+means that $\vr$ describes some path on the sphere of radius $k$
+with center at the origin. Show that $\vr$ is perpendicular to ${\vr}'$ at every
+point. Hint: Use Theorem~\ref{thm:vector derivative
+properties}, part (d).
+\label{exercise:derivative is perpendicular}
+
+\problem A bug is crawling along the spoke of a wheel that lies along %{{{2
+a radius of the wheel. The bug is crawling at 1 unit per second and
+the wheel is rotating at 1 radian per second. Suppose the wheel lies
+in the $y$-$z$ plane with center at the origin, and at time $t=0$ the
+spoke lies along the positive $y$ axis and the bug is at the origin. 
+Find a vector function $\vr (t)$
+for the position of the bug at time $t$, the velocity vector
+$\vr '(t)$, the unit tangent ${\vT}(t)$, and the speed of the bug
+$|\vr '(t)|$.
+\answer
+$\langle 0,t\cos t,t\sin t\rangle$, 
+$\langle 0,\cos t-t\sin t,\sin t+t\cos t\rangle$,
+$\vr '/\sqrt{1+t^2}$, $\sqrt{1+t^2}$
+\endanswer
+
+\problem An object moves with velocity vector $\langle \cos t, \sin t, %{{{2
+t\rangle$, starting at $\langle 0,0,0\rangle$ when $t=0$. Find the function
+$\vr $ giving its location.
+\answer
+$\langle \sin t,1-\cos t,t^2/2\rangle$
+\endanswer
+
+\problem An object moves with velocity vector $\langle t, t^2, %{{{2
+\cos t\rangle$, starting at $\langle 0,0,0\rangle$ when $t=0$.
+Find the function
+$\vr $ giving its location.
+\answer
+$\langle t^2/2,t^3/3,\sin t\rangle$
+\endanswer
+
+\problem What is the physical interpretation of the dot product of two %{{{2
+vector valued functions?  What is the physical interpretation of the
+cross product of two vector valued functions?
+
+\problem Show, using the rules of cross products and differentiation, %{{{2
+that
+$${d\over dt} (\vr (t) \times \vr '(t))= 
+\vr (t) \times \vr ''(t).$$
+
+\problem Determine the point at which ${\vf}(t)=\langle t, t^2, t^3 %{{{2
+\rangle$ and ${\vg}(t) =\langle \cos(t), \cos(2t), t+1 \rangle$
+intersect, and find the angle between the curves at that point.  (Hint:
+You'll need to set this one up like a line intersection problem,
+writing one in $s$ and one in $t$.) If these two functions were the
+trajectories of two airplanes on the same scale of time, would the
+planes collide at their point of intersection?  Explain.
+
+
+
+
+\problem Find the length of $\langle 3\cos t,2t,3\sin t\rangle$,  %{{{2
+$t\in[0,2\pi]$.
+\answer
+$2\pi\sqrt{13}$
+\endanswer
+
+\problem Find the length of $\langle t^2,2,t^3\rangle$, $t\in[0,1]$. %{{{2
+\answer
+$(-8+13\sqrt{13})/27$
+\endanswer
+
+\problem Find the length of $\langle t^2,\sin t,\cos t\rangle$, $t\in[0,1]$. %{{{2
+\answer
+$\sqrt5/2+\ln(\sqrt5+2)/4$
+\endanswer
+
+\problem Find the length of the curve $y=x^{3/2}$, $x\in[1,9]$. %{{{2
+\answer
+$(85\sqrt{85}-13\sqrt{13})/27$
+\endanswer
+
+\problem Set up an integral to compute the length of %{{{2
+$\langle \cos t, \sin t, e^t\rangle$, $t\in[0,5]$. (It is tedious but
+not too difficult to compute this integral.)
+\answer
+$\int_0^5 \sqrt{1+e^{2t}}\,dt$
+\endanswer
+
+\problem Find the curvature of $\langle t,t^2,t\rangle$. %{{{2
+\answer
+$2\sqrt2/(2+4t^2)^{3/2}$
+\endanswer
+
+\problem Find the curvature of $\langle t,t^2,t^2\rangle$. %{{{2
+\answer
+$2\sqrt2/(1+8t^2)^{3/2}$
+\endanswer
+
+\problem Find the curvature of $\langle t,t^2,t^3\rangle$. %{{{2
+\answer
+$2\sqrt{1+9t^2+9t^4}/(1+4t^2+9t^4)^{3/2}$
+\endanswer
+
+
+
+
+\problem Let $\vr =\langle \cos t,\sin t,t\rangle$.  %{{{2
+Compute $\vv $, ${\va}$,
+$a_T$, and $a_N$.
+\answer
+$\langle -\sin t,\cos t,1\rangle$,
+$\langle -\cos t, -\sin t,0\rangle$,
+$0$, $1$
+\endanswer
+
+\problem Let $\vr =\langle \cos t,\sin t,t^2\rangle$.  %{{{2
+Compute $\vv $, ${\va}$,
+$a_T$, and $a_N$.
+\answer
+$\langle -\sin t,\cos t,2t\rangle$,
+$\langle -\cos t, -\sin t,2\rangle$,
+$4t/\sqrt{4t^2+1}$, $\sqrt{4t^2+5}/\sqrt{4t^2+1}$
+\endanswer
+
+\problem Let $\vr =\langle \cos t,\sin t,e^t\rangle$.  %{{{2
+Compute $\vv $, ${\va}$,
+$a_T$, and $a_N$.
+\answer
+$\langle -\sin t,\cos t,e^t\rangle$,
+$\langle -\cos t, -\sin t,e^t\rangle$,
+$e^{2t}/\sqrt{e^{2t}+1}$, $\sqrt{2e^{2t}+1}/\sqrt{e^{2t}+1}$
+\endanswer
+
+\problem Let $\vr =\langle e^t,\sin t,e^t\rangle$.  %{{{2
+Compute $\vv $, $\va $,
+$a_T$, and $a_N$.
+\answer
+$\langle e^t,\cos t,e^t\rangle$,
+$\langle e^t, -\sin t,e^t\rangle$,
+$(2e^{2t}-\cos t\sin t)/\sqrt{2e^{2t}+\cos^2 t}$, 
+$\sqrt{2}e^t|\cos t+\sin t|/\sqrt{2e^{2t}+\cos^2 t}$
+\endanswer
+
+\problem Suppose an object moves so that its acceleration is given by %{{{2
+$\va =\langle -3\cos t,-2\sin t,0\rangle$. At time $t=0$ the object
+is at $(3,0,0)$ and its velocity vector is $\langle
+0,2,0\rangle$. Find $\vv (t)$ and $\vr (t)$ for the object.
+\answer
+$\langle -3\sin t,2\cos t,0\rangle$,
+$\langle 3\cos t, 2\sin t,0\rangle$
+\endanswer
+
+\problem Suppose an object moves so that its acceleration is given by %{{{2
+$\va =\langle -3\cos t,-2\sin t,0\rangle$. At time $t=0$ the object
+is at $(3,0,0)$ and its velocity vector is $\langle
+0,2.1,0\rangle$. Find $\vv (t)$ and $\vr (t)$ for the object.
+\answer
+$\langle -3\sin t,2\cos t+0.1,0\rangle$,
+$\langle 3\cos t, 2\sin t+t/10,0\rangle$
+\endanswer
+
+\problem Suppose an object moves so that its acceleration is given by %{{{2
+$\va =\langle -3\cos t,-2\sin t,0\rangle$. At time $t=0$ the object
+is at $(3,0,0)$ and its velocity vector is $\langle
+0,2,1\rangle$. Find $\vv (t)$ and $\vr (t)$ for the object.
+\answer
+$\langle -3\sin t,2\cos t,1\rangle$,
+$\langle 3\cos t, 2\sin t,t\rangle$
+\endanswer
+
+\problem Suppose an object moves so that its acceleration is given by %{{{2
+$\va =\langle -3\cos t,-2\sin t,0\rangle$. At time $t=0$ the object
+is at $(3,0,0)$ and its velocity vector is $\langle
+0,2.1,1\rangle$. Find $\vv (t)$ and $\vr (t)$ for the object.
+\answer
+$\langle -3\sin t,2\cos t+1/10,1\rangle$,
+$\langle 3\cos t, 2\sin t+t/10,t\rangle$
+\endanswer
+
+
+\end{multicols}
+
+\def\tint#1{\int\int\int_{#1}}
+\section{Multiple Integration} %{{{1
+
+\begin{multicols}{2}
+
+
+\problem Compute $\DS \int_{0}^{2}\int_{0}^{4} 1+x \,dy\,dx$. %{{{2
+\answer
+$16$
+\endanswer
+
+\problem Compute $\DS \int_{-1}^{1}\int_{0}^{2} x+y\,dy\,dx$. %{{{2
+\answer
+$4$
+\endanswer
+
+
+\problem Compute $\DS \int_{1}^{2}\int_{0}^{y} xy \,dx\,dy$. %{{{2
+\answer
+$15/8$
+\endanswer
+
+
+\problem Compute $\DS \int_{0}^{1}\int_{y^2/2}^{\sqrt y} \,dx\,dy$. %{{{2
+\answer
+$1/2$
+\endanswer
+
+
+\problem Compute $\DS \int_{1}^{2}\int_{1}^{x} {x^2\over y^2}\,dy\,dx$. %{{{2
+\answer
+$5/6$
+\endanswer
+
+
+\problem Compute $\DS \int_{0}^{1}\int_{0}^{x^2} {y\over e^x}\,dy\,dx$. %{{{2
+\answer
+$12-65/(2e)$.
+\endanswer
+
+
+\problem Compute $\DS \int_{0}^{\sqrt{\pi/2}}\int_{0}^{x^2} x\cos y\,dy\,dx$. %{{{2
+\answer
+$1/2$
+\endanswer
+
+
+\problem Compute $\DS \int_{0}^{\pi/2}\int_{0}^{\cos\theta}r^2 %{{{2
+(\cos\theta-r) \,dr\,d\theta$.
+\answer
+$\pi/64$
+\endanswer
+
+\problem  Compute: $\DS \int_0^1\int_{\sqrt{y}}^1  %{{{2
+\sqrt{x^3+1}\,dx\,dy$.
+\answer
+$(2/9)2^{3/2}-(2/9)$
+\endanswer
+
+\problem Compute: $\DS \int_0^1\int_{y^2}^1  %{{{2
+y\sin(x^2)\,dx\,dy$.
+\answer
+$(1-\cos(1))/4$
+\endanswer
+
+\problem Compute: $\DS \int_0^1 \int_{x^2}^1 x\sqrt{1+y^2}\,dy\,dx$ %{{{2
+\answer
+$(2\sqrt2-1)/6$
+\endanswer
+
+\problem Compute: $\DS \int_0^1 \int_0^y %{{{2
+{2\over\sqrt{1-x^2}}\,dx\,dy$
+\answer
+$\pi-2$
+\endanswer
+
+\problem Find the volume bounded by $z=x^2+y^2$ and $z=4$. %{{{2
+\answer
+$8\pi$
+\endanswer
+
+
+\problem Find the volume in the first octant %{{{2
+bounded by $y^2=4-x$ and $y=2z$.
+\answer
+$2$
+\endanswer
+
+
+\problem Find the volume in the first octant %{{{2
+bounded by $y^2=4x$, $2x+y=4$, $z=y$,
+and $y=0$.
+\answer
+$5/3$
+\endanswer
+
+\problem Find the volume in the first octant %{{{2
+bounded by $x+y+z=9$, $2x+3y=18$, and $x+3y=9$.
+\answer
+$81/2$
+\endanswer
+
+\problem Find the volume in the first octant %{{{2
+bounded by $x^2+y^2=a^2$ and $z=x+y$.
+\answer
+$2a^3/3$
+\endanswer
+
+\problem Find the volume bounded by $4x^2+y^2=4z$ and $z=2$. %{{{2
+\answer
+$4\pi$
+\endanswer
+
+\problem Find the volume bounded by $z=x^2+y^2$ and $z=y$. %{{{2
+\answer
+$\pi/32$
+\endanswer
+
+\problem Find the average value of $f(x,y)=e^y\sqrt{x+e^y}$ on the %{{{2
+rectangle with vertices $(0,0)$, $(4,0$), $(4,1)$ and $(0,1)$.
+
+%% Balof
+\problem Below is a weather map of Colorado.  Use %{{{2
+the data to estimate the average temperature in the state using 4,
+16 and 25 subdivisions.  Give both an upper and lower estimate.
+Why do we like Colorado for this problem?  What
+other state might we like?
+
+\verb|\includegraphics{weathermap.ps}|
+
+\problem Three cylinders of radius 1 intersect at right angles at the %{{{2
+origin, as shown in figure~\ref{fig:three cylinders}. Find the
+volume contained inside all three cylinders.
+\answer
+$16-8\sqrt{2}$
+\endanswer
+
+\begin{figure}
+    \caption{Intersection of three cylinders.}
+\end{figure}
+
+\problem Prove that if $f(x,y)$ is integrable and if $\DS g(x,y)=\int_a^x %{{{2
+\int_b^y f(s,t) \; dt \; ds$ then $g_{xy}=g_{yx}=f(x,y)$.
+
+\problem Reverse the order of integration on each of the following integrals %{{{2
+
+\begin{itemize}
+\item[a.] $\DS\int_0^3 \int_0^{\sqrt{9-y}} f(x,y)\; dx \; dy$
+\item[b.] $\DS\int_1^2 \int_0^{\ln x} f(x,y) \; dy \; dx $
+\item[c.] $\DS\int_0^1 \int_{\arcsin y}^{\pi/2} f(x,y) \; dx \; dy$
+\end{itemize}
+
+%% Balof
+\problem What are the parallels between Fubini's %{{{2
+Theorem and Clairaut's Theorem?
+
+
+
+
+
+
+\problem Find the volume above the $x$-$y$ plane, under the surface %{{{2
+$r^2=2z$, and inside $r=2$.
+\answer
+$4\pi$
+\endanswer
+
+\problem Find the volume inside both $r=1$ and $r^2+z^2=4$. %{{{2
+\answer
+$32\pi/3-4\sqrt3\pi$
+\endanswer
+
+\problem Find the volume below $z=\sqrt{1-r^2}$ and above %{{{2
+the top half of the cone $z=r$.
+\answer
+$(2-\sqrt2)\pi/3$
+\endanswer
+
+\problem Find the volume below  $z=r$, above the $x$-$y$ plane, and %{{{2
+inside $r=\cos\theta$.
+\answer
+$4/9$
+\endanswer
+
+\problem Find the volume below  $z=r$, above the $x$-$y$ plane, and %{{{2
+inside $r=1+\cos\theta$.
+\answer
+$5\pi/3$
+\endanswer
+
+\problem Find the volume between $x^2+y^2=z^2$ and $x^2+y^2=z$. %{{{2
+\answer
+$\pi/6$
+\endanswer
+
+\problem Find the area inside $r=1+\sin\theta$ and outside %{{{2
+$r=2\sin\theta$. 
+\answer
+$\pi/2$
+\endanswer
+
+\problem Find the area inside both %{{{2
+$r=2\sin\theta$ and $r=2\cos\theta$. 
+\answer
+$\pi/2-1$
+\endanswer
+
+\problem Find the area inside the four-leaf rose $r=\cos(2\theta)$ %{{{2
+and outside $r=1/2$.
+\answer
+$\sqrt3/4+\pi/6$
+\endanswer
+
+\problem Investigate and describe the differences between the graphs of %{{{2
+$r=\cos(2\theta)$ and $r=\sin(2\theta)$.
+
+\problem Investigate and describe the differences between the graphs of %{{{2
+$r=\cos(2k\theta)$ and $r=\cos((2k+1)\theta)$
+
+\problem Figure \ref{fig:double flower} shows the plot of %{{{2
+$r=1+4\sin(5\theta)$.
+
+\begin{figure}
+    \caption{$r=1+4\sin(5\theta)$}
+\end{figure}
+
+\begin{itemize}
+
+\item[a.] Describe the behavior of the graph in terms of the given
+    equation.  Specifically, explain maximum and minimum values, number
+    of leaves, and the 'leaves within leaves'.
+
+\item[b.] Give an integral or integrals to determine the area outside a
+    smaller leaf but inside a larger leaf.
+
+
+\item[c.] How would changing the value of $a$ in the equation
+    $r=1+a\cos(5\theta)$ change the relative sizes of the inner and
+    outer leaves? Focus on values $a\geq 1$.  (Hint: How would we change
+    the maximum and minimum values?)
+
+\end{itemize}
+
+\problem Consider the integral $\DS\int\int_{D} {1\over\sqrt{x^2+y^2}} \; %{{{2
+dA$, where $D$ is the unit disk centered at the origin.
+
+\begin{itemize}
+
+\item[a.] Why might this integral be considered improper?
+
+\item[b.] Calculate the value of this integral over the annulus with outer
+    radius 1 and inner radius $\delta$.
+
+\item[c.] Obtain a value for the integral on the whole disk by letting
+    $\delta$ approach 0.
+
+\item[d.] For which values $\lambda$ can we replace the denominator with
+    $(x^2+y^2)^\lambda$ in the original integral?
+
+\end{itemize}
+
+
+
+
+
+
+\problem Find the center of mass of a two-dimensional plate  %{{{2
+that occupies the square $[0,1]\times[0,1]$
+and has density
+function $xy$.
+\answer
+$\bar x=\bar y=2/3$
+\endanswer
+
+\problem Find the center of mass of a two-dimensional plate  %{{{2
+that occupies the triangle $0\le x\le1$, $0\le y\le x$,
+and has density
+function $xy$.
+\answer
+$\bar x=4/5$, $\bar y=8/15$
+\endanswer
+
+\problem Find the center of mass of a two-dimensional plate  %{{{2
+that occupies the upper unit semicircle centered at $(0,0)$
+and has density
+function $y$.
+\answer
+$\bar x=0$, $\bar y=3\pi/16$
+\endanswer
+
+\problem Find the center of mass of a two-dimensional plate  %{{{2
+that occupies the upper unit semicircle centered at $(0,0)$
+and has density
+function $x^2$.
+\answer
+$\bar x=0$, $\bar y=16/(15\pi)$
+\endanswer
+
+
+
+
+
+
+\problem Find the area of the surface of a right circular cone of %{{{2
+height $h$ and base radius $a$.
+\answer
+$\pi a\sqrt{h^2+a^2}$
+\endanswer
+
+\problem Find the area of the portion of the plane $z=mx$ inside the %{{{2
+cylinder $x^2+y^2=a^2$.
+\answer
+$\pi a^2\sqrt{m^2+1}$
+\endanswer
+
+\problem Find the area of the portion of the plane $x+y+z=1$ in the %{{{2
+first octant.
+\answer
+$\sqrt3/2$
+\endanswer
+
+\problem Find the area of the upper half of the cone %{{{2
+$x^2+y^2=z^2$ inside the cylinder $x^2+y^2-2x = 0$.
+\answer
+$\pi\sqrt2$
+\endanswer
+
+\problem Find the area of the upper half of the cone %{{{2
+$x^2+y^2=z^2$ above the interior of one loop of $r=\cos(2\theta)$.
+\answer
+$\pi\sqrt2/8$
+\endanswer
+
+\problem Find the area of the upper hemisphere of  %{{{2
+$x^2+y^2+z^2=1$ above the interior of one loop of $r=\cos(2\theta)$.
+\answer
+$\pi/2-1$
+\endanswer
+
+\problem The plane $ax+by+cz=d$ cuts a triangle in the first octant %{{{2
+provided that $a, b, c$ and $d$ are all positive.  Set up the
+integral to find the area of this triangle.
+
+\problem The surface area formula can be used to compute the surface area %{{{2
+of the upper half of the sphere $x^2+y^2+z^2=a^2$, but the integral
+is improper.
+
+\begin{itemize}
+
+\item[a.] Set up the appropriate integral to calculate this area and give
+    two algebraic reasons why it is improper.
+
+    %% Balof (one will look similar to
+    %%  our work from the Implicit Function Theorem).
+
+    \item[b.] Find the surface area of the upper hemisphere of
+        $x^2+y^2+z^2=a^2$ above a circle of radius $t$ where $t<a$.
+
+    \item[c.] Find the surface area of the whole upper hemisphere by taking a
+        limit of your answer in part (b) as $t$ approaches $a$.
+
+    \end{itemize}
+
+
+
+
+
+    \problem Evaluate $\DS\int_{0}^{1}\int_{0}^{x}\int_{0}^{x+y}
+    2x+y-1 \,dz\,dy\,dx$.
+    \answer
+    $11/24$
+\endanswer
+
+\problem Evaluate $\DS\int_{0}^{2}\int_{-1}^{x^2}\int_{1}^{y} %{{{2
+xyz \,dz\,dy\,dx$.
+\answer
+$623/60$
+\endanswer
+
+\problem Evaluate $\DS\int_{0}^{1}\int_{0}^{x}\int_{0}^{\ln y} %{{{2
+e^{x+y+z}\,dz\,dy\,dx$.
+\answer
+$-3e^2/4+2e-3/4$
+\endanswer
+
+\problem Evaluate %{{{2
+$\DS\int_{0}^{\pi/2}\int_{0}^{\sin\theta}\int_{0}^{r\cos\theta}
+r^2\,dz\,dr\,d\theta$.
+\answer
+$1/20$
+\endanswer
+
+\problem Evaluate  %{{{2
+$\DS\int_{0}^{\pi}\int_{0}^{\sin\theta}\int_{0}^{r\sin\theta}
+r\cos^2\theta\,dz\,dr\,d\theta$.
+\answer
+$\pi/48$
+\endanswer
+
+\problem Evaluate $\DS\int_{0}^{1}\int_{0}^{y^2}\int_{0}^{x+y} %{{{2
+x\,dz\,dx\,dy$.
+\answer
+$11/84$
+\endanswer
+
+\problem Evaluate $\DS\int_{1}^{2}\int_{y}^{y^2}\int_{0}^{\ln(y+z)} %{{{2
+e^x\,dx\,dz\,dy$.
+\answer
+$151/60$
+\endanswer
+
+\problem For each of the integrals in the previous exercises, give a %{{{2
+description of the volume (both algebraic and geometric) that is the
+domain of integration.
+
+
+\problem Find the mass of a cube with edge length 2 and density equal %{{{2
+to the square of the distance from one corner.
+\answer
+$32$
+\endanswer
+
+\problem Find the mass of a cube with edge length 2 and density equal %{{{2
+to the square of the distance from one edge.
+\answer
+$64/3$
+\endanswer
+
+\problem An object occupies the volume of the upper hemisphere of  %{{{2
+$x^2+y^2+z^2=4$ and has density $z$ at $(x,y,z)$. Find the center of mass.
+\answer
+$\bar x=\bar y=0$, $\bar z=16/15$
+\endanswer
+
+\problem An object occupies the volume of the pyramid with corners at  %{{{2
+$(1,1,0)$, $(1,-1,0)$, $(-1,-1,0)$, $(-1,1,0)$, and $(0,0,2)$ and has
+density $x^2+y^2$ at $(x,y,z)$. Find the center of mass.
+\answer
+$\bar x=\bar y=0$, $\bar z=1/3$
+\endanswer
+
+\problem Verify the moments $M_{xy}$, $M_{xz}$, and $M_{yz}$ %{{{2
+of example~\ref{example:3d center of mass} by evaluating the
+integrals. 
+
+
+\problem Find the region $E$ for which $\DS\tint{E} %{{{2
+(1-x^2-y^2-z^2) \; \dV $ is a maximum.
+
+
+
+
+
+
+\problem Evaluate $\DS\int_{0}^{1}\int_{0}^{x}\int_{0}^{\sqrt{x^2+y^2}} %{{{2
+{(x^2+y^2)^{3/2}\over x^2+y^2+z^2}\,dz\,dy\,dx$.
+\answer
+$\pi/12$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int x^2\,\dV $ %{{{2
+over the interior of the cylinder $x^2+y^2=1$ between $z=0$ and $z=5$.
+\answer
+$5\pi/4$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int xy\,\dV $ %{{{2
+over the interior of the cylinder $x^2+y^2=1$ between $z=0$ and $z=5$.
+\answer
+$0$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int z\,\dV $ %{{{2
+over the region above the $x$-$y$ plane, inside $x^2+y^2-2x=0$ and
+under $x^2+y^2+z^2=4$.
+\answer
+$5\pi/4$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int yz\,\dV $ %{{{2
+over the region in the first octant, inside $x^2+y^2-2x=0$ and 
+under $x^2+y^2+z^2=4$.
+\answer
+$4/5$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int x^2+y^2\,\dV $ %{{{2
+over the interior of $x^2+y^2+z^2=4$.
+\answer
+$256\pi/15$
+\endanswer
+
+\problem Evaluate $\DS\int\int\int \sqrt{x^2+y^2}\,\dV $ %{{{2
+over the interior of $x^2+y^2+z^2=4$.
+\answer
+$4\pi^2$
+\endanswer
+
+\problem Find the mass of a right circular cone of height $h$ and %{{{2
+base radius $a$ if the density is proportional to the distance from
+the base.
+\answer
+$\pi kh^2a^2/12$
+\endanswer
+
+\problem Find the mass of a right circular cone of height $h$ and %{{{2
+base radius $a$ if the density is proportional to the distance from
+its axis of symmetry.
+\answer
+$\pi kha^3/6$
+\endanswer
+
+\problem An object occupies the region inside the unit sphere at the %{{{2
+origin, and has density equal to the distance from the $x$-axis. Find
+the mass.
+\answer
+$\pi^2/4$
+\endanswer
+
+\problem An object occupies the region inside the unit sphere at the %{{{2
+origin, and has density equal to the square of the distance from the
+origin. Find the mass.
+\answer
+$4\pi/5$
+\endanswer
+
+\problem An object occupies the region between the unit sphere at the %{{{2
+origin and a sphere of radius 2 with center at the origin, and has
+density equal to the distance from the origin. Find the mass.
+\answer
+$124\pi/5$
+\endanswer
+
+
+
+
+
+\problem Complete example~\ref{example:change of variables} by %{{{2
+converting to polar coordinates and evaluating the integral.
+
+\problem Evaluate $\DS\int\int xy\,dx\,dy$ over the square %{{{2
+with corners $(0,0)$, $(1,1)$, $(2,0)$, and $(1,-1)$ in two ways:
+directly, and using $x=(u+v)/2$, $y=(u-v)/2$.
+\answer
+$0$
+\endanswer
+
+\problem Evaluate $\DS\int\int x^2+y^2\,dx\,dy$ over the square %{{{2
+with corners $(-1,0)$, $(0,1)$, $(1,0)$, and $(0,-1)$ in two ways:
+directly, and using $x=(u+v)/2$, $y=(u-v)/2$.
+\answer
+$2/3$
+\endanswer
+
+\problem Evaluate $\DS\int\int (x+y)e^{x-y}\,dx\,dy$ over the triangle %{{{2
+with corners $(0,0)$, $(-1,1)$, and $(1,1)$ in two ways:
+directly, and using $x=(u+v)/2$, $y=(u-v)/2$.
+
+\problem Evaluate $\DS\int\int y(x-y)\,dx\,dy$ over the parallelogram %{{{2
+with corners $(0,0)$, $(3,3)$, $(7,3)$, and $(4,0)$ in two ways:
+directly, and using $x=u+v$, $y=u$.
+
+\problem Evaluate $\DS\int\int \sqrt{x^2+y^2}\,dx\,dy$ over the %{{{2
+triangle with corners $(0,0)$, $(4,4)$, and $(4,0)$ using $x=u$, $y=uv$.
+\answer
+$32(\sqrt2+\ln(1+\sqrt2))/3$
+\endanswer
+
+\problem Evaluate $\DS\int\int y\sin(xy)\,dx\,dy$ over the %{{{2
+region bounded by $xy=1$, $xy=4$, $y=1$, and $y=4$ using
+$x=u/v$, $y=v$.
+\answer
+$3\cos(1)-3\cos(4)$
+\endanswer
+
+
+\def\dint#1{\int\int_{#1}}
+\textbf{Vector Calculus}
+
+
+
+Sketch the vector fields; check your work with Maple's \verb|fieldplot|
+command. 
+
+\problem $\langle x,y\rangle$  %{{{2
+
+\problem $\langle -x, -y\rangle$  %{{{2
+
+\problem $\langle x,-y\rangle$  %{{{2
+
+\problem $\langle \sin x,\cos y\rangle$  %{{{2
+
+\problem $\langle y,1/x\rangle$  %{{{2
+
+\problem $\langle x+1,x+3\rangle$  %{{{2
+
+\problem Verify equation~\ref{eq:inverse square field as gradient}. %{{{2
+
+
+
+
+
+\problem Compute $\DS\int_{\partial D} 2y\,dx + 3x\,dy$,  %{{{2
+where $D$ is described by $0\le x,y\le 1$.
+\answer
+$1$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} xy\,dx + xy\,dy$,  %{{{2
+where $D$ is described by $0\le x,y\le 1$.
+\answer
+$0$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} e^{2x+3y}\,dx + e^{xy}\,dy$,  %{{{2
+where $D$ is described by $-2\le x\le 2$, $-1\le y\le 1$.
+\answer
+$1/(2e)-1/(2e^7)+e/2-e^7/2$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} y\cos x\,dx + y\sin x\,dy$,  %{{{2
+where $D$ is described by $0\le x\le \pi/2$, $1\le y\le 2$.
+\answer
+$1/2$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} x^2y\,dx + xy^2\,dy$,  %{{{2
+where $D$ is described by $0\le x\le 1$, $0\le y\le x$.
+\answer
+$-1/6$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} x\sqrt{y}\,dx + \sqrt{x+y}\,dy$,  %{{{2
+where $D$ is described by $1\le x\le 2$, $2x\le y\le 4$.
+\answer
+$(2\sqrt3-10\sqrt5+8\sqrt6)/3-2\sqrt2/5+1/5$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} (x/y)\,dx + (2+3x)\,dy$,  %{{{2
+where $D$ is described by $1\le x\le 2$, $1\le y\le x^2$.
+\answer
+$11/2-\ln(2)$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} \sin y\,dx + \sin x\,dy$,  %{{{2
+where $D$ is described by $0\le x\le \pi/2$, $x\le y\le \pi/2$.
+\answer
+$2-\pi/2$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} x\ln y\,dx$, %{{{2
+where $D$ is described by $1\le x\le 2$, $\DS e^x\le y\le e^{x^2}$.
+\answer
+$-17/12$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} \sqrt{1+x^2}\,dy$,  %{{{2
+where $D$ is described by $-1\le x\le 1$, $x^2\le y\le 1$.
+\answer
+$0$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} x^2y\,dx - xy^2\,dy$,  %{{{2
+where $D$ is described by $x^2+y^2\le 1$.
+\answer
+$-\pi/2$
+\endanswer
+
+\problem Compute $\DS\int_{\partial D} y^3\,dx + 2x^3\,dy$,  %{{{2
+where $D$ is described by $x^2+y^2\le 4$.
+\answer
+$12\pi$
+\endanswer
+
+\problem Finish our proof of Green's Theorem by showing that %{{{2
+$\DS\oint_C Q\,dy=\dint{D} {\partial Q\over\partial x}\,dA$.
+
+
+
+
+
+
+\problem Let $\vF =\langle xy,-xy\rangle$ and  %{{{2
+let $D$ be given by $0\le x\le 1$, $0\le y\le 1$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$-1$, $0$
+\endanswer
+
+\problem Let $\vF =\langle ax^2,by^2\rangle$ and  %{{{2
+let $D$ be given by $0\le x\le 1$, $0\le y\le 1$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$0$, $a+b$
+\endanswer
+
+\problem Let $\vF =\langle ay^2,bx^2\rangle$ and  %{{{2
+let $D$ be given by $0\le x\le 1$, $0\le y\le x$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$(2b-a)/3$, $0$
+\endanswer
+
+\problem Let $\vF =\langle \sin x\cos y,\cos x\sin y\rangle$ and  %{{{2
+let $D$ be given by $0\le x\le \pi/2$, $0\le y\le x$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$0$, $1$
+\endanswer
+
+\problem Let $\vF =\langle y,-x\rangle$ and  %{{{2
+let $D$ be given by $x^2+y^2\le 1$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$-2\pi$, $0$
+\endanswer
+
+\problem Let $\vF =\langle x,y\rangle$ and  %{{{2
+let $D$ be given by $x^2+y^2\le 1$.
+Compute $\DS\int_{\partial D} \vF \cdot d\vr $ and
+$\DS\int_{\partial D} \vF \cdot\vN \,ds$.
+\answer
+$0$, $2\pi$
+\endanswer
+
+
+
+
+
+
+\problem Find the area of the portion of $x+2y+4z=10$ in the first %{{{2
+octant.
+\answer
+$25\sqrt{21}/4$
+\endanswer
+
+\problem Find the area of the portion of $2x+4y+z=0$ %{{{2
+inside $x^2+y^2=1$.
+\answer
+$\pi\sqrt{21}$
+\endanswer
+
+\problem Find the area of $z=x^2+y^2$ that lies below $z=1$. %{{{2
+\answer
+$\pi(5\sqrt5-1)/6$
+\endanswer
+
+\problem Find the area of $z=\sqrt{x^2+y^2}$ that lies below $z=2$. %{{{2
+\answer
+$4\pi\sqrt2$
+\endanswer
+
+\problem Find the area of the portion of $x^2+y^2+z^2=a^2$ that lies %{{{2
+in the first octant.
+\answer
+$\pi a^2/2$
+\endanswer
+
+\problem Find the area of the portion of $x^2+y^2+z^2=a^2$ that lies %{{{2
+above $x^2+y^2\le b^2$.
+\answer
+$2\pi a(a-\sqrt{a^2-b^2})$
+\endanswer
+
+\problem Find the area of $z=x^2-y^2$ that lies inside $x^2+y^2=a^2$. %{{{2
+\answer
+$\pi((1+4a^2)^{3/2}-1)/6$
+\endanswer
+
+\problem Find the area of $z=xy$ that lies inside $x^2+y^2=a^2$. %{{{2
+\answer
+$2\pi((1+a^2)^{3/2}-1)/3$
+\endanswer
+
+\problem Find the area of $x^2+y^2+z^2=a^2$  %{{{2
+that lies above the interior of the circle given in polar coordinates
+by $r=a\cos \theta$.
+\answer
+$\pi a^2-2a^2$
+\endanswer
+
+\problem Find the area of the cone $z=k\sqrt{x^2+y^2}$ %{{{2
+that lies above the interior of the circle given in polar coordinates
+by $r=a\cos \theta$.
+\answer
+$\pi a^2\sqrt{1+k^2}/4$
+\endanswer
+
+\problem Find the area of the plane $z=ax+by+c$ that lies over a %{{{2
+region $D$ with area $A$.
+\answer
+$A\sqrt{1+a^2+b^2}$
+\endanswer
+
+\problem Find the area of the cone $z=k\sqrt{x^2+y^2}$ that lies over a %{{{2
+region $D$ with area $A$.
+\answer
+$A\sqrt{k^2+1}$
+\endanswer
+
+\problem Find the area of the cylinder $x^2+z^2=a^2$ that lies inside %{{{2
+the cylinder $x^2+y^2=a^2$.
+\answer
+$8a^2$
+\endanswer
+
+\problem The surface $f(x,y)$ can be represented with the vector %{{{2
+function $\langle x,y,f(x,y)\rangle$. Set up the surface area integral using
+this vector function and compare to the integral of
+section~\ref{sec:surface area}. 
+
+
+
+
+
+\problem Find the center of mass of an object that occupies the upper %{{{2
+hemisphere of $x^2+y^2+z^2=1$ and has density $x^2+y^2$.
+\answer
+$(0,0,3/8)$
+\endanswer
+
+\problem Find the center of mass of an object that occupies the %{{{2
+surface $z=xy$, $0\le x,y\le 1$, and has density $\sqrt{1+x^2+y^2}$.
+\answer
+$(11/20,11/20,3/10)$
+\endanswer
+
+\problem Find the centroid of the surface of a right circular cone of %{{{2
+height $h$ and base radius $r$, not including the base.
+\answer
+on center axis, $h/3$ above the base
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle 2,-3,4\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=x^2+y^2$, $-1\le x\le 1$, $-1\le
+y\le 1$, oriented up.
+\answer
+$16$
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle x,y,3\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=3x-5y$, $1\le x\le 2$, $0\le
+y\le 2$, oriented up.
+\answer
+$7$
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle x,y,-2\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=1-x^2-y^2$, $x^2+y^2\le1$,
+oriented up.
+\answer
+$-\pi$
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle xy, yz,zx\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=x+y^2+2$, $0\le x\le 1$, $x\le
+y\le 1$, oriented up.
+\answer
+$-137/120$
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle e^x, e^y,z\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=xy$, $0\le x\le 1$, $-x\le
+y\le x$, oriented up.
+\answer
+$-2/e$
+\endanswer
+
+\problem Evaluate $\DS \dint{D} \langle xz,yz,z\rangle\cdot {\bf %{{{2
+N}\,dS$, where $D$ is given by $z=a^2-x^2-y^2$, $x^2+y^2\le b^2$, 
+oriented up.
+\answer
+$\pi b^2(-4b^4-3b^2+6a^2b^2+6a^2)/6$
+\endanswer
+
+
+
+
+
+\problem %{{{2
+Let $\vF =\langle z,x,y\rangle$.
+The plane $z=2x+2y-1$ and the paraboloid $z=x^2+y^2$ intersect in a
+closed curve. Stokes's Theorem implies that
+$$\dint{D_1} (\nab\times\vF )\cdot \vN \,dS=
+\oint_C \vF \cdot d\vr =
+\dint{D_2} (\nab\times\vF )\cdot \vN \,dS,
+$$
+where the line integral is computed over the intersection $C$ of the plane
+and the paraboloid, and the two surface integrals are computed over
+the portions of the two surfaces that have boundary $C$ (provided, of
+course, that the orientations all match). Compute all three integrals.
+\answer
+$-3\pi$
+\endanswer
+
+\problem Let $D$ be the portion of $z=1-x^2-y^2$ above the $x$-$y$ %{{{2
+plane, oriented up, and let $\vF =\langle
+xy^2,-x^2y,xyz\rangle$. Compute $\DS\dint{D} (\nab\times{\bf
+F})\cdot \vN \,dS$.
+\answer
+$0$
+\endanswer
+
+\problem Let $D$ be the portion of $z=2x+5y$ inside $x^2+y^2=1$, %{{{2
+oriented up, and
+let $\vF =\langle y,z,-x\rangle$. Compute
+$\DS\int_{\partial D} \vF \cdot d\vr $.
+\answer
+$-4\pi$
+\endanswer
+
+\problem Let $D$ be the portion of $z=px+qy+r$ over a region in the %{{{2
+$x$-$y$ plane that has area $A$, oriented up, and 
+let $\vF =\langle ax+by+cz,ax+by+cz,ax+by+cz\rangle$. Compute
+$\DS\int_{\partial D} \vF \cdot d\vr $.
+\answer
+$A(p(c-b)+q(a-c)+a-b)$
+\endanswer
+
+\problem Let $D$ be any surface and  %{{{2
+let $\vF =\langle P(x),Q(y),R(z)\rangle$ ($P$ depends only on $x$,
+$Q$ only on $y$, and $R$ only on $z$). Show that
+$\DS\int_{\partial D} \vF \cdot d\vr =0$.
+
+\problem Show that $\DS\int_C f\nab g+g\nab f\cdot d\vr =0$, where %{{{2
+$\bf r$ describes a closed curve $C$ to which Stokes's Theorem
+applies.
+
+
+\end{multicols}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "free234"
+%%% End: 
