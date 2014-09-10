@@ -1,3 +1,0 @@
-#!/bin/bash
-/usr/texbin/xelatex --interaction=batchmode free221
-
