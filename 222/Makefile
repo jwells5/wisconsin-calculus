@@ -1,3 +1,3 @@
-free222.pdf: *.tex figures/*.pdf
-	xelatex free222
+free222.pdf: *.tex
+	pdflatex free222
 

@@ -18,14 +18,14 @@
 %% }
 \renewcommand{\thesection}{\arabic{section}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\sidenote}[1]{\marginpar{%%{{{1
+\newcommand{\sidenote}[1]{\marginpar{%
 \fcolorbox{darkbluegreen}{darkgreen}{\sffamily\footnotesize\color[rgb]{0.7,1.0,0.7}#1
 }} }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       FONTS {{{1
+%       FONTS 
 \def\dfnt{\sffamily\itshape\color{darkbluegreen}} % font for text in pdf_tex figures
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%       ENVIRONMENTS%{{{1
+%       ENVIRONMENTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{definition}[1][Definition]
 {\subsection{#1}\itshape}
@@ -39,7 +39,7 @@
 \newenvironment{example}[1][Example]
 {\subsection{#1}}{\medskip}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%      MACROS for PROBLEMS%{{{1
+%      MACROS for PROBLEMS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\problemfont}{\sffamily\small%
@@ -75,7 +75,7 @@
 \newcommand{\marginwarning}{\hbox to0pt{\kern-3em \color{red}\small\textdbend}}%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     MACROS for PROJECTS%{{{1
+%     MACROS for PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{PROJECT}
 \newcommand{\project}[1]{\newpage
@@ -91,7 +91,7 @@
 \bigskip
 
 }
-%%%%%%%%%%%%%   Various abbreviations  %%%%%%%%%%%{{{1
+%%%%%%%%%%%%%   Various abbreviations  %%%%%%%%%%%
 \newcommand{\setA}{\mathcal{A}}
 \newcommand{\setB}{\mathcal{B}}
 \newcommand{\setC}{\mathcal{C}}
@@ -119,12 +119,12 @@
 \newcommand{\setY}{\mathcal{Y}}
 \newcommand{\setZ}{\mathcal{Z}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% GENERAL MACROS%{{{1
+%% GENERAL MACROS
 \newcommand{\DS}{\displaystyle}
 %% TAYLOR MACROS
 \newcommand{\limntoi}{\lim_{n\to\infty}}
 \newcommand{\Ti}{T_{\infty}}
-%% VECTOR MACROS, used in 222 and 234.%{{{1
+%% VECTOR MACROS, used in 222 and 234.
 \newcommand{\vvv}[1]{{\protect\vecteur{\boldsymbol #1} }}  % Use for lower case
 \newcommand{\VVV}[1]{{\protect\vecteur{\boldsymbol #1} }}     % Use for uppercase
 %%%% JOEL'S vector and matrix macros
@@ -157,7 +157,7 @@
 \newcommand{\vs}{{\vvv s}}
 \newcommand{\vt}{{\vvv t}}
 \newcommand{\vu}{{\vvv u}}
-\renewcommand{\vv}{{\vvv v}}
+\newcommand{\vv}{{\vvv v}}
 \newcommand{\vw}{{\vvv w}}
 \newcommand{\vx}{{\vvv x}}
 \newcommand{\vy}{{\vvv y}}
@@ -171,16 +171,13 @@
 \newcommand{\vN}{{\VVV N}}
 \newcommand{\vT}{{\VVV T}}
 \newcommand{\vX}{{\VVV X}}
-% vector with subscript macros  {{{1
+% vector with subscript macros  
 \def\ves#1{\ve_{\kern-2pt\relax#1}}
 \def\vfs#1{\vf_{\kern-2pt\relax#1}}
 
-%{{{1  miscellaneous other macros
-%\newcommand{\dpp}{{\boldsymbol\cdot}}  % dot product
-\newcommand{\dpp}{\,•\,}  % dot product
+%  miscellaneous other macros
+\newcommand{\dpp}{{\boldsymbol\cdot}}  % dot product
 \newcommand{\cp}{{\boldsymbol\times}}  % cross product
-%\newcommand{\dpp}{{\pmb\cdot}}
-%\newcommand{\cp}{\pmb{\times}}
 \newcommand{\parppd}[8]{%     parallelpiped
 {#1#2#3#4 \atop #5#6#7#8}
 }
@@ -207,7 +204,7 @@
 \newcommand{\cR}{\mathcal{R}} 
 \newcommand{\cS}{\mathcal{S}} 
 \newcommand{\pd}{\partial}    % partial differentials
-\newcommand{\nab}{\vvv\nabla}
+\newcommand{\nab}{{\vvv\nabla}}
 \renewcommand{\div}{\mathop{\rm div}}
 \newcommand{\grad}{\mathop{\bf grad}}
 \newcommand{\curl}{\mathop{\bf curl}}
@@ -235,21 +232,3 @@
 \newcommand{\fibo}{\bm{\phi}} % Fibonacci number
 \newcommand{\sign}{\mathop{\mathrm{sign}} }
 \newcommand\ind[1]{1_{\{#1\}} }   % indicator function, used in David's projects
-%%% Arnie Miller macros %%%%%{{{1
-
- \def\vtor(#1,#2,#3){
- \left(\begin{array}{r}
- #1 \\
- #2 \\
- #3 \\
- \end{array}\right)}
- \def\al{\alpha}
- \def\conj(#1){\overline{#1}}
- \def\ll{{\mathcal L}}
- \def\c{\vec{c}}
- \def\i{\vec{i}}
- \def\j{\vec{j}}
- \def\k{\vec{k}}
- \def\p{\vec{p}}
-
-% vim: fdm=marker fdc=3

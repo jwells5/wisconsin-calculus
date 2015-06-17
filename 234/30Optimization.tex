@@ -1804,11 +1804,16 @@ for $x, y, \lambda$. Since $x=y$ the constraint implies $4x=1$, so $x=y=\frac14$
 Finally, either of the first two equations provides $\lambda = \frac12x =\frac12y =
 \frac18$.
 
-\subsubsection*{What is the meaning of $\lambda$?}  In this example you see that we first
-found the solution $(x, y)$, and then computed $\lambda$.  The multiplier $\lambda$
-is the ratio between the lengths of the gradients of $f$ and $g$ at the maximum, and
-is usually of no interest.  Nonetheless, when using Lagrange's method, \textit{you
-  must always also find $\lambda$,} or at least make sure that a $\lambda$ exists for
+\subsubsection*{What is the meaning of $\lambda$?}  In this example you
+see that we first found the solution $(x, y)$, and then computed
+$\lambda$.  The multiplier $\lambda$ is the ratio between the lengths of
+the gradients of $f$ and $g$ at the maximum, and can be interpreted as
+\textit{the rate at which the maximum $f$ changes if the value of the
+constraint $g=C$ is varied};  the details go beyond this course (but see
+Problems~\ref{prb:lagrange-multiplier-interpretation-1} and
+\ref{prb:lagrange-multiplier-interpretation-2}).  In any case, the
+upshot is that, when using Lagrange's method, \textit{you must always
+also find $\lambda$,} or at least make sure that a $\lambda$ exists for
 the $x$ and $y$ you have found.
 
 
@@ -2122,6 +2127,24 @@ eliminate $z$ and make this a problem about functions of $(x,y)$ only.)
 \answer  Farthest: $(-\sqrt2,\sqrt2,2+2\sqrt2)$; closest:  
 $(2,0,0)$, $(0,-2,0)$
 \endanswer
+
+\problem \textbf{(Interpretation of the Lagrange multiplier--general case.)}%
+\label{prb:lagrange-multiplier-interpretation-1}
+Suppose that for all values of the constraint parameter $C$ we have a solution $\bigl(x(C), y(C)\bigr)$ to the Lagrange multplier equations $\nab f(x, y)=\lambda \nab g(x,y)$, $g(x,y)=C$.
+
+Show that the derivative of $f(x(C), y(C))$ with respect to $C$ is exactly $\lambda$.
+
+\problem \textbf{(Interpretation of the Lagrange multiplier--example.)}
+\label{prb:lagrange-multiplier-interpretation-2}
+
+\subprob Use Lagrange multpliers to find the rectangle with sides $x$ and $y$ and enclosed area $A$ whose perimeter is as small as possible.  Find the $x$ and $y$ coordinates of the solution, the Lagrange multiplier $\lambda$, as well as the smallest perimeter $L$, and write all of them as functions of the prescribed area $A$.
+
+\subprob Compute the derivative 
+\[
+\frac{dL}{dA}.
+\]
+Describe in words what this derivative represents (``the rate of change of \dots''), and verify that in this example $\frac{dL}{dA} = \lambda$.
+
 \end{multicols}
 \noproblemfont
 

@@ -86,7 +86,7 @@ R= \sum_{j=1}^{n}\bigl(g(c_j) - f(c_j)\bigr)\Delta x.
 If we abuse the notation slightly and write the indices of summation as values
 of $x$, this becomes
 \[
-R= \sum_{``x=a''}^{``x=b''}\bigl(g(x_j) - f(x_j)\bigr)\Delta x.
+R= \sum_{\text{``$x=a$''}}^{\text{``$x=b$''}}\bigl(g(x_j) - f(x_j)\bigr)\Delta x.
 \]
 Now, if we take the limit as $n \to \infty$, then the result is exactly the integral
 \[
@@ -115,11 +115,11 @@ description of the derivation of the area formula \eqref{eq:area-between-graphs}
   thin strips together, which we (i.e. Leibniz) write as follows:
   \[
     \text{Area} =
-    %\mathop{\raisebox{-3pt}{\scalebox{0.9}[2.0]{\bfseries\sffamily S}}}
-    \text{\Large ſ}_{x=a}^{\;\;b} \bigl(g(x) - f(x)\bigr) dx.
+    \mathop{\raisebox{-3pt}{\scalebox{0.8}[2.5]{\slshape\sffamily S}}}
+    _{x=a}^{\;\;b} \bigl(g(x) - f(x)\bigr) dx.
   \]
 \end{quotation}
-The \textit{ſ} (``long s'') indicates that Leibniz is summing a lot of numbers.  This is
+The ``long s'' indicates that Leibniz is summing a lot of numbers.  This is
 of course a very strange kind of sum, since the ``numbers'' he is adding are
 infinitely small, and since there are infinitely many of them (there is one term
 for each value of $x$ between $a$ and $b$!). Because there are infinitely many
@@ -1017,7 +1017,8 @@ under its graph was easy to compute ($\frac13$), its arclength turns out to be m
 more complicated.
 \marginpar{\sffamily\itshape\footnotesize\input ../figures/221/09motion-on-parabola.pdf_tex \\
 Area: $1/3$\\
-Length: $\tfrac12 \sqrt{5} + \ln\bigl(2+\sqrt{5}\bigr) $.}%
+Length: \\
+\null\hfill $\tfrac12 \sqrt{5} + \tfrac14 \ln\bigl(2+\sqrt{5}\bigr) $.}%
 Our length formula \eqref{eq:09length-of-graph-of-f} says that the arclength of the
 parabola is given by
 \begin{equation}
@@ -1041,7 +1042,7 @@ or (if you like hyperbolic functions)
 \]
 The answer is :
 \[
-  L = \tfrac12 \sqrt{5} + \ln\bigl(2+\sqrt{5}\bigr) \approx 1.47894\cdots
+  L = \tfrac12 \sqrt{5} + \tfrac 14 \ln\bigl(2+\sqrt{5}\bigr) \approx 1.47894\cdots
 \]
 The computation is left as a challenging exercise (Problem
 \ref{ex:09length-of-parabola}).
@@ -1060,7 +1061,7 @@ functions we know in this course (it's an ``elliptic integral of the second
 kind.'')  This happens very often with the integrals that you run into when you
 try to compute the arclength of a curve.  In spite of the fact that we get stuck
 when we try to compute the integral in \eqref{eq:09lengthOFsineGraph}, the
-formula is not useless.  For example, since $-1\leq <\cos x\leq 1$ we know that
+formula is not useless.  For example, since $-1\leq \cos x\leq 1$ we know that
 \[
   1\leq \sqrt{1+\cos ^2 x} \leq \sqrt{1+1} = \sqrt2,
 \]
