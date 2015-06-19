@@ -1,11 +1,4 @@
-% Time-stamp: Aug  8 10:59 09intapps.tex
 %!TEX root = free221.tex
-
-% Add your name and the date here if you've done something.
-% Evan, fixed batch of typos and some wording issues 12/23
-
-
-
 \chapter{Applications of the integral}
 The integral appears as the answer to many different questions.  In this chapter
 we will describe a number of ``things that are an integral''.  In each example,
@@ -19,9 +12,9 @@ lengths and other things, but that would be a mistake.  In each case the
 important thing to learn is the reasoning that tells us how to turn a question
 about areas, volumes, etc into an integral.
 
-\section{Areas between graphs} %{{{1
+\section{Areas between graphs} %
 % !!! Issue: Missing an example. Also missing a discussion of what happens if the curves cross.
-\subsection{The problem} %{{{2
+\subsection{The problem} %
 Suppose you have two functions $f$ and $g$ on an interval $[a,b]$ such that
 $f(x)\leq g(x)$
 for all $x$ in the interval $[a,b]$.  Then the area of the region between the
@@ -41,7 +34,7 @@ graphs of the two functions is
     ``height$\times$width.''  }
 
 \end{figure}
-\subsection{Derivation using Riemann sums} %{{{2
+\subsection{Derivation using Riemann sums} %
 To get this formula, we approximate the region by a large number of thin
 rectangles.  Choose a partition $a=x_0<x_1<\cdots<x_n=b$ of the interval
 $[a,b]$ and choose a number $c_k$ in each interval $[x_{k-1}, x_k]$. Then we form the
@@ -73,7 +66,7 @@ which is just the Riemann sum for the integral on the right hand side in
 we conclude that the area between the graphs of $f$ and $g$ is exactly the
 integral in \eqref{eq:area-between-graphs}.
 
-\subsection{Summary of the derivation} %{{{2
+\subsection{Summary of the derivation} %
 Since most applications of the integral follow the pattern in the derivation
 above, it is important to understand its general features.
 Here we can summarize the above calculation using Riemann sums by the following
@@ -95,7 +88,7 @@ I= \int_{x=a}^{x=b}\bigl(g(x) - f(x)\bigr) \, dx.
 Essentially, the idea is that as we take the limit, the sum becomes an integral
 and the ``$\Delta$''s become ``$d$''s.
 
-\subsection{Leibniz' derivation} %{{{2
+\subsection{Leibniz' derivation} %
 Many scientists and engineers think of integrals in terms of Leibniz's ``sums of
 infinitely many infinitely small quantities,'' and will prefer the following
 description of the derivation of the area formula \eqref{eq:area-between-graphs} 
@@ -130,55 +123,55 @@ in Leibniz' interpretation, an integral comes about by adding infinitely many
 infinitely small numbers.
 
 
-\section{Problems} %{{{1
+\section{Problems} %
 % !!! Issue: For the love of all that is whatever, can we get some
 % areas-between-curves problems that AREN'T a line and a parabola?
-\problemfont %{{{3
+\problemfont %
 \begin{multicols}{2}\setlength{\parindent}{0pt}
-\problem Find the area of the finite region bounded by the parabola $y^2=4x$ and %{{{3
+\problem Find the area of the finite region bounded by the parabola $y^2=4x$ and %
 the line $y=2x$.
 
-\problem Find the area bounded by the curve $y=x(2-x)$ and the line $x=2y$. %{{{3
+\problem Find the area bounded by the curve $y=x(2-x)$ and the line $x=2y$. %
 
-\problem Find the area bounded by the curve $x^2=4y$ and the line $x=4y-2$. %{{{3
+\problem Find the area bounded by the curve $x^2=4y$ and the line $x=4y-2$. %
 
-\problem Calculate the area of the finite region bounded by the parabolas $y=x^2$ %{{{3
+\problem Calculate the area of the finite region bounded by the parabolas $y=x^2$ %
 and $x=y^2$.
 
-\problem Find the area of the finite region included between the parabola $y^2=x$ %{{{3
+\problem Find the area of the finite region included between the parabola $y^2=x$ %
 and the line $x+y=2$.
 
-\problem Find the area of the finite region bounded by the curves $y=\sqrt{x}$ and %{{{3
+\problem Find the area of the finite region bounded by the curves $y=\sqrt{x}$ and %
 $y=x$.
 
-\problem Use integration to find the area of the triangular region bounded %{{{3
+\problem Use integration to find the area of the triangular region bounded %
 by the lines $y=2x+1$, $y=3x+1$ and $x=4$.
 
 
-\problem Find the finite area bounded by the parabola $x^2-2=y$ and the line %{{{3
+\problem Find the finite area bounded by the parabola $x^2-2=y$ and the line %
 $x+y=0$.
 
-\problem Where do the graphs of $f(x) = x^2$ and $g(x) = 3/(2+x^2)$ %{{{3
+\problem Where do the graphs of $f(x) = x^2$ and $g(x) = 3/(2+x^2)$ %
 intersect?  Find the area of the region which lies above the graph of $y=f(x)$
 and below the graph of $y=g(x)$.
 
 (Hint: if you need to integrate $1/(2+x^2)$ you could substitute
 $u=x/ \sqrt2$.)
 
-\problem Graph the curve $y=(1/2)x^2+1$ and the straight line $y=x+1$ and %{{{3
+\problem Graph the curve $y=(1/2)x^2+1$ and the straight line $y=x+1$ and %
 find the area between the curve and the line.
 
-\problem Find the area of the finite region between the parabolas $y^2=x$ and %{{{3
+\problem Find the area of the finite region between the parabolas $y^2=x$ and %
 $x^2=16y$.
 
-\problem Find the area of the finite region enclosed by the parabola $y^2=4ax$ and %{{{3
+\problem Find the area of the finite region enclosed by the parabola $y^2=4ax$ and %
 the line $y=mx$, where $a$ and $m$ are positive constants.
 
-\problem Find $a$ so that the curves $y=x^2$ and $y=a\cos x$ intersect at %{{{3
+\problem Find $a$ so that the curves $y=x^2$ and $y=a\cos x$ intersect at %
 the point $(x,y)=(\frac\pi4, \frac{\pi^2}{16})$. Then find the finite area
 between these curves.
 
-\problem \groupproblem Write a definite integral whose value is the %{{{3
+\problem \groupproblem Write a definite integral whose value is the %
 area of the region between the two circles $x^2+y^2=1$ and
 $(x-1)^2+y^2=1$.  Find this area.  [Hint: The area can be found using geometry,
 using the observation that the part of a circle cut off by a line is a circular
@@ -186,12 +179,12 @@ sector with a triangle removed.]
 
 \end{multicols}
 \noproblemfont
-\section{Cavalieri's principle and volumes of solids} %{{{1
+\section{Cavalieri's principle and volumes of solids} %
 In this section we'll discuss the ``method of slicing'' and use integration to
 derive the formulas for volumes of spheres, cylinders, cones, and other solid
 objects in a systematic way.
 
-\subsection{Example -- Volume of a pyramid} %{{{2
+\subsection{Example -- Volume of a pyramid} %
 As an example let's compute the volume of a pyramid whose base is a square of
 side 1, and whose height is 1.  Our strategy will be to divide the pyramid into
 thin horizontal slices whose volumes we can compute, and to add the volumes of
@@ -272,7 +265,7 @@ Computing the integral then yields that the volume of the pyramid is
 V = \frac13.
 \]
 
-\subsection{Computing volumes by slicing -- the general case} %{{{2
+\subsection{Computing volumes by slicing -- the general case} %
 The ``method of slicing,'' which we just used to compute the volume of a
 pyramid, works for solids of any shape.  The strategy always consists of
 dividing the solid into many thin (horizontal) slices, computing the volume of
@@ -325,7 +318,7 @@ On the other hand the sum on the right is a Riemann sum for the integral $I=
 In summary, to compute the volume of a solid, we pick an axis, slice up the solid perpendicular to that axis, and then integrate (along the axis) the cross-sectional areas of each of the slices.
 
 
-\subsection{Cavalieri's principle} %{{{2
+\subsection{Cavalieri's principle} %
 \begin{figure}[b]
   \centerline{\input{../figures/221/09Cavalieri.tex}}
 
@@ -349,7 +342,7 @@ a number of coins on top of each other then the total volume of the coins is
 just the sum of the volumes of the coins.  If you change the shape of the pile
 by sliding the coins horizontally then the volume of the pile will still be the
 sum of the volumes of the coins, meaning that it doesn't change.
-\subsection{Solids of revolution} %{{{2
+\subsection{Solids of revolution} %
 In principle, formula \eqref{eq:09volume-by-slicing} allows you to compute the
 volume of any solid, provided you can compute the areas $A(x)$ of all cross
 sections.  One class of solids for which the areas of the cross sections are
@@ -386,7 +379,7 @@ therefore find that
   V = \pi \int_a^b r^2 \; dx = \pi \int_a^b f(x)^2 \; dx.
 \end{equation}
 
-\subsection{Volume of a sphere} %{{{2
+\subsection{Volume of a sphere} %
 \label{sec:volume-sphere}
 As an example we compute the volume of a sphere with radius $R$.  You can get
 that sphere by revolving a semicircle with radius $R$ around the $x$-axis: this gives 
@@ -413,7 +406,7 @@ which is the standard formula we have seen before.
 
 
 
-\subsection{Volume of a solid with a core removed -- the method of ``washers.''} %{{{2
+\subsection{Volume of a solid with a core removed -- the method of ``washers.''} %
 \label{sec:volume-solid-with-core-removed}
 Another class of solids whose volume you can compute by slicing arises when you
 have one solid of revolution, and remove a smaller solid of revolution.  Here
@@ -450,9 +443,9 @@ arrive at
 
 
 
-\section{Three examples of volume computations of solids of revolution} %{{{1
+\section{Three examples of volume computations of solids of revolution} %
 
-\subsection{Problem 1: Revolve $\setR$ around the $y$-axis} %{{{2
+\subsection{Problem 1: Revolve $\setR$ around the $y$-axis} %
 \label{sec:09revolver-example1}
 Consider the solid obtained by revolving the region
 \[
@@ -523,7 +516,7 @@ V = \int_0^1 A(y) dy = 4\pi \int_0^1\sqrt y\; dy = 4\pi \cdot \tfrac23 =
 \frac{8\pi}3.
 \]
 
-\subsection{Problem 2: Revolve $\setR$ around the line $x=-1$} %{{{2
+\subsection{Problem 2: Revolve $\setR$ around the line $x=-1$} %
 Find the volume of the solid of revolution obtained by revolving the same region
 $\setR$ around the line $x=-1$.
 
@@ -571,7 +564,7 @@ V=\int_0^1 \bigl(\pi r_{\textrm{out}}^2-\pi r_{\textrm{in}}^2\bigr)dy
 \]
 
 
-\subsection{Problem 3: Revolve $\setR$ around the line $y=2$} %{{{2
+\subsection{Problem 3: Revolve $\setR$ around the line $y=2$} %
 Compute the volume of the solid you get when you revolve the same region $\setR$
 around the line $y=2$.
 
@@ -667,7 +660,7 @@ between the graphs of two functions $f(r)\leq g(r)$, then we get
 V = 2\pi\int_a^b r\bigl(g(r) - f(r)\bigr) \;dr.
 \]
 
-\subsection{Example -- The solid obtained by rotating $\setR$ about the $y$-axis, again} %{{{2
+\subsection{Example -- The solid obtained by rotating $\setR$ about the $y$-axis, again} %
 The region $\setR$ from \S\ref{sec:09revolver-example1} can also be described as
 \[
 \setR = \bigl\{(x, y) \mid 0\leq x\leq 2, f(x)\leq y\leq g(x)\bigr\},
@@ -691,16 +684,16 @@ which coincides with the answer we found in \S\ref{sec:09revolver-example1}.
 
 
 
-\section{Problems} %{{{1
-\problemfont %{{{3
+\section{Problems} %
+\problemfont %
 \begin{multicols}{2}\setlength{\parindent}{0pt}
-\problem \groupproblem What do the dots in ``$\lim_{\cdots}$'' in equation %{{{3
+\problem \groupproblem What do the dots in ``$\lim_{\cdots}$'' in equation %
 \eqref{eq:09vol-of-all-slices} stand for? (In other words, what approaches what
 in this limit?)
 \[
 \clubsuit
 \]
-\problem  %{{{3
+\problem  %
 Find the volume enclosed by the paraboloid obtained by rotating the
 graph of $f(x) = R \sqrt{x/H}$ ($0\leq x\leq H$) around the $x$-axis.
 Here $R$ and $H$ are positive constants.  Draw the solid whose volume
@@ -714,26 +707,26 @@ Find the volume of the solids you get by rotating each of the
 following graphs around the $x$-axis:
 \endgroup
 
-\problem $f(x) = x$, $0\leq x\leq 2$  %{{{3
+\problem $f(x) = x$, $0\leq x\leq 2$  %
 
-\problem $f(x) = \sqrt{2-x}$, $0\leq x\leq 2$  %{{{3
+\problem $f(x) = \sqrt{2-x}$, $0\leq x\leq 2$  %
 
-\problem $f(x) = \bigl(1+x^2\bigr)^{-1/2}$, $|x|\leq1$  %{{{3
+\problem $f(x) = \bigl(1+x^2\bigr)^{-1/2}$, $|x|\leq1$  %
 
-\problem $f(x) = \sin x$, $0\leq x\leq \pi$  %{{{3
+\problem $f(x) = \sin x$, $0\leq x\leq \pi$  %
 
-\problem $f(x) = 1-x^2$, $|x|\leq 1$  %{{{3
+\problem $f(x) = 1-x^2$, $|x|\leq 1$  %
 
-\problem $f(x) = \cos x$, $0\leq x\leq \pi$  [Note that this function crosses %{{{3
+\problem $f(x) = \cos x$, $0\leq x\leq \pi$  [Note that this function crosses %
 the $x$-axis: is this a problem?]
 
-\problem $f(x) = 1/\cos x$, $0\leq x\leq \pi/4$  %{{{3
+\problem $f(x) = 1/\cos x$, $0\leq x\leq \pi/4$  %
 
-\problem  \label{ex:SphereVolume} %{{{3
+\problem  \label{ex:SphereVolume} %
 Find the volume that results by rotating the semicircle
 $y=\sqrt{R^2-x^2}$ about the $x$-axis, for $-R \leq x \leq R$.
 
-\problem Let $\setT$ be the triangle $1\le x\le 2$, $0\le y\le 3x-3$. %{{{3
+\problem Let $\setT$ be the triangle $1\le x\le 2$, $0\le y\le 3x-3$. %
  
 Find the volume of the solid obtained by \ldots
 
@@ -747,7 +740,7 @@ Find the volume of the solid obtained by \ldots
 
 
 
-\problem A spherical bowl of radius $a$ contains water to a %{{{3
+\problem A spherical bowl of radius $a$ contains water to a %
 depth $h<2a$. 
 
 \subprob  Find the volume of the water in the bowl in terms of $h$ and $a$.  (Which
@@ -757,7 +750,7 @@ solid of revolution is implied in this problem?)
 the rate of 0.2 ft${}^3$/sec. How fast is the water level rising
 when the water is 4 ft deep?
 
-\problem \label{ex:09archimedes} %{{{3
+\problem \label{ex:09archimedes} %
 What we have called Cavalieri's principle was already known in some
 form to Archimedes.  He used this idea to compute the volumes of
 various solids.  One of his more famous discoveries is depicted below
@@ -796,9 +789,9 @@ Cavalieri's principle (and thus without doing any integrals).
   \label{fig:09archimedes-sphere-cone-cylinder}
 \end{figure}
 
-\section{Distance from velocity} %{{{1
+\section{Distance from velocity} %
 
-\subsection{Motion along a line} %{{{2
+\subsection{Motion along a line} %
 If an object is moving on a straight line, and if its position at time $t$ is
 $x(t)$, then we had defined the velocity to be $v(t) = x'(t)$.  Therefore the
 position is an antiderivative of the velocity, and the fundamental theorem of
@@ -861,7 +854,7 @@ Again, we have to wonder what ``adding infinitely many infinitely small
 quantities'' actually means.  Leibniz never explained that.  Fortunately the
 derivation with Riemann sums leads to the same answer.
 
-\subsection{The return of the dummy} %{{{2
+\subsection{The return of the dummy} %
 Often you want to write a formula for $x(t)=\cdots$ rather than $x(t_b)=\cdots$
 as we did in \eqref{eq:distance-from-velocity}, i.e.\ you want to say what the
 position is at time $t$, instead of at time $t_a$.  For instance, you might want
@@ -885,7 +878,7 @@ situation is to decorate the integration variable with a prime ( $t'$ ), a tilde
 x(t) = x(0) + \int^{t}_{0} v(\bar t)\; d\bar t.
 \]
 
-\subsection{Motion along a curve in the plane} %{{{2
+\subsection{Motion along a curve in the plane} %
 If an object is moving in the plane, and if its position is given by
 \[
 x = x(t), \quad y = y(t)
@@ -961,7 +954,7 @@ s= \int_{t_a}^{t_b} ds = \int_{t_a}^{t_b} \sqrt{\Bigl(\frac{dx}{dt}\Bigr)^2 +
 Of course, you have to believe in infinitely small numbers when you use this
 argument.
 
-\section{The arclength of a curve} %{{{1
+\section{The arclength of a curve} %
 We introduced the integral as a tool to compute areas of plane regions.  You can
 also use it to compute arclengths of plane curves.  In fact, if the curve is a
 parametric curve, given by $x=x(t)$, $y=y(t)$ then we already have the formula.
@@ -973,7 +966,7 @@ these examples will show is that the formula \eqref{eq:09distance-travelled}
 is a good source of impossible or very difficult integrals.
 
 
-\subsection{The circumference of a circle} %{{{2
+\subsection{The circumference of a circle} %
 You can parametrize the circle with radius $R$ by
 \[
 x(t) = R\cos t, \quad y(t)=R\sin t,\quad (0\leq t\leq 2\pi)
@@ -992,7 +985,7 @@ sine and cosine, and to find their derivatives.  But our computation shows that
 the length formula \eqref{eq:09distance-travelled} is at least consistent with
 what we already knew.
 
-\subsection{The length of the graph of a function $y=f(x)$} %{{{2
+\subsection{The length of the graph of a function $y=f(x)$} %
 In Chapter~V, \S~\ref{sec:motion-on-a-graph}, we saw that you can parametrize
 the graph of a function $y=f(x)$, by
 \[
@@ -1011,7 +1004,7 @@ a formula for the length of the graph of a function $y=f(x)$:
   \label{eq:09length-of-graph-of-f}
 \end{equation}
 
-\subsection{Arclength of a parabola} %{{{2
+\subsection{Arclength of a parabola} %
 Consider our old friend, the parabola $y=x^2$, $0\leq x\leq 1$.  While the area
 under its graph was easy to compute ($\frac13$), its arclength turns out to be much
 more complicated.
@@ -1047,7 +1040,7 @@ The answer is :
 The computation is left as a challenging exercise (Problem
 \ref{ex:09length-of-parabola}).
 
-\subsection{Arclength of the graph of the sine function} %{{{2
+\subsection{Arclength of the graph of the sine function} %
 To compute the length of the curve given by $y=\sin x$, $0\leq x\leq \pi$ you
 would have to compute this integral:
 \begin{equation}\label{eq:09lengthOFsineGraph}
@@ -1076,18 +1069,18 @@ i.e.
 \]
 
 \begin{multicols}{2}[
-\section{Problems} %{{{1
-\problemfont %{{{3
+\section{Problems} %
+\problemfont %
 ]\setlength{\parindent}{0pt}
 
-\problem The velocity of a particle moving along the $x$-axis is %{{{3
+\problem The velocity of a particle moving along the $x$-axis is %
 \[
   v(t)=-(t-1)^2+2
 \]
 for $0 \leq t \leq 6$. If at time $t=0$ the particle is at the origin, find the
 location of the particle at time $t=3$.
 
-\problem A snail travels at a constant speed of $0.001$ units per hour on a %{{{3
+\problem A snail travels at a constant speed of $0.001$ units per hour on a %
 straight path from point $A(1,1)$ to point $B(2,3)$.
 
 \subprob Find a parametrization of the snail's motion and use it to compute the
@@ -1096,7 +1089,7 @@ distance traveled by the snail.
 \subprob Is there an easier way to find the distance travelled, and does it
 lead to the same result?
 
-\problem Find the length of the piece of the graph of $y=\sqrt{1-x^2}$ where %{{{3
+\problem Find the length of the piece of the graph of $y=\sqrt{1-x^2}$ where %
 $0\le x\le \frac12$.
 
 The graph is a circle, so there are two ways of computing this
@@ -1104,7 +1097,7 @@ length.  One uses geometry (length of a circular arc $=$ radius times angle),
 the other uses an integral.
 
 Use both methods and check that you get the same answer.
-\answer %{{{3
+\answer %
 The answer is $\pi/6$.
 
 To get this using the integral you use formula
@@ -1117,7 +1110,7 @@ The integral of that is $\arcsin x (+C)$, so the answer is
 $\arcsin\tfrac12 - \arcsin 0 = \pi/6$.
 \endanswer
 
-\problem Compute the length of the part of the \textit{evolute of the circle}, %{{{3
+\problem Compute the length of the part of the \textit{evolute of the circle}, %
 given by
 \[
 x(t) = \cos t + t\sin t, \quad y(t) = \sin t - t\cos t
@@ -1126,7 +1119,7 @@ where $0 \leq t \leq \pi$.
 (This problem has a nice answer, but any small algebra error can lead you to an
 impossible integral.)
 
-\problem \groupproblem Show that the \textit{Archimedean spiral}, given by %{{{3
+\problem \groupproblem Show that the \textit{Archimedean spiral}, given by %
 \[
 x(\theta) = \theta\cos\theta, \; y(\theta) = \theta\sin\theta,\;
 0\le \theta\le \pi
@@ -1139,7 +1132,7 @@ Hint: you can set up integrals for both lengths.  If you get the same
 integral in both cases, then you know the two curves have the same
 length (even if you don't try to compute the integrals).
 
-\problem Three equivalent problems, pick one: %{{{3
+\problem Three equivalent problems, pick one: %
 
 \subprob  Let $N(t)$ denote the size of a bacteria population at time $t$.  The
 dynamics of the population is given by
@@ -1163,7 +1156,7 @@ water during the first $10$ hours of measurements?
 If at time $t=0$ the particle was positioned at $x=25$, what is the distance
 traveled by the particle during the time interval $0 \leq t \leq 10$?
 
-\problem A rope that hangs between two poles at $x=-\ln 2$ and $x=\ln 2$ takes %{{{3
+\problem A rope that hangs between two poles at $x=-\ln 2$ and $x=\ln 2$ takes %
 the shape of a \textit{Catenary}, with equation
 \[
   y(x)=\frac{1}{4}\bigl(e^x+e^{-x}\bigr).
@@ -1172,12 +1165,12 @@ the shape of a \textit{Catenary}, with equation
 
 \subprob Compute the integral you got in part \textbf{(a)}.
 
-\problem \label{ex:09length-of-parabola} %{{{3
+\problem \label{ex:09length-of-parabola} %
 Find the length of the parabola $L$ in \eqref{eq:09length-of-parabola}
 by using the substitution \eqref{eq:09rationalizing-substitution}.
 \end{multicols}
 \noproblemfont
-\section{Velocity from acceleration} %{{{1
+\section{Velocity from acceleration} %
 The acceleration of the object is by definition the rate of change of its
 velocity,
 \[
@@ -1191,7 +1184,7 @@ Conclusion: \textit{If you know the acceleration $a(t)$ at all times $t$, and
   also the velocity $v(0)$ at time $t=0$, then you can compute the velocity
   $v(t)$ at all times by integrating.}
 
-\subsection{Free fall in a constant gravitational field} %{{{2
+\subsection{Free fall in a constant gravitational field} %
 If you drop an object then it will fall, and as it falls its velocity increases.
 The object's motion is described by the fact that \textit{its acceleration is
 constant}.  This constant is called $g$ and, at sea level on Earth, it is about $9.8
@@ -1238,9 +1231,9 @@ h_{\textrm{max}} = h(\tfrac5{32}) = 10+\tfrac{25}{32}-\tfrac{25}{64}=
 
 
 
-\section{Work done by a force} %{{{1
+\section{Work done by a force} %
 
-\subsection{Work as an integral} %{{{2
+\subsection{Work as an integral} %
 According to  Newtonian mechanics any force that acts on an object in motion
 performs a certain amount of work, i.e.\ it transfers a certain amount of
 energy.  (In Physics ``work'' is a form of energy.)
@@ -1301,7 +1294,7 @@ an object whose motion is described by $x(t)$ is
 \end{equation}
 in which $v(t) = x'(t)$ is the velocity of the object.
 
-\subsection{Kinetic energy} %{{{2
+\subsection{Kinetic energy} %
 Newton's famous law relating force and acceleration says
 \[
   F=ma.
@@ -1345,14 +1338,14 @@ of the object, and our computation shows that \textit{the amount by which the
 kinetic energy of an object increases is equal to the amount of work done on
 the object. }
 
-\section{Problems} %{{{1
-\problemfont %{{{3
+\section{Problems} %
+\problemfont %
 \begin{multicols}{2}
 
-\problem A ball is thrown upward from a height of $6$ ft, with an initial velocity of $32$ ft/sec. Is %{{{3
+\problem A ball is thrown upward from a height of $6$ ft, with an initial velocity of $32$ ft/sec. Is %
 that enough speed for the ball to clear a fence $17$ ft high?
 
-\problem A particle with mass $m$ on a straight line (the $x$-axis) is being %{{{3
+\problem A particle with mass $m$ on a straight line (the $x$-axis) is being %
 pushed and pulled by a force of magnitude $F(t) = F_0 \sin (\omega t)$.  Here
 $F_0$ is the amplitude of the force, and $\omega$ is the frequency at which it
 oscillates.  $m$, $F_0$, and $\omega$ are constants.
@@ -1364,10 +1357,10 @@ the particle at time $t$?
 \subprob What effect does an increase in the frequency $\omega$ have on the
 velocity $v(t)$ of the particle?
 
-\problem Give a shorter derivation \textit{a la } Leibniz of the integral for %{{{3
+\problem Give a shorter derivation \textit{a la } Leibniz of the integral for %
 work in equation \eqref{eq:work-done-by-F}.
 
-\problem As an object falls, the force of gravitation transfers energy to the %{{{3
+\problem As an object falls, the force of gravitation transfers energy to the %
 object.  Let $h(t)$ be the height of the object at time $t$.  
 
 \subprob Use the integral \eqref{eq:work-done-by-F}, i.e.
@@ -1386,7 +1379,7 @@ where $h_a = h(t_a)$ and $h_b = h(t_b)$.
 \subprob If you throw a ball in the air, and catch it when it returns to the
 same height, how much work did the gravitational force do on the ball?
 
-\problem (\textit{Rocket Science}.) %{{{3
+\problem (\textit{Rocket Science}.) %
 A rocket is shot straight up into space.  Its height, measured from the
 center of the Earth, is $r(t)$.  The gravitational force on the rocket gets less
 as it gets further away from the Earth.  According to another of Newton's laws
@@ -1406,11 +1399,4 @@ Use \eqref{eq:work-done-by-F} again.  In this problem $v = \frac{dr}{dt}$.
 \end{center}
 
 \end{multicols}
-
-
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: "free221"
-%%% TeX-engine: xetex
-%%% End: 
+\noproblemfont
