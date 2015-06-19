@@ -264,21 +264,23 @@ I=\int \cos^4x \; \dd x
 then we can use the double angle trick once to rewrite $\cos^2 x$ as
 $\frac12(1+\cos 2x)$, which results in
 \[
-I=\int \cos^4x \; \dd x =\int\bigl\{\frac12(1+\cos 2x)\bigr\}^2 \;\dd x =\frac14
-\int \bigl(1+2\cos 2x + \cos^22x\bigr)\; \dd x.
+I=\int \cos^4x \; \dd x
+=\int\bigl\{\frac12(1+\cos 2x)\bigr\}^2 \;\dd x
+=\frac14 \int \bigl(1+2\cos 2x + \cos^2 2x\bigr)\; \dd x.
 \]
 The first two terms are easily integrated, and now that we know the double angle
 trick we also can do the third term.  We find
 \[
-\int\cos^2 2x\;\dd x = \frac12 \int \bigl(1+\cos 4x\bigr)\;\dd x = \frac x2 +
-\frac18\sin 4x +C.
+\int\cos^2 2x\;\dd x
+= \frac12 \int \bigl(1+\cos 4x\bigr)\;\dd x
+= \frac x2 + \frac18\sin 4x +C.
 \]
 Going back to the integral $I$ we get
 \begin{align*}
   I
   &= \frac14 \int \bigl(1+2\cos 2x + \cos^22x\bigr)\; \dd x\\
-  &= \frac x4 + \frac14\sin 2x +\frac12 \bigl( \frac x4 + \frac 18\sin 4x\bigr) +C\\
-  &= \frac {3x}8 + \frac14\sin 2x + \frac 1{16}\sin 4x +C
+  &= \frac x4 + \frac14\sin 2x +\frac14 \bigl( \frac x2 + \frac 18\sin 4x\bigr) +C\\
+  &= \frac {3x}8 + \frac14\sin 2x + \frac 1{32}\sin 4x +C
 \end{align*}
 
 \subsubsection{Example without the double angle trick}
