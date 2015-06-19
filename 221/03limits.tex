@@ -787,11 +787,13 @@ If $ \lim_{x\to a}F_2(x)\ne0$, then
 \begin{equation}
   \lim_{x\to a}\frac{F_1(x)}{F_2(x)}= \frac{L_1}{L_2}.\tag{$P_6$}
 \end{equation}
-Finally, if $k$ is a positive real number, then
-  \begin{equation}
+Finally, if $k$ is an integer, then
+\begin{equation}
 \lim_{x\to a}\bigl(F_1(x)^k\bigr) = L_1\,^k . \tag{$P_{7}$}
-  \end{equation}
-In other words the limit of the sum is the sum of the limits, etc.  One can
+\end{equation}
+If $L_1 > 0$, then $(P_7)$ holds for any real number $k$.
+
+In other words ``the limit of the sum is the sum of the limits,'' etc.  One can
 prove these laws using the definition of limit in
 \S\ref{sec:formal-limit-def} but we will not do this here.  However, these laws
 should seem like common sense: if, for $x$ close to $a$, the quantity
@@ -1313,7 +1315,7 @@ f(x)\le g(x)\le h(x)
 \]
 exist and are equal to the same value $L$. Then
 \[
-\lim_{x\to a} h(x)
+\lim_{x\to a} g(x)
 \]
 also exists and is equal to $L$.
 \upshape
@@ -1532,7 +1534,7 @@ The given function is the composition of two functions, namely
 \]
 or, in function notation, we want to find $\lim_{x\to 3}h(x)$ where
 \[
-h(x) = f(g(x)), \text{ with } g(x) = x^3-3x^2+2\text{ and }g(x) = \sqrt{x}.
+h(x) = f(g(x)), \text{ with } g(x) = x^3-3x^2+2\text{ and }f(x) = \sqrt{x}.
 \]
 Either way, we have
 \[
@@ -1970,8 +1972,7 @@ Hint: multiply top and bottom with \(1+\cos x\).
 \problem $\DS\lim_{\theta\to\pi/2}\frac{1-\sin\theta}{\theta-\pi/2}$ 
 
 \answer 
-Hint: substitute $\theta = \frac{\pi}{2} - \varphi$, and let
-$\varphi\to 0$.  Answer: $0$.
+Hint: substitute $\theta = \frac{\pi}{2} - \varphi$, and let $\varphi\to 0$.  Answer: $0$.
 \endanswer
 
 \problem $\DS \lim_{x\to0}\frac{\sin^2 x}{1-\cos x}$. 
