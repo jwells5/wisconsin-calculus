@@ -857,9 +857,6 @@ $t=1$.  Where does this point intersect the $xy$-plane?
 \subprob For any given $t$ find the tangent line to the curve 
 at the point $X(t)$, and find where this curve intersects the $xy$-plane.  
 
-\subprob If you call that intersection point $P(t)$, then which curve
-is traced out by the point $P(t)$ as $t$ varies?
-
 \problem Compute the length of one full turn of the helix by taking the
 parametrization given in \eqref{eq:helix-def} and computing the length of the
 segment with $0\le \theta\le2\pi$.
@@ -902,7 +899,28 @@ $\kappa'(t) = \dfrac{e^t} {\bigl(1+e^{2t}\bigr)^{5/2}}
 \bigl(1-2e^{2t}\bigr)$, so the maximal curvature (smallest radius of
 curvature) occurs when $x=-\frac{1} {2}\ln{2}$.
 \endanswer
-%%\problem Show: a curve is plane if and only if its torsion vanishes 
+
+\problem
+\subprob
+A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ always satisfies $\vv(t) = \vm \times \vx(t)$.  Show that the quantity $\vm\cdot \vx(t)$ is constant.
+\answer
+To show that $\vm\dpp\vx(t)$ is constant we differentiate it with respect to time:
+\[
+\frac{d \vm\dpp\vx(t)} {dt} = \vm\dpp\vx'(t) = \vm\dpp\bigl(\vm\cp\vx(t)\bigr) = 0,
+\]
+because the cross product $\vm\cp\vx(t)$ is always perpendicular to the vector $\vm$.
+\endanswer
+\subprob 
+A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ and acceleration $\va(t)$ always satisfy $\va(t) = \vm \cp \vv(t)$.
+
+Show that the quantity $\|\vv(t)\|^2$ is constant.
+
+Then show that the angle between $\vm$ and $\vv(t)$ is constant (hint: look at the dot product $\vm\dpp\vv(t)$).
+
+\subprob
+A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant number $C$ such that the acceleration $\va(t)$ always satisfies $\va(t) = -C \vx(t)$.  Show that the quantity $\vx(t)\cp\vv(t)$ is constant (where $\vv(t)$ is by definition the velocity vector).
+
+%% \problem Show: a curve is plane if and only if its torsion vanishes 
 %%($\tau = 0$).
 %%
 %%\problem Express $\vx'\cp\vx''$ in terms of $\kappa, \tau, \vT, \vN,
