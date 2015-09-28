@@ -20,7 +20,7 @@ def drawslice(h, linetozaxis='YES'):
              q*P[2]+(1-q)*T[2]] for P in base]
     polygonA(map(proj, slice[:3]))
     setdash("[3] 0")
-    setrgbcolor(
+    setrgbcolor('black')
     linewidth(0.5)
     if(linetozaxis!='NO'):
         polygonA(map(proj, slice[-3:]))
