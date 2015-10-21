@@ -1,5 +1,5 @@
 % !TEX root =free234.tex
-% Time-stamp: <2015-10-19 14:21:43 angenent>
+% Time-stamp: <2015-10-21 12:09:18 angenent>
 \chapter{Derivatives}
 
 \section{Interior points and continuous functions} 
@@ -2784,8 +2784,26 @@ there exist a function $f(x, y)$ such that $P= f_x$ and $Q= f_y$?
 is a constant.  For which $a$ does there exist a function $f(x, y)$ such
 that $P= f_x$ and $Q= f_y$?
 
-\problem Suppose $P(x, y) = x^2-2xy^3$ and $Q(x, y) = (xy)^2$.  Does  
-there exist a function $f(x, y)$ such that $P= f_x$ and $Q= f_y$?
+\problem
+\subprob Does there exist a function $f(x, y)$ such that
+\[
+f_x = ax^2y + bxy^2, \quad f_y = y^3+x^3\;?
+\]
+where $a,b$ are constants.
+\answer
+Clairaut requires $f_{xy} = f_{yx}$, which leads to $a=3$, $b=0$.  So there is no solution unless $a=3$ and $b=0$.  \emph{If} $a=3$ and $b=0$ then the solution is $f(x,y) = x^3y + \frac14 y^4 $.
+\endanswer
+
+\subprob
+Does there exist a function $f(x, y)$ such that
+\begin{align*}
+f_x &= ax^2y + bxy^2+k\cos x, \\
+f_y &= y^3+x^3-l e^y\;?
+\end{align*}
+where $a, b, k, l$ are constants.
+\answer
+Again, there is no solution unless $a=3$ and $b=0$.  There is no restriction on $k$ $or l$.  \emph{If} $a=3$ and $b=0$ then the solution is $f(x,y) = x^3y + \frac14 y^4 + k\sin x - le^y$.
+\endanswer
 
 \problem Suppose $x=u+v$, $y=u-v$, and suppose $f(x, y) = g(u, v)$.  
 Then compute
@@ -2825,7 +2843,7 @@ Note that this is almost the same as $\dfrac{\pd^2g}{\pd u^2}$: the only change 
 
 \subprob $\dfrac{\pd^2 g}{\pd u^2} - \dfrac{\pd^2 g}{\pd v^2}$
 \answer
-$\dfrac{\pd^2 g}{\pd u^2} - \dfrac{\pd^2 g}{\pd v^2} = -4f_{xy} $
+$\dfrac{\pd^2 g}{\pd u^2} - \dfrac{\pd^2 g}{\pd v^2} = 4f_{xy} $
 \endanswer
 
 \subprob $\dfrac{\pd^2 g}{\pd u^2} + \dfrac{\pd^2 g}{\pd v^2}$

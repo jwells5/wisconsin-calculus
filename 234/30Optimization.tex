@@ -1,6 +1,6 @@
 %!TEX root = free234.tex
 %!TEX program=xelatex
-% Time-stamp: <2014-04-07 15:41:10 angenent>
+% Time-stamp: <2015-10-19 14:32:03 angenent>
 \chapter{Maxima and Minima}  
 In first semester calculus we learned how to find the maximal and minimal values of a
 function $y=f(x)$ of one variable.  The basic method is as follows: assuming the
@@ -242,17 +242,10 @@ is given by $y = -\frac 38 \sqrt 3$.
 \end{multicols}
 
 \section{Critical points}
-For functions $y=f(x), a\leq x\leq b$, of one variable the standard way of
-finding minima (and maxima) is to look for them in two different places: either
-the minimum is attained at one of the end points $x=a$ or $x=b$ of the interval,
-or else the minimum is attained at an interior point.  At an interior minimum
-one has $f'(x) = 0$, so they can be found by solving the equation $f'(x) = 0$.
-The same approach works for functions of two or more variables.  The basic fact
-that tells us that this is so, is the following theorem.
+For functions $y=f(x), a\leq x\leq b$, of one variable the standard way of finding minima (and maxima) is to look for them in two different places: either the minimum is attained at one of the end points $x=a$ or $x=b$ of the interval, or else the minimum is attained at an interior point.  At an interior minimum one has $f'(x) = 0$, so they can be found by solving the equation $f'(x) = 0$.  The same approach works for functions of two or more variables.  The basic fact that tells us that this is so, is the following theorem.
 
 \subsection{Definition (critical point)} \itshape%
-A critical point of a function $z=f(x,y)$ of two variables is a point $(a,b)$ at
-which $\nab f(a,b) = 0$, i.e.~at which
+A critical point of a function $z=f(x,y)$ of two variables is a point $(a,b)$ at which $\nab f(a,b) = 0$, i.e.~at which
 \[
 f_x(a,b) = 0 \text{ and } f_y(a,b) = 0.
 \]
@@ -263,26 +256,15 @@ At a critical point of a function the tangent plane to the graph is horizontal.
 \subsection{Theorem.  Local extrema are critical points}
 
 \label{sec:extrema-are-critical} 
-\itshape If a function $z=f(x,y)$ defined on a domain $D$ has a local minimum or
-local maximum at an interior point $(a,b)$ then one has
+\itshape If a function $z=f(x,y)$ defined on a domain $D$ has a local minimum or local maximum at an interior point $(a,b)$ then one has
 \[
 \frac{\pd f}{\pd x}(a,b)=0, \text{ and } \frac{\pd f}{\pd y}(a,b) = 0.
 \]
 \upshape
-\subsubsection*{Picture proof} (See
-Figure~\ref{fig:max-are-critical-picture-proof}.)  If $f$ has a local maximum at
-an interior point $(a,b)$ then $f(x, y) \leq f(a, b)$ for all $(x,y)$ close to
-$(a,b)$.  This means that a small piece of the graph of $f$ near its local
-maximum at $(a,b,f(a,b))$ lies below the plane $z=f(a,b)$.  This plane must
-therefore be the tangent plane to the graph of $f$.  Being horizontal, its
-slopes are zero, and these slopes are exactly the partial derivatives of $f$ at
-$(a,b)$.
+\subsubsection*{Picture proof} (See Figure~\ref{fig:max-are-critical-picture-proof}.)  If $f$ has a local maximum at an interior point $(a,b)$ then $f(x, y) \leq f(a, b)$ for all $(x,y)$ close to $(a,b)$.  This means that a small piece of the graph of $f$ near its local maximum at $(a,b,f(a,b))$ lies below the plane $z=f(a,b)$.  This plane must therefore be the tangent plane to the graph of $f$.  Being horizontal, its slopes are zero, and these slopes are exactly the partial derivatives of $f$ at $(a,b)$.
+
 \subsubsection*{Frozen variable proof}
-Suppose $f$ has a local maximum at an interior point $(a,b)$ of the domain $D$.
-Then we can freeze the $y$-variable at the value $y=b$ and consider the function
-of one variable $g(x) = f(x,b)$.  This function has a maximum at $x=a$, so by
-first semester calculus we know that $g'(x) = 0$.  By definition $g'(a) = f_x(x,
-b)$, so we conclude that $f_x(a,b) = 0$.
+Suppose $f$ has a local maximum at an interior point $(a,b)$ of the domain $D$.  Then we can freeze the $y$-variable at the value $y=b$ and consider the function of one variable $g(x) = f(x,b)$.  This function has a maximum at $x=a$, so by first semester calculus we know that $g'(x) = 0$.  By definition $g'(a) = f_x(x, b)$, so we conclude that $f_x(a,b) = 0$.
 
 By freezing $x$ instead of $y$ we find that $f_y(a,b)=0$ also must hold.
 
@@ -291,11 +273,7 @@ The same arguments apply in the case of a local minimum.
   \centering
 
   \includegraphics{02localmax.pdf}
-  \caption{\textbf{Theorem~\ref{sec:extrema-are-critical}: } at a local maximum
-    the tangent plane to the graph is horizontal.  The partial derivatives
-    w.r.t.\ both $x$ and $y$ vanish, and in fact, the derivative along
-    \emph{any} path through $(a,b)$ vanishes.  To see a picture of a local
-    minimum turn the page upside down.}
+  \caption{\textbf{Theorem~\ref{sec:extrema-are-critical}: } at a local maximum the tangent plane to the graph is horizontal.  The partial derivatives w.r.t.\ both $x$ and $y$ vanish, and in fact, the derivative along \emph{any} path through $(a,b)$ vanishes.  To see a picture of a local minimum turn the page upside down.}
   \label{fig:max-are-critical-picture-proof}
 \end{figure}
 
