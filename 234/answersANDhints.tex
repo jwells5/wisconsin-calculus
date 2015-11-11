@@ -1089,6 +1089,16 @@ A function of two variables has
 so \emph{four} different partial derivatives of third order.
 \bigskip
 
+\item[{\bfseries(IV15.14a)}]
+
+Clairaut requires $f_{xy} = f_{yx}$, which leads to $a=3$, $b=0$.  So there is no solution unless $a=3$ and $b=0$.  \emph{If} $a=3$ and $b=0$ then the solution is $f(x,y) = x^3y + \frac14 y^4 $.
+\bigskip
+
+\item[{\bfseries(IV15.14b)}]
+
+Again, there is no solution unless $a=3$ and $b=0$.  There is no restriction on $k$ $or l$.  \emph{If} $a=3$ and $b=0$ then the solution is $f(x,y) = x^3y + \frac14 y^4 + k\sin x - le^y$.
+\bigskip
+
 \item[{\bfseries(IV15.15a)}]
 
 We have $g(u,v) = f(u+v, u-v)$, so
@@ -1124,7 +1134,7 @@ Note that this is almost the same as $\dfrac{\pd^2g}{\pd u^2}$: the only change 
 
 \item[{\bfseries(IV15.15d)}]
 
-$\dfrac{\pd^2 g}{\pd u^2} - \dfrac{\pd^2 g}{\pd v^2} = -4f_{xy} $
+$\dfrac{\pd^2 g}{\pd u^2} - \dfrac{\pd^2 g}{\pd v^2} = 4f_{xy} $
 \bigskip
 
 \item[{\bfseries(IV15.15e)}]
@@ -1214,7 +1224,7 @@ Critical point and level set near the critical point.
 
 \item[{\bfseries(V6.1c)}]
 
-$f_x = 2x+4y$, $f_y = 4x+2y$, $f_{xx} = 2$, $f_{xy}=4$, $f_{yy}=2$.
+$f_x = 2x+4y$, $f_y = 4x+2y-6$, $f_{xx} = 2$, $f_{xy}=4$, $f_{yy}=2$.
 There is one critical point: $(x,y) = (2, -1)$.
 
 The 2nd order Taylor expansion at this point is
@@ -1865,12 +1875,12 @@ is the area of a quarter circle with radius 1, so the answer is $\pi/4$.
 Once you compute the inner integral
 \[
 \int_0^1 \sin(\pi x) dx  = \left[ -\frac1\pi\cos\pi x \right]_{x=0}^1
-=-\frac1\pi\cos \pi - \frac1\pi/4 (-\cos 0) = 2,
+=-\frac1\pi\cos \pi - \frac1\pi (-\cos 0) = \frac 2\pi,
 \]
 you get
 \[
 \int_x^1 \Bigl\{\int_0^1 \sin(\pi x) dx \Bigr\}dy
-=\int_x^1 2dy = \left[ 2y \right]_{y=x}^1 = 2(1-x).
+=\int_x^1 \frac 2\pi dy = \left[ \frac 2\pi y \right]_{y=x}^1 = \frac 2\pi (1-x).
 \]
 The result depends on $x$.  The $x$ in the answer and the two $x$-es
 in the inner integral refer to different quantities.  This is at best

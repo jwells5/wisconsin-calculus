@@ -661,8 +661,8 @@ $f(x, y)$ written in polar coordinates.\footnote{It is very common to
 use the same letter $f$ for both functions, i.e.\ to write $f(x,y)$
 for $f$ as a function of Cartesian coordinates, and also $f(r,
 \theta)$ for the same function but written in Polar coordinates.  This
-begs the question of what $f(0.3, 1.24)$ means -- are $(0.3, 1.24)$
-the polar or the Cartesian coordinates of the point at which $f$ is to be
+begs the question of what ``$f(0.3, 1.24)$'' means -- are $(0.3, 1.24)$
+the Polar or the Cartesian coordinates of the point at which $f$ is to be
 evaluated?  To avoid this kind of ambiguity we will try to use different
 letters for the same quantity regarded as a function of Cartesian
 coordinates, and of Polar coordinates.}
@@ -794,12 +794,12 @@ Is the answer a number -- does it depend on $x$ or $y$?
 Once you compute the inner integral
 \[
 \int_0^1 \sin(\pi x) dx  = \left[ -\frac1\pi\cos\pi x \right]_{x=0}^1
-=-\frac1\pi\cos \pi - \frac1\pi/4 (-\cos 0) = 2,
+=-\frac1\pi\cos \pi - \frac1\pi (-\cos 0) = \frac 2\pi,
 \]
 you get 
 \[
 \int_x^1 \Bigl\{\int_0^1 \sin(\pi x) dx \Bigr\}dy
-=\int_x^1 2dy = \left[ 2y \right]_{y=x}^1 = 2(1-x).
+=\int_x^1 \frac 2\pi dy = \left[ \frac 2\pi y \right]_{y=x}^1 = \frac 2\pi (1-x).
 \]
 The result depends on $x$.  The $x$ in the answer and the two $x$-es
 in the inner integral refer to different quantities.  This is at best
@@ -2215,3 +2215,8 @@ $15\pi$
 \noproblemfont
 
 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "free234"
+%%% End:
