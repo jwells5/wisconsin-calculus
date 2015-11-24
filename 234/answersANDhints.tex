@@ -2035,7 +2035,22 @@ $8\pi$
 
 \item[{\bfseries(VI3.6g)}]
 
-$\pi/32$
+On the region $\cR$ we have $y\geq x^2+y^2 \geq0$, so in particular, we have $y\geq0$, and therefore  $\cR$ lies above the $x$-axis.
+To write $\cR$ in polar coordinates, you set $x=r\cos\theta$, $y=r\sin\theta$.  Then
+\[
+x^2+y^2 \leq y \iff r^2 \leq r\sin\theta \iff r\leq \sin\theta.
+\]
+In P.C.~the region is therefore given by
+\[
+0\leq\theta\leq \pi, \text{ and }0\leq r\leq \sin\theta.
+\]
+The volume of the region above $\cR$ is
+\[
+V = \iint\limits_\cR \bigl\{y - (x^2+y^2)\bigr\} dA
+=\int\limits_{\theta=0}^\pi \int\limits_{r=0}^{\sin\theta}
+\bigl\{r\sin\theta - r^2\bigr\} r\, dr\, d\theta.
+\]
+The result is $\pi/32$.
 \bigskip
 
 \item[{\bfseries(VI3.8a)}]
