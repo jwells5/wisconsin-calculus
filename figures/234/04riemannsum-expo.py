@@ -52,7 +52,7 @@ def tower(x0, y0, x1, y1, h): #{{{1
 PMAT = matrix( [[0,0], [1,0], [0,1]] )
 PMAT = rotatey(pi/10, PMAT)
 PMAT = rotatez(pi/6, PMAT)
-print PMAT
+print( PMAT )
 
 ## def fun(x, y): return x*x*exp(-1-0.7*y) #{{{1
 def fun(x, y): return x*x/(2+4*y) #{{{1

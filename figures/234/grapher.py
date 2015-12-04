@@ -29,7 +29,7 @@ def _Initialize():
     _ghostscript = "/usr/local/bin/gs-noX11 "
     #_ghostscript = "gswin32c "
     target = "pdf"  # or "png" or "dvipng"
-    print """Loading grapher.py"""
+    print( """Loading grapher.py""" )
 
 #--------------------------  functions  ------------------------
 
@@ -78,9 +78,9 @@ def openOutputFile(name, width, dummytarget=""):
     global outfile, filename, texfile
     global scale,hshift,vshift,BoundingBox,ViewBox
     if dummytarget!="":
-        print "Ignoring the dummy target %s"%(dummytarget)
-        print "Using target %s"%(target)
-        print "Use setTarget() to change the target"
+        print( "Ignoring the dummy target %s"%(dummytarget) )
+        print( "Using target %s"%(target) )
+        print( "Use setTarget() to change the target" )
     BoundingBox = [0,0,0,0]
     BoundingBox[2]=width
     scale = (width-2)/(1.0*(ViewBox[2]-ViewBox[0]))
@@ -89,14 +89,15 @@ def openOutputFile(name, width, dummytarget=""):
     hshift = BoundingBox[0]-scale* ViewBox[0]+1
     vshift = BoundingBox[1]-scale* ViewBox[1]+1
     if debug:
-        print """\
+        printstring = """\
             scale = %0.2f hshift = %0.2f vshift = %0.2f
             Boundingbox = [%0.2f, %0.2f, %0.2f, %0.2f]"""%(
                 scale, hshift, vshift,
                 BoundingBox[0],BoundingBox[1],BoundingBox[2],BoundingBox[3])
+        print(printstring)
     filename=name
     if debug:
-        print """........opening output file  |%s|"""%(name)
+        print( """........opening output file  |%s|"""%(name) )
     outfile=open(filename+".eps","w")
     topMatter =  "%!PS-Adobe-2.0 EPSF-2.0\n"
     topMatter += "%%Title: "+filename+".eps\n"
@@ -124,7 +125,7 @@ def openOutputFile(name, width, dummytarget=""):
     elif target=="png" or target=="dvipng":
         graphics_extension = "eps"
     else:
-        print "unknown target: %s"%(target) 
+        print( "unknown target: %s"%(target)  )
     topMatter = r"""\begin{picture} (%6f,%6f)(0,0)
     \put(0.0, 0.0){\includegraphics{%s.%s}}
     """%(BoundingBox[2], BoundingBox[3], filename, graphics_extension)
@@ -137,13 +138,13 @@ def closeOutputFile():
     global target
     global outfile, texfile, filename
     outfile.write("showpage\n")
-    print "........closing %s.eps"%(filename)
+    print( "........closing %s.eps"%(filename) )
     outfile.close()
     texfile.write("\n\\end{picture}\n")
-    print "........closing %s.tex"%(filename)
+    print( "........closing %s.tex"%(filename) )
     texfile.close()
     if target=="pdf": #
-        print "........making %s.pdf"%(filename)
+        print( "........making %s.pdf"%(filename) )
         os.system("epstopdf %s.eps"%(filename))
     elif target=="jpeg": #
         cmd =  _ghostscript + " -q " 
@@ -153,7 +154,7 @@ def closeOutputFile():
         cmd +=  filename + ".eps"
         os.system(cmd)
     elif target=="png": #
-        print "........making %s.png"%(filename)
+        print( "........making %s.png"%(filename) )
         cmd = _ghostscript + " -q " 
         cmd += " -dSAFER -dBATCH -dNOPAUSE -sDEVICE=png16m "
         cmd += " -dGraphicsAlphaBits=4 -dTextAlphaBits=4 -dEPSCrop -r144 "
@@ -177,11 +178,11 @@ def closeOutputFile():
         temptex.write( texfiletext%(filename) )
         temptex.close()
         result = os.system("latex -interaction=batchmode temp")
-        print "........making temp.dvi result %d"%(result)
+        print( "........making temp.dvi result %d"%(result) )
         result = os.system( "dvipng -D300 -T tight temp -o %s.png"%(filename) )
-        print "........making %s.png result %d"%(filename, result)
+        print( "........making %s.png result %d"%(filename, result) )
 
-    print "....done"
+    print( "....done" )
 
 def moveto(p):  
     global scale,hshift,scale,vshift
@@ -276,12 +277,12 @@ def __polygonBBclipping__(P,s):
                 outfile.write("%6.2f %6.2f lineto\n" % (x2,y2))
             else:
                 outfile.write("stroke\n")                
-                print "%s %6.2f %6.2f %6.2f%6.2f"%(\
-                        "__polygon__ going out of bounds:",x1,y1,x2,y2)
+                print( "%s %6.2f %6.2f %6.2f%6.2f"%(\
+                        "__polygon__ going out of bounds:",x1,y1,x2,y2) )
         else:
             if inBB2:
-                print "%s %6.2f %6.2f %6.2f%6.2f"%(\
-                        "__polygon__ back in bounds: ",x1,y1,x2,y2)
+                print( "%s %6.2f %6.2f %6.2f%6.2f"%(\
+                        "__polygon__ back in bounds: ",x1,y1,x2,y2) )
                 outfile.write("%6.2f %6.2f moveto\n" % (x2,y2))
     if inBB2:
         outfile.write(s+"\n")
@@ -311,7 +312,7 @@ def polygonF(P, fillcolor=0):
 
 def plot(x, y, tmin, tmax):  
     global scale, hshift, scale, vshift, outfile, ViewBox
-    print "plot parameter range %lf...%lf"%(tmin, tmax)
+    print( "plot parameter range %lf...%lf"%(tmin, tmax) )
     dt=(1.0*(tmax-tmin))/500
     times=[tmin+k*dt for k in range(501)]
     poly = [[x(t), y(t)] for t in times]

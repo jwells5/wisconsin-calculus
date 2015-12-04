@@ -1004,8 +1004,7 @@ the line $y=x$.
 $\pi-2$
 \endanswer
 
-\problem Find the volumes of the following regions 
-by computing a double integral.
+\problem Find the volumes of the following regions by computing a double integral.
 
 \subprob the region bounded by $z=x^2+y^2$ and $z=4$. 
 \answer
@@ -1013,29 +1012,25 @@ $8\pi$
 \endanswer
 
 
-\subprob the region in the first octant 
-bounded by $y^2=4-x$ and $y=2z$.
+\subprob the region in the first octant bounded by $y^2=4-x$ and $y=2z$.
 \answer
 $2$
 \endanswer
 
 
-\subprob the region in the first octant 
-bounded by $y^2=4x$, $2x+y=4$, $z=y$,
+\subprob the region in the first octant bounded by $y^2=4x$, $2x+y=4$, $z=y$,
 and $y=0$.
 \answer
 $5/3$
 \endanswer
 
-\subprob the region in the first octant 
-bounded by\\
+\subprob the region in the first octant bounded by\\
 $x+y+z=9$, $2x+3y=18$, and $x+3y=9$.
 \answer
 $81/2$
 \endanswer
 
-\subprob the region in the first octant 
-bounded by $x^2+y^2=a^2$ and $z=x+y$.
+\subprob the region in the first octant bounded by $x^2+y^2=a^2$ and $z=x+y$.
 \answer
 $2a^3/3$
 \endanswer
@@ -1065,9 +1060,8 @@ V = \iint\limits_\cR \bigl\{y - (x^2+y^2)\bigr\} dA
 The result is $\pi/32$.
 \endanswer
 
-\begin{multicols}{2}
-\problem The average value of a function $f(x, y)$
-over a domain $D$ is by definition
+%\begin{multicols}{2}
+\problem The average value of a function $f(x, y)$ over a domain $D$ is by definition
 \[
 \text{average $f$ over $D$}
 =
@@ -1080,14 +1074,18 @@ with vertices $(0,0)$, $(4,0)$, $(4,1)$ and $(0,1)$.
 $a\le x\le b$.  
 Let $A$ be the area under the graph of $y=f(x)$, ($a\le c\le b$), and
 let $B$ be the area under the graph of $y=f(x)^2$ ($a\le c\le b$)
-
-\subprob Compute $\int_a^b \int_0^{f(x)} dy dx$. 
+Express the following integrals in terms of $A$ and $B$:
+\[
+I_1 = \int_a^b \int_0^{f(x)} dy\, dx,
+\qquad
+I_2 = \int_a^b \int_0^{f(x)} y\,dy\, dx,
+\qquad
+I_3 = \int_a^b \int_0^{f(x)^2} \,dy\, dx.
+\]
 \answer
-$A$
-\endanswer
-\subprob Compute $\int_a^b \int_0^{f(x)} ydy dx$. 
-\answer
-$B/2$
+$I_1 = A$,
+$I_2 = B/2$,
+$I_3= B$.
 \endanswer
 
 \problem Let $V$ be the volume under the graph of the function 
@@ -1128,7 +1126,7 @@ Try to draw the region $D$, and the graph of $z=xy$ above $D$.
 but the integral in this problem isn't as bad.)
 
 \subprob Use Polar Coordinates to compute $V$.  
-\end{multicols}
+%\end{multicols}
 \noproblemfont
 
 
@@ -1851,7 +1849,7 @@ K = \tfrac4{15} \pi \mu \omega^2 a^5.
 
 \section{Problems}  
 \problemfont
-\begin{multicols}{2}
+
 
 \problem Describe the following sets  
 (given in spherical coordinates):
@@ -1874,26 +1872,74 @@ The half of the $yz$ plane which contains the positive $y$ axis, and
 which ends at the $z$-axis.
 \endanswer
 
-\problem Let $E$ be the part of the sphere with radius $a$, 
-centered at the origin, and contained in the first octant
+\problem Let $E$ be the part of the sphere with radius $a$, centered at the origin, and contained in the first octant.
 
+\subprob Describe $E$ in terms of Cartesian coordinates.
+\answer
+Version 1:  $x\ge0$, $y\ge0$, $z\ge0$, $x^2+y^2+z^2\le a^2$\\
+Version 2:  $0\le x\le a$, $0\le y\le \sqrt{a^2-x^2}$, $0\le z\le \sqrt{a^2-x^2-y^2}$.\\
+Version 1 is simpler, but not good for setting up a triple integral.  Version 2 looks worse, but actually allows you to write a triple integral over the region.
+\endanswer
 \subprob Describe $E$ in terms of spherical coordinates. 
 \answer
 $0\leq \theta\le\pi/2$, $0\le \rho\le a$, $0\le\phi\le\pi/2$.
 \endanswer
 
 \subprob  Describe $E$ in terms of cylindrical coordinates. 
-There are two possible answers, find both.
 \answer
 $0\le\theta\le\pi/2$, $0\le r\le a$, $0\le z\le \sqrt{a^2-r^2}$, or:
 
 $0\le\theta\le\pi/2$, $0\le z\le a$, $0\le r\le \sqrt{a^2-z^2}$.
 \endanswer
 
+\problem Describe the following regions in \emph{Spherical Coordinates.}  Which of these regions are bounded?
+
+\subprob The region inside the sphere with radius one and the origin as center.
+\answer
+Bounded.  $0\le\rho\le 1$, $0\le\theta\le2\pi$, $0\le\phi\le\pi$.
+\endanswer
+
+\subprob The region above the cone $z= \sqrt{x^2+y^2}$.
+\answer
+Unbounded.  $0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \frac\pi4$
+\endanswer
+
+\subprob The region below the $xy$-plane
+\answer
+Unbounded.  $0\le \rho<\infty$, $0\le\theta\le 2\pi$, $\frac\pi2 \le \phi \le \pi$
+\endanswer
+
+\subprob The region above the cone $z= - \sqrt{x^2+y^2}$.
+\answer
+$0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \frac34\pi$
+\endanswer
+
+\subprob The region above the cone $z=2\sqrt{x^2+y^2}$.
+\answer
+Unbounded.
+$0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \arctan(1/2)$
+(if you got a slightly different answer, remember that $\arctan(1/2) = \frac{\pi} {2} - \arctan 2$).
+\endanswer
+
+\subprob The part of region between the $xz$-plane and the plane $y=x$ where $x\ge0$.
+\answer
+Unbounded.  $0\le\rho<\infty$, $0\le\theta\le\frac\pi4$, $0\le\phi\le\pi$.
+\endanswer
+
+\subprob The region consisting of all points inside the sphere with radius $a$ and the origin as center, between the two cones $z=\pm\sqrt{x^2+y^2}$, and which also satisfy $x\ge0$, and $0\le y \le x$.
+\answer
+Bounded.  $0\le\rho\le a$, $0\le\theta\le\pi/4$, $\frac14\pi\le\phi\le\frac34\pi$.
+\endanswer
+
+\subprob The region consisting of all points outside the sphere with radius $a$ and the origin as center, between the two cones $z=\pm\sqrt{x^2+y^2}$, and which also satisfy $x\ge0$, and $y \ge x$.
+\answer
+Unbounded.  $\rho\ge a$, $\frac14\pi\le\theta\le\frac12\pi$, $\frac14\pi\le\phi\le\frac34\pi$.
+\endanswer
+
+
 \problem Draw the volume elements in cylindrical and in spherical 
 coordinates and show how these lead to $dV = rdrd\theta dz$, and
 $dV = \rho^2\sin\phi\; d\rho\; d\theta\; d\phi$, respectively.
-
 \answer
 Figures \ref{fig:04cylindrical-volume-element} and
 \ref{fig:04spherical-volume-element}.
@@ -1915,25 +1961,27 @@ $x=\sqrt{1-y^2-z^2}$ for the point in front, and $x=-\sqrt{1-y^2-z^2}$
 for the point in the back (furthest away from you, the viewer).
 \endanswer
 
-\problem \textit{The potential energy in a pile of honey. }
-If you lift an object to height $h$ above the ground, then the
-potential energy you give it is $mgh$, where $m$ is the mass of the
-object, and $g$ is the acceleration of gravitation ($g\approx 9.8 {\rm
-m}/{\rm sec}^2$).
+\problem \textit{The potential energy in a pile of honey. }\\
 
-Suppose that a certain substance occupies a three dimensional region $D$
-(think of honey that has just been poured into a jar, see the drawing
-which gives a two dimensional side view of the situation).
-\begin{center}
-  \includegraphics[width=0.4\textwidth]{04jar-of-honey.pdf}
-\end{center}
-Assuming the base of the jar is an $A\times B$ rectangle, the honey
-occupies the region
-\begin{multline*}
-D = \bigl\{(x,y,z) :\\
-0\leq x\leq A, \; 0\leq y\leq B,\\
+\noindent%
+\begin{minipage}[b]{0.5\linewidth}
+If you lift an object to height $h$ above the ground, then the potential energy you give it is $mgh$, where $m$ is the mass of the object, and $g$ is the acceleration of gravitation ($g\approx 9.8 {\rm m}/{\rm sec}^2$).
+
+Suppose that a certain substance occupies a three dimensional region $D$ (think of honey that has just been poured into a jar, see the drawing which gives a two dimensional side view of the situation).
+
+Assuming the base of the jar is an $A\times B$ rectangle, the honey occupies the region
+\end{minipage}\hfill
+\begin{minipage}[b]{0.39\linewidth}
+\centering
+\includegraphics[width=\textwidth]{04jar-of-honey.pdf}
+
+\rule{0pt}{3ex}
+\end{minipage}
+\[
+D = \bigl\{(x,y,z) :
+0\leq x\leq A, \; 0\leq y\leq B,
 0\leq z\leq f(x, y)\bigr\}.
-\end{multline*}
+\]
 Here $f(x, y)$ is the height of the honey above the point $(x, y)$ in
 the base of the jar.
 
@@ -2084,7 +2132,7 @@ If a mass is distributed throughout a region $D$ with density
 $\mu(x, y, z)$, then, by definition the coordinates $(X,Y,Z)$
 of the \emph{center of mass} 
 \[
-X \stackrel{\rm def}{=} \frac{\iiint_D x\mu(x, y, z))\; dV}{\text{Mass of }D},
+X \stackrel{\rm def}{=} \frac{\iiint_D x\mu(x, y, z)\; dV}{\text{Mass of }D},
 \]
 and similarly for $Y$ and $Z$.
 
@@ -2102,6 +2150,7 @@ density $x^2+y^2$ at $(x,y,z)$. Find the center of mass.
 $\bar x=\bar y=0$, $\bar z=1/3$
 \endanswer
 
+\begin{multicols}{2}
 \problem Let $z=f(x, y)$ be a function on some domain $D$, 
 and assume that $D$ is split into two parts:  $D_+$, on which
 $f\geq 0$, and $D_-$, on which $f(x, y)<0$.
@@ -2145,6 +2194,7 @@ piece.]
 \int_{0}^{1}\int_{0}^{x}\int_{0}^{\sqrt{x^2+y^2}} 
 {(x^2+y^2)^{3/2}\over x^2+y^2+z^2}\,dz\,dy\,dx.  
 \]
+Hint:  use a substitution to do the inner integral (e.g. $z=\sqrt{x^2+y^2} u$, where $u$ is your new integration variable.  Remember that in the inner integral both $x$ and $y$ are constants.)
 \answer
 $\pi/12$
 \endanswer

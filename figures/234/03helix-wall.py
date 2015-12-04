@@ -43,7 +43,7 @@ def pr(q):  #{{{1
 PMAT = [[0,0], [1,0], [0,1]]  #{{{1
 PMAT = rotatey(pi/6, PMAT)
 PMAT = rotatez(pi/6, PMAT)
-print PMAT
+print( PMAT )
 
 
 setViewBox(-2, -2, 2, 2) #{{{1

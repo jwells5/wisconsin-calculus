@@ -23,7 +23,7 @@ line3d([0,0,0], [0,0,2.0])
 ## COMPUTE THE HELIX {{{1
 nturns = 1.00  ## we'll draw a whole turn of the helix
 he = [helix(nturns*0.02*pi*(n)) for n in range(101)]
-print he[0]
+print( he[0] )
 ## DRAW THE SCAFFOLDING{{{1
 p = he[35]
 scaf = [ pr([1,0,0]), pr([0,0,0]), pr([p[0],p[1],0]), pr(p) ]

@@ -15,7 +15,7 @@ def drawgradf(t): #{{{1
     s=0.25
     xx, yy = x(t), y(t)
     grx, gry = 2*xx, (3*yy-2)*yy
-    print "t=%5f xx=%5f yy=%5f grad=(%5f, %5f)"%(t, xx, yy, grx, gry)
+    print( "t=%5f xx=%5f yy=%5f grad=(%5f, %5f)"%(t, xx, yy, grx, gry) )
     arrow([xx, yy], [xx+s*grx, yy+s*gry], 3, 2)
     
 def annotategradf(t): #{{{1

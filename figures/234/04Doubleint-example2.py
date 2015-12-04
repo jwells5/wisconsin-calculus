@@ -32,7 +32,7 @@ def shadowline3d(A, B,widths=[1,0.25]): #{{{1
 PMAT = matrix( [[0,0], [1,0], [0,1]] )
 PMAT = rotatey(pi/5, PMAT)
 PMAT = rotatez(-1.9, PMAT)
-print PMAT
+print( PMAT )
 
 def fun(x, y): return x+y #{{{1
 def xbot(y): return 1-sqrt(y)

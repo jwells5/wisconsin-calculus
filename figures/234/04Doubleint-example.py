@@ -3,7 +3,7 @@ from grapher3d import *
 setProjection (matrix( [[0,0], [1,0], [0,1]] ))
 setProjection (rotatey(pi/5, theProjection ()))
 setProjection (rotatez(-1.9, theProjection ()))
-print PMAT
+print( PMAT )
 
 def fun(x, y): return x*x+y*y #{{{1
 

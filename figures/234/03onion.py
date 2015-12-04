@@ -11,7 +11,7 @@ def P(t): #{{{1
     x=1/(1.0+t*t*0.25)
     return [x, t*x*x]
 
-print P(2/sqrt(3.0))
+print( P(2/sqrt(3.0)) )
 
 #{{{1 main
 tees = [0.02 * i for i in range(-200,201)]

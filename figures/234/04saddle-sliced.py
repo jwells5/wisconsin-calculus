@@ -3,12 +3,12 @@ from grapher3d import *
 def helix(t): # {{{1
     return (cos(t), sin(t), t/pi)
 ###  set projection matrix     {{{1
-print theProjection()
+print( theProjection() )
 setProjection(rotatey(pi/6, theProjection()))
 setProjection(rotatez(pi/6, theProjection()))
-print theProjection()
+print( theProjection() )
 
-print pr([1,0,0],1)
+print( pr([1,0,0],1) )
 
 setViewBox(-2, -1.8, 2, 1.3) # {{{1
 openOutputFile("04saddle-sliced", 400)

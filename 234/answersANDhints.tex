@@ -2053,14 +2053,11 @@ V = \iint\limits_\cR \bigl\{y - (x^2+y^2)\bigr\} dA
 The result is $\pi/32$.
 \bigskip
 
-\item[{\bfseries(VI3.8a)}]
+\item[{\bfseries(VI3.8)}]
 
-$A$
-\bigskip
-
-\item[{\bfseries(VI3.8b)}]
-
-$B/2$
+$I_1 = A$,
+$I_2 = B/2$,
+$I_3= B$.
 \bigskip
 
 \item[{\bfseries(VI3.9a)}]
@@ -2102,34 +2099,83 @@ which ends at the $z$-axis.
 
 \item[{\bfseries(VI7.2a)}]
 
-$0\leq \theta\le\pi/2$, $0\le \rho\le a$, $0\le\phi\le\pi/2$.
+Version 1:  $x\ge0$, $y\ge0$, $z\ge0$, $x^2+y^2+z^2\le a^2$\\
+Version 2:  $0\le x\le a$, $0\le y\le \sqrt{a^2-x^2}$, $0\le z\le \sqrt{a^2-x^2-y^2}$.\\
+Version 1 is simpler, but not good for setting up a triple integral.  Version 2 looks worse, but actually allows you to write a triple integral over the region.
 \bigskip
 
 \item[{\bfseries(VI7.2b)}]
+
+$0\leq \theta\le\pi/2$, $0\le \rho\le a$, $0\le\phi\le\pi/2$.
+\bigskip
+
+\item[{\bfseries(VI7.2c)}]
 
 $0\le\theta\le\pi/2$, $0\le r\le a$, $0\le z\le \sqrt{a^2-r^2}$, or:
 
 $0\le\theta\le\pi/2$, $0\le z\le a$, $0\le r\le \sqrt{a^2-z^2}$.
 \bigskip
 
-\item[{\bfseries(VI7.3)}]
+\item[{\bfseries(VI7.3a)}]
+
+Bounded.  $0\le\rho\le 1$, $0\le\theta\le2\pi$, $0\le\phi\le\pi$.
+\bigskip
+
+\item[{\bfseries(VI7.3b)}]
+
+Unbounded.  $0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \frac\pi4$
+\bigskip
+
+\item[{\bfseries(VI7.3c)}]
+
+Unbounded.  $0\le \rho<\infty$, $0\le\theta\le 2\pi$, $\frac\pi2 \le \phi \le \pi$
+\bigskip
+
+\item[{\bfseries(VI7.3d)}]
+
+$0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \frac34\pi$
+\bigskip
+
+\item[{\bfseries(VI7.3e)}]
+
+Unbounded.
+$0\le \rho<\infty$, $0\le\theta\le 2\pi$, $0\le\phi\le \arctan(1/2)$
+(if you got a slightly different answer, remember that $\arctan(1/2) = \frac{\pi} {2} - \arctan 2$).
+\bigskip
+
+\item[{\bfseries(VI7.3f)}]
+
+Unbounded.  $0\le\rho<\infty$, $0\le\theta\le\frac\pi4$, $0\le\phi\le\pi$.
+\bigskip
+
+\item[{\bfseries(VI7.3g)}]
+
+Bounded.  $0\le\rho\le a$, $0\le\theta\le\pi/4$, $\frac14\pi\le\phi\le\frac34\pi$.
+\bigskip
+
+\item[{\bfseries(VI7.3h)}]
+
+Unbounded.  $\rho\ge a$, $\frac14\pi\le\theta\le\frac12\pi$, $\frac14\pi\le\phi\le\frac34\pi$.
+\bigskip
+
+\item[{\bfseries(VI7.4)}]
 
 Figures \ref{fig:04cylindrical-volume-element} and
 \ref{fig:04spherical-volume-element}.
 \bigskip
 
-\item[{\bfseries(VI7.4a)}]
+\item[{\bfseries(VI7.5a)}]
 
 Large circle has radius $1$, the smaller has radius $\sqrt{1-z^2}$.
 \bigskip
 
-\item[{\bfseries(VI7.4b)}]
+\item[{\bfseries(VI7.5b)}]
 
 $x=\sqrt{1-y^2-z^2}$ for the point in front, and $x=-\sqrt{1-y^2-z^2}$
 for the point in the back (furthest away from you, the viewer).
 \bigskip
 
-\item[{\bfseries(VI7.5a)}]
+\item[{\bfseries(VI7.6a)}]
 
 The potential energy is ``mass$\times$height$\times g$''.  The mass of
 the small piece of honey is $\Delta m = \mu\times \Delta V$, where
@@ -2140,7 +2186,7 @@ However, as one considers smaller and smaller pieces the approximation
 gets better.
 \bigskip
 
-\item[{\bfseries(VI7.5b)}]
+\item[{\bfseries(VI7.6b)}]
 
 The total potential energy is
 \[
@@ -2151,7 +2197,7 @@ put all the honey at height zero (e.g.\ by pouring it out of the jar
 onto the floor.)
 \bigskip
 
-\item[{\bfseries(VI7.5c)}]
+\item[{\bfseries(VI7.6c)}]
 
 The iterated integral is
 \[
@@ -2164,7 +2210,7 @@ dx
 \]
 \bigskip
 
-\item[{\bfseries(VI7.6a)}]
+\item[{\bfseries(VI7.7a)}]
 
 The kinetic energy in a small region of the airmass is $\frac12 \Delta
 m \times v^2$, where $\Delta m$ is the mass of the air in the small
@@ -2179,7 +2225,7 @@ leads to this integral:
 .\]
 \bigskip
 
-\item[{\bfseries(VI7.6b)}]
+\item[{\bfseries(VI7.7b)}]
 
 In cylindrical coordinates the domain is defined by $0\le r\le R$ and
 $0< z \le H$, so the integral is
@@ -2194,118 +2240,118 @@ $0< z \le H$, so the integral is
 \]
 \bigskip
 
-\item[{\bfseries(VI7.7a)}]
+\item[{\bfseries(VI7.8a)}]
 
 $623/60$
 \bigskip
 
-\item[{\bfseries(VI7.7b)}]
+\item[{\bfseries(VI7.8b)}]
 
 $-3e^2/4+2e-3/4$
 \bigskip
 
-\item[{\bfseries(VI7.7c)}]
+\item[{\bfseries(VI7.8c)}]
 
 $1/20$
 \bigskip
 
-\item[{\bfseries(VI7.7d)}]
+\item[{\bfseries(VI7.8d)}]
 
 $\pi/48$
 \bigskip
 
-\item[{\bfseries(VI7.7e)}]
+\item[{\bfseries(VI7.8e)}]
 
 $11/84$
 \bigskip
 
-\item[{\bfseries(VI7.7f)}]
+\item[{\bfseries(VI7.8f)}]
 
 $151/60$
 \bigskip
 
-\item[{\bfseries(VI7.8)}]
+\item[{\bfseries(VI7.9)}]
 
 $32$
 \bigskip
 
-\item[{\bfseries(VI7.9)}]
+\item[{\bfseries(VI7.10)}]
 
 $64/3$
 \bigskip
 
-\item[{\bfseries(VI7.10)}]
+\item[{\bfseries(VI7.11)}]
 
 $\bar x=\bar y=0$, $\bar z=16/15$
 \bigskip
 
-\item[{\bfseries(VI7.11)}]
+\item[{\bfseries(VI7.12)}]
 
 $\bar x=\bar y=0$, $\bar z=1/3$
 \bigskip
 
-\item[{\bfseries(VI7.12a)}]
+\item[{\bfseries(VI7.13a)}]
 
 $I=V_+$, $J= -V_-$ (note the minus sign),
 $K= V_+-V_-$, $L = V_+ + V_-$.
 \bigskip
 
-\item[{\bfseries(VI7.13)}]
+\item[{\bfseries(VI7.14)}]
 
 $\pi/12$
 \bigskip
 
-\item[{\bfseries(VI7.14)}]
-
-$5\pi/4$
-\bigskip
-
 \item[{\bfseries(VI7.15)}]
 
-$0$
+$5\pi/4$
 \bigskip
 
 \item[{\bfseries(VI7.16)}]
 
-$5\pi/4$
+$0$
 \bigskip
 
 \item[{\bfseries(VI7.17)}]
 
-$4/5$
+$5\pi/4$
 \bigskip
 
 \item[{\bfseries(VI7.18)}]
 
-$256\pi/15$
+$4/5$
 \bigskip
 
 \item[{\bfseries(VI7.19)}]
 
-$4\pi^2$
+$256\pi/15$
 \bigskip
 
 \item[{\bfseries(VI7.20)}]
 
-$\pi kh^2a^2/12$
+$4\pi^2$
 \bigskip
 
 \item[{\bfseries(VI7.21)}]
 
-$\pi kha^3/6$
+$\pi kh^2a^2/12$
 \bigskip
 
 \item[{\bfseries(VI7.22)}]
 
-$\pi^2/4$
+$\pi kha^3/6$
 \bigskip
 
 \item[{\bfseries(VI7.23)}]
 
-$4\pi/5$
+$\pi^2/4$
 \bigskip
 
 \item[{\bfseries(VI7.24)}]
+
+$4\pi/5$
+\bigskip
+
+\item[{\bfseries(VI7.25)}]
 
 $15\pi$
 \bigskip

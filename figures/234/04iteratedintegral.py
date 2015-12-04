@@ -34,7 +34,7 @@ def  shadowlines3d(segmentlist,widths=[1,0.25]): #{{{1
 PMAT = matrix( [[0,0], [1,0], [0,1]] )
 PMAT = rotatey(pi/10, PMAT)
 PMAT = rotatez(pi/3, PMAT)
-print PMAT
+print( PMAT )
 
 def fun(x, y): return exp(-1+3*x+y-x*x-y*y)
 def drawslice(y, dy): #{{{1

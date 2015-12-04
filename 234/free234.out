@@ -1,0 +1,97 @@
+\BOOKMARK [0][-]{chapter.1}{Chapter 1. Vector Geometry in Three dimensional space}{}% 1
+\BOOKMARK [1][-]{section.1.1}{1. Three dimensional space}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{2. Geometric description of vectors}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{3. Arithmetic of vectors}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{4. Vector algebra}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{5. Component representation of vectors}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{6. The dot product}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{7. The cross product}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{8. The triple product}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.9}{9. Determinants}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.10}{10. Determinants, the triple product, and the cross product}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.11}{11. Defining equations for lines and planes}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.12}{12. Problems}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{Chapter 2. Parametric curves and vector functions}{}% 14
+\BOOKMARK [1][-]{section.2.1}{1. Vector functions}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{2. Using vector functions to describe motion}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{3. Lines}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.4}{4. Circular motion}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{5. The cycloid}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.6}{6. The helix}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.7}{7. The derivative of a vector function}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.8}{8. The derivative as velocity vector}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.9}{9. Acceleration}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.10}{10. The differentiation rules}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.11}{11. Vector functions of constant length}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.12}{12. Two examples}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.13}{13. Arc length}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.14}{14. Arc length derivative}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.15}{15. Unit Tangent and Curvature}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.16}{16. Osculating plane}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.17}{17. Problems}{chapter.2}% 31
+\BOOKMARK [0][-]{chapter.3}{Chapter 3. Functions of more than one variable}{}% 32
+\BOOKMARK [1][-]{section.3.1}{1. Functions of two variables and their graphs}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.2}{2. Linear functions}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.3}{3. Quadratic forms}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.4}{4. Functions in polar coordinates r,}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.5}{5. Methods of visualizing the graph of a function}{chapter.3}% 37
+\BOOKMARK [1][-]{section*.40}{Problems}{chapter.3}% 38
+\BOOKMARK [0][-]{chapter.4}{Chapter 4. Derivatives}{}% 39
+\BOOKMARK [1][-]{section.4.1}{1. Interior points and continuous functions}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.2}{2. Partial Derivatives}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.3}{3. Problems}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.4}{4. The linear approximation to a function}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.5}{5. The tangent plane to a graph}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.6}{6. The Two Variable Chain Rule}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.7}{7. Problems}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.8}{8. Gradients}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.9}{9. The chain rule and the gradient of a function of three variables}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.10}{10. Implicit Functions}{chapter.4}% 49
+\BOOKMARK [1][-]{section*.56}{Problems}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.11}{11. The Chain Rule with more Independent Variables; Coordinate Transformations}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.12}{12. Problems}{chapter.4}% 52
+\BOOKMARK [1][-]{section.4.13}{13. Higher Partials and Clairaut's Theorem}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.14}{14. Finding a function from its derivatives}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.15}{15. Problems}{chapter.4}% 55
+\BOOKMARK [0][-]{chapter.5}{Chapter 5. Maxima and Minima}{}% 56
+\BOOKMARK [1][-]{section.5.1}{1. Local and Global extrema}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.2}{2. Continuous functions on closed and bounded sets}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.3}{3. Problems}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.4}{4. Critical points}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.5}{5. When there are more than two variables}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.6}{6. Problems}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.7}{7. A Minimization Problem: Linear Regression}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.8}{8. Problems}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.9}{9. The Second Derivative Test}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.10}{10. Problems}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.11}{11. Second derivative test for more than two variables}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.12}{12. Optimization with constraints and the method of Lagrange multipliers}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.13}{13. Problems}{chapter.5}% 69
+\BOOKMARK [0][-]{chapter.6}{Chapter 6. Integrals}{}% 70
+\BOOKMARK [1][-]{section.6.1}{1. Ways of Integrating}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.2}{2. Double Integrals}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.3}{3. Problems}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.4}{4. Triple integrals}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.5}{5. Why compute a Triple Integral?}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.6}{6. Integration in special coordinate systems}{chapter.6}% 76
+\BOOKMARK [1][-]{section.6.7}{7. Problems}{chapter.6}% 77
+\BOOKMARK [0][-]{chapter.7}{Chapter 7. Vector Calculus}{}% 78
+\BOOKMARK [1][-]{section.7.1}{1. Vector Fields}{chapter.7}% 79
+\BOOKMARK [1][-]{section.7.2}{2. Examples of vector fields}{chapter.7}% 80
+\BOOKMARK [1][-]{section.7.3}{3. Line integrals}{chapter.7}% 81
+\BOOKMARK [1][-]{section.7.4}{4. Problems}{chapter.7}% 82
+\BOOKMARK [1][-]{section.7.5}{5. Line integrals of vector fields}{chapter.7}% 83
+\BOOKMARK [1][-]{section.7.6}{6. Another Fundamental Theorem of Calculus}{chapter.7}% 84
+\BOOKMARK [1][-]{section.7.7}{7. Conservative vector fields}{chapter.7}% 85
+\BOOKMARK [1][-]{section.7.8}{8. Problems}{chapter.7}% 86
+\BOOKMARK [1][-]{section.7.9}{9. Flux integrals}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.10}{10. Green's Theorem}{chapter.7}% 88
+\BOOKMARK [1][-]{section.7.11}{11. Conservative vector fields and Clairaut's theorem}{chapter.7}% 89
+\BOOKMARK [1][-]{section.7.12}{12. Problems}{chapter.7}% 90
+\BOOKMARK [1][-]{section.7.13}{13. Surfaces and Surface integrals}{chapter.7}% 91
+\BOOKMARK [1][-]{section.7.14}{14. Examples}{chapter.7}% 92
+\BOOKMARK [1][-]{section.7.15}{15. The divergence theorem and Stokes' theorem}{chapter.7}% 93
+\BOOKMARK [1][-]{section.7.16}{16. \040\205 differentiating vector fields}{chapter.7}% 94
+\BOOKMARK [1][-]{section.7.17}{17. Problems}{chapter.7}% 95
+\BOOKMARK [0][-]{chapter*.138}{Math 234 \205 Answers and Hints}{}% 96
+\BOOKMARK [0][-]{chapter.8}{Chapter 8. GNU Free Documentation License}{}% 97

@@ -32,7 +32,7 @@ def pr(q):
 PMAT = [[0,0], [1,0], [0,-1]]
 PMAT = rotatey(pi/5, PMAT)
 PMAT = rotatez(pi/6, PMAT)
-print PMAT
+print( PMAT )
 
 qbicfront = [cubic(-1+k*0.02) for k in range(51)]
 qbicback = [cubic(k*0.02) for k in range(42)]

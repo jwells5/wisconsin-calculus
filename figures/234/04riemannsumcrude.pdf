@@ -1,4 +1,4 @@
-%PDF-1.4
+%PDF-1.5
 %«Ïè¢
 5 0 obj
 <</Length 6 0 R/Filter /FlateDecode>>
@@ -47,12 +47,12 @@ endobj
 <?adobe-xap-filters esc="CRLF"?>
 <x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
 <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
-<rdf:Description rdf:about='uuid:4e3954a6-0bcb-11ee-0000-6b391fadc2d7' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.05'/>
-<rdf:Description rdf:about='uuid:4e3954a6-0bcb-11ee-0000-6b391fadc2d7' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2013-06-12T17:23:50-05:00</xmp:ModifyDate>
-<xmp:CreateDate>2013-06-12T17:23:50-05:00</xmp:CreateDate>
+<rdf:Description rdf:about='uuid:6f7dcb56-9c55-11e5-0000-1947f9ea3d49' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.18'/>
+<rdf:Description rdf:about='uuid:6f7dcb56-9c55-11e5-0000-1947f9ea3d49' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2015-12-03T14:10:45-06:00</xmp:ModifyDate>
+<xmp:CreateDate>2015-12-03T14:10:45-06:00</xmp:CreateDate>
 <xmp:CreatorTool>UnknownApplication</xmp:CreatorTool></rdf:Description>
-<rdf:Description rdf:about='uuid:4e3954a6-0bcb-11ee-0000-6b391fadc2d7' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:4e3954a6-0bcb-11ee-0000-6b391fadc2d7'/>
-<rdf:Description rdf:about='uuid:4e3954a6-0bcb-11ee-0000-6b391fadc2d7' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>04riemannsumcrude.eps</rdf:li></rdf:Alt></dc:title></rdf:Description>
+<rdf:Description rdf:about='uuid:6f7dcb56-9c55-11e5-0000-1947f9ea3d49' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:6f7dcb56-9c55-11e5-0000-1947f9ea3d49'/>
+<rdf:Description rdf:about='uuid:6f7dcb56-9c55-11e5-0000-1947f9ea3d49' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>04riemannsumcrude.eps</rdf:li></rdf:Alt></dc:title></rdf:Description>
 </rdf:RDF>
 </x:xmpmeta>
                                                                         
@@ -61,9 +61,9 @@ endobj
 endstream
 endobj
 2 0 obj
-<</Producer(GPL Ghostscript 9.05)
-/CreationDate(D:20130612172350-05'00')
-/ModDate(D:20130612172350-05'00')
+<</Producer(GPL Ghostscript 9.18)
+/CreationDate(D:20151203141045-06'00')
+/ModDate(D:20151203141045-06'00')
 /Title(04riemannsumcrude.eps)>>endobj
 xref
 0 10
@@ -79,7 +79,7 @@ xref
 0000000648 00000 n 
 trailer
 << /Size 10 /Root 1 0 R /Info 2 0 R
-/ID [<74337B65401F7389943707F64DA86F4F><74337B65401F7389943707F64DA86F4F>]
+/ID [<985A870FF83C61AC2554434822A0CE99><985A870FF83C61AC2554434822A0CE99>]
 >>
 startxref
 2234

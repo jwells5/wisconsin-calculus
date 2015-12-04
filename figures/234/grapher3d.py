@@ -3,11 +3,11 @@ A set of extensions to the grapher module to accomodate three
 dimensional drawings. 
 """
 ## import stuff 
-print "........Grapher3D"
+print( "........Grapher3D" )
 from grapher import *
-print "........Imported grapher"
+print( "........Imported grapher" )
 from numpy import *
-print "........Imported numpy"
+print( "........Imported numpy" )
 
 PMAT = matrix([[0.0,0.0], [1.0,0.0], [0.0,1.0]])
 
@@ -25,7 +25,7 @@ def pr(q, debug=0):
     """ Multiply the row matrix q with PMAT and return as list"""
     global PMAT
     if debug==1:
-        print "....pr\n", PMAT, q
+        print( "....pr\n", PMAT, q )
     qq = matrix(q)*PMAT
     return [qq[0,0], qq[0,1]]
 def line3d(P,Q): 
@@ -40,11 +40,11 @@ def shadowline3d(A, B,widths=[1,0.25], colors=['white','black']):
 def setProjection(pm): 
     global PMAT
     PMAT = pm
-    print  ".,.,.,.,projection matrix:\n", PMAT
+    print(  ".,.,.,.,projection matrix:\n", PMAT )
 def resetProjection(): 
     global PMAT
     PMAT = matrix([[0,0], [1,0], [0,1]])
-    print  ".,.,.,.,projection matrix:\n", PMAT
+    print(  ".,.,.,.,projection matrix:\n", PMAT )
 def theProjection(): 
     global PMAT
     return PMAT

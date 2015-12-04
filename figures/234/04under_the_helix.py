@@ -27,7 +27,7 @@ def helix(t): # {{{1
 PMAT = [[0,0], [1,0], [0,1]]
 PMAT = rotatey(pi/6, PMAT)
 PMAT = rotatez(pi/6, PMAT)
-print PMAT
+print( PMAT )
 
 
 setViewBox(-0.75, -1, 1.25, 1) # {{{1
@@ -45,7 +45,7 @@ setdash("[] 0")
 ### compute the helix {{{1
 nturns = 0.25  ## we'll draw one quarter term of the helix
 he = [helix(nturns*0.02*pi*(n)) for n in range(101)]
-print he[0]
+print( he[0] )
 
 linewidth(1) # {{{1 draw the helix
 polygonA([pr(a) for a in he])

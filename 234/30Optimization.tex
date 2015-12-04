@@ -1,6 +1,6 @@
 %!TEX root = free234.tex
 %!TEX program=xelatex
-% Time-stamp: <2015-11-11 13:48:16 angenent>
+% Time-stamp: <2015-12-01 22:23:27 angenent>
 \chapter{Maxima and Minima}  
 In first semester calculus we learned how to find the maximal and minimal values of a
 function $y=f(x)$ of one variable.  The basic method is as follows: assuming the
@@ -261,7 +261,8 @@ At a critical point of a function the tangent plane to the graph is horizontal.
 \frac{\pd f}{\pd x}(a,b)=0, \text{ and } \frac{\pd f}{\pd y}(a,b) = 0.
 \]
 \upshape
-\subsubsection*{Picture proof} (See Figure~\ref{fig:max-are-critical-picture-proof}.)  If $f$ has a local maximum at an interior point $(a,b)$ then $f(x, y) \leq f(a, b)$ for all $(x,y)$ close to $(a,b)$.  This means that a small piece of the graph of $f$ near its local maximum at $(a,b,f(a,b))$ lies below the plane $z=f(a,b)$.  This plane must therefore be the tangent plane to the graph of $f$.  Being horizontal, its slopes are zero, and these slopes are exactly the partial derivatives of $f$ at $(a,b)$.
+\subsubsection*{Picture proof}
+(See Figure~\ref{fig:max-are-critical-picture-proof}.)  If $f$ has a local maximum at an interior point $(a,b)$ then $f(x, y) \leq f(a, b)$ for all $(x,y)$ close to $(a,b)$.  This means that a small piece of the graph of $f$ near its local maximum at $(a,b,f(a,b))$ lies below the plane $z=f(a,b)$.  This plane must therefore be the tangent plane to the graph of $f$.  Being horizontal, its slopes are zero, and these slopes are exactly the partial derivatives of $f$ at $(a,b)$.
 
 \subsubsection*{Frozen variable proof}
 Suppose $f$ has a local maximum at an interior point $(a,b)$ of the domain $D$.  Then we can freeze the $y$-variable at the value $y=b$ and consider the function of one variable $g(x) = f(x,b)$.  This function has a maximum at $x=a$, so by first semester calculus we know that $g'(x) = 0$.  By definition $g'(a) = f_x(x, b)$, so we conclude that $f_x(a,b) = 0$.
@@ -371,7 +372,8 @@ found that there is only one local maximum in the region $D_2$.
 
 \subsection{Another example -- find the critical points of $f(x,y) =x-x^3-xy^2$}
 
-\subsubsection*{Solution: } The derivatives of our function are
+\subsubsection*{Solution: }
+The derivatives of our function are
 \[
 \pdd fx = 1-3x^2-y^2,\qquad \pdd fy = -2xy.
 \]
@@ -1291,7 +1293,7 @@ k\Delta x+l\Delta y = 0, \text{ i.e. } k(x-a) + l(y-b) = 0
 \]
 while the other is tangent to
 \[
-m\Delta x+n\Delta y = 0, \text{ i.e. } m(x-a) + l(y-b) = 0.
+m\Delta x+n\Delta y = 0, \text{ i.e. } m(x-a) + n(y-b) = 0.
 \]
 
 \subsection{Example -- apply the second derivative test to the fishy example}
@@ -1756,7 +1758,8 @@ then the point $(a, b)$ satisfies the \textit{Lagrange Multiplier} equation,
 \upshape The number $\lambda$ is called the \textit{Lagrange multiplier}, and it is
 one of the unknowns in the equations we must solve when we use Lagrange's method.
 
-\subsection{Example} We again try to find the largest rectangle with
+\subsection{Example}
+We again try to find the largest rectangle with
 perimeter~$1$, as in example \ref{sec:isoperimetric-1}.
 
 The problem is to maximize $f(x, y) = xy$ with constraint $g(x, y) = 2x+2y = 1$.  We
@@ -1782,7 +1785,8 @@ for $x, y, \lambda$. Since $x=y$ the constraint implies $4x=1$, so $x=y=\frac14$
 Finally, either of the first two equations provides $\lambda = \frac12x =\frac12y =
 \frac18$.
 
-\subsubsection*{What is the meaning of $\lambda$?}  In this example you
+\subsubsection*{What is the meaning of $\lambda$?}
+In this example you
 see that we first found the solution $(x, y)$, and then computed
 $\lambda$.  The multiplier $\lambda$ is the ratio between the lengths of
 the gradients of $f$ and $g$ at the maximum, and can be interpreted as
@@ -1795,7 +1799,8 @@ also find $\lambda$,} or at least make sure that a $\lambda$ exists for
 the $x$ and $y$ you have found.
 
 
-\subsubsection*{Did we find a maximum or a minimum?}  Lagrange's method does not tell us if
+\subsubsection*{Did we find a maximum or a minimum?}
+Lagrange's method does not tell us if
 we have a maximum or a minimum, and we will have to use different methods to figure
 this out.  There does exist a second derivative test for constrained minimization
 problems, but it falls outside the scope of this course.
