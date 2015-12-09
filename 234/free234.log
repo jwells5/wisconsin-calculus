@@ -1,34 +1,34 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.11.17)  3 DEC 2015 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 DEC 2015 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./free234.tex
+**free234
 (./free234.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./amsbook.cls
 Document Class: amsbook 2009/07/02 v2.20.1
 \linespacing=\dimen102
 \normalparindent=\dimen103
 \normaltopskip=\skip41
-(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip42
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen104
 ))
-(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen105
 )
-(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count79
@@ -71,17 +71,17 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 367.
 
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-\copyins=\insert199
+\copyins=\insert233
 \abstractbox=\box28
 \listisep=\skip45
 \c@part=\count91
@@ -105,22 +105,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \thm@postskip=\skip49
 \thm@headsep=\skip50
 \dth@everypar=\toks24
-) (../preamble.tex
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(../preamble.tex
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/eucal.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 207.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
 ) (../esvect.sty
 
 LaTeX Warning: You have requested package `../esvect',
@@ -129,38 +130,38 @@ LaTeX Warning: You have requested package `../esvect',
 Package: esvect 
 \symesvector=\mathgroup9
 LaTeX Font Info:    Redeclaring math symbol \fldr on input line 46.
-) (c:/texlive/2015/texmf-dist/tex/latex/manfnt/manfnt.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/manfnt/manfnt.sty
 Package: manfnt 1999/07/010.2LaTeX2e manfnt package
 \dbend@height=\skip51
 )
-(c:/texlive/2015/texmf-dist/tex/latex/cancel/cancel.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
-(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(c:/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count100
@@ -168,26 +169,26 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-(c:/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
-(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -228,25 +229,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen116
 \Hy@linkcounter=\count101
 \Hy@pagecounter=\count102
 
-(c:/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count103
 
-(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -278,12 +279,12 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(c:/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count109
 \c@bookmark@seq@number=\count110
 
-(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -297,11 +298,11 @@ Package hyperref Info: Option `bookmarksopen' set `false' on input line 27.
 Package hyperref Warning: Option `pdftex' has already been used,
 (hyperref)                setting the option has no effect on input line 27.
 
-(c:/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(c:/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen120
 \captionmargin@=\dimen121
@@ -315,8 +316,8 @@ Package caption Info: AMS or SMF document class.
 \c@ContinuedFloat=\count111
 Package caption Info: hyperref package is loaded.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
 \c@tracingmulticols=\count112
 \mult@box=\box29
 \multicol@leftmargin=\dimen127
@@ -364,7 +365,7 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \colbreak@box=\box54
 \mc@col@check@num=\count120
 )
-(c:/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen136
 \lightrulewidth=\dimen137
@@ -384,22 +385,20 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count124
 \@thisrulewidth=\dimen148
 )
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/libertine.sty
-Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fon
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/libertine.sty
+Package: libertine 2014/02/19 (Bob Tennent) Supports Libertine and Biolinum fon
 ts for all LaTeX engines.
 
-(c:/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
 
-(c:/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
-)
 \XKV@depth=\count125
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
 ))
-(c:/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -412,76 +411,75 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(c:/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/mweights/mweights.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mweights/mweights.sty
 Package: mweights 2013/07/21 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
@@ -490,19 +488,19 @@ LaTeX Info: Redefining \rmfamily on input line 36.
 LaTeX Info: Redefining \sffamily on input line 53.
 LaTeX Info: Redefining \ttfamily on input line 70.
 )
-(c:/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 )
-(c:/texlive/2015/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-LaTeX Info: Redefining \oldstylenums on input line 478.
+LaTeX Info: Redefining \oldstylenums on input line 477.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/LinLibertine_I.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/LinLibertine_I.tex)))
 (../free-macros.tex
 \c@PROB=\count126
 \c@SUBPROB=\count127
@@ -539,14 +537,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
- (c:/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
  input line 24.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/ot1linuxlibertinet-tlf.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.
+fd
 File: OT1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
@@ -555,22 +555,21 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Try loading font information for U+msa on input line 24.
-
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+esvect on input line 24.
 
 
-(c:/texlive/2015/texmf-dist/tex/latex/esvect/uesvect.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-(c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen149
@@ -583,10 +582,10 @@ File: uesvect.fd
 \MPnumerator=\count133
 \makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks29
-) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -594,17 +593,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring ON on input line 24.
 
-(c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count135
@@ -635,7 +634,8 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on 
 input line 7.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/ot1linuxbiolinumt-tlf.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/OT1LinuxBiolinumT-TLF.f
+d
 File: OT1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/L
 inuxBiolinumT-TLF.
 )
@@ -655,17 +655,17 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 14.
+ [1
 
-[1
-
-{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figures/234/
-04slice1.pdf>]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../figu
+res/234/04slice1.pdf>]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 18.
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineMonoT-TL
 F on input line 25.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/ot1linuxlibertinemonot-tlf.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/OT1LinuxLibertineMonoT-
+TLF.fd
 File: OT1LinuxLibertineMonoT-TLF.fd 2012/12/06 (autoinst) Font definitions for 
 OT1/LinuxLibertineMonoT-TLF.
 )
@@ -795,8 +795,8 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
  [7 <../figures/234/005adding-vectors-parallelogram.pdf> <../figures/222/05scal
 ar-mult.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/222/05scalar-mult.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/222/05scalar-mult.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >] (../figures/234/005vector-components.pdf_tex
 <../figures/234/005vector-components.pdf, id=587, 333.30632pt x 89.49272pt>
 File: ../figures/234/005vector-components.pdf Graphic file (type pdf)
@@ -842,8 +842,8 @@ Package pdftex.def Info: ../figures/234/005dot-product.pdf used on input line 5
 ) [9 <../figures/234/005vector-components3D.pdf> <../figures/234/005dot-product
 .pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/005dot-product.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/005dot-product.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >] (../figures/222/05crossprod-corkscrew.pdf_tex
 <../figures/222/05crossprod-corkscrew.pdf, id=632, 247.51775pt x 95.51527pt>
 File: ../figures/222/05crossprod-corkscrew.pdf Graphic file (type pdf)
@@ -881,9 +881,9 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 362.
 [11 <../figures/222/05crossprod-corkscrew.pdf> <../figures/222/05area-parallelo
 gram-spanned-by-vectors.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/222/05area-parallelogram-spanned-
-by-vectors.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
+pdfTeX warning: pdflatex (file ../figures/222/05area-parallelogram-spanned-by-v
+ectors.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
 >] (../figures/234/01parallelepiped.pdf_tex
 <../figures/234/01parallelepiped.pdf, id=666, 321.60464pt x 225.24463pt>
 File: ../figures/234/01parallelepiped.pdf Graphic file (type pdf)
@@ -909,8 +909,8 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
  [12 <../figures/234/01parallelepiped.pdf> <../figures/234/01parallelepiped-fli
 pped.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01parallelepiped-flipped.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01parallelepiped-flipped.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
 <../figures/222/05determinant-shortcut2.pdf, id=684, 126.99948pt x 73.17416pt>
 File: ../figures/222/05determinant-shortcut2.pdf Graphic file (type pdf)
@@ -954,13 +954,14 @@ Overfull \hbox (1.34999pt too wide) in paragraph at lines 62--615
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Try loading font information for U+eus on input line 617.
-(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/ueus.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) [15 <../figures/222/05distance-to-line.pdf>]
 LaTeX Font Info:    Try loading font information for TS1+LinuxBiolinumT-TLF on 
 input line 634.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/ts1linuxbiolinumt-tlf.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxBiolinumT-TLF.f
+d
 File: TS1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/L
 inuxBiolinumT-TLF.
 )
@@ -1128,8 +1129,8 @@ Overfull \hbox (43.8342pt too wide) in paragraph at lines 68--123
 
 [21 <../figures/222/06circle.pdf> <../figures/234/06cycloid.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/06cycloid.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/06cycloid.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
 >] (../figures/234/01helix.pdf_tex
 <../figures/234/01helix.pdf, id=857, 216.6033pt x 237.16248pt>
 File: ../figures/234/01helix.pdf Graphic file (type pdf)
@@ -1198,14 +1199,14 @@ hose length is con-stant, $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
  input line 449.
 
-(c:/texlive/2015/texmf-dist/tex/latex/libertine/ts1linuxlibertinet-tlf.fd
+(/usr/local/texlive/2014/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
+fd
 File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 449.
-
-(../figures/222/06circle3.pdf_tex
+ (../figures/222/06circle3.pdf_tex
 <../figures/222/06circle3.pdf, id=926, 146.48462pt x 101.17801pt>
 File: ../figures/222/06circle3.pdf Graphic file (type pdf)
 
@@ -1297,8 +1298,8 @@ Underfull \hbox (badness 10000) detected at line 65
 [36 <../figures/234/01Agraphwithlevelsets.pdf> <../figures/234/01levelsets-with
 out-the-graph.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01levelsets-without-the-graph
-.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01levelsets-without-the-graph.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >] <../figures/234/01Mendota.jpeg, id=1114, 505.89pt x 427.5975pt>
 File: ../figures/234/01Mendota.jpeg Graphic file (type jpg)
 
@@ -1429,8 +1430,8 @@ ne 402.
 (pdftex.def)             Requested size: 112.57982pt x 104.70822pt.
  [42 <../figures/234/01PC.pdf> <../figures/234/01theta-r-constant.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01theta-r-constant.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01theta-r-constant.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
 >] (../figures/234/01cone.pdf_tex
 <../figures/234/01cone.pdf, id=1253, 325.91556pt x 177.98598pt>
 File: ../figures/234/01cone.pdf Graphic file (type pdf)
@@ -1893,8 +1894,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [52] [53 <../figures/234/01chainrule.pdf> <../figures/234/01chainrule-mvt-point
 s.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01chainrule-mvt-points.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01chainrule-mvt-points.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
 >] [54]
 <../figures/234/01totaldifferential.pdf, id=1553, 172.89482pt x 138.75475pt>
 File: ../figures/234/01totaldifferential.pdf Graphic file (type pdf)
@@ -1931,13 +1932,13 @@ Package pdftex.def Info: ../figures/234/02saddle-with-tangent.jpg used on input
  [56 <../figures/234/01totaldifferential.pdf> <../figures/234/01totaldifferenti
 al-no-tangentplane.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01totaldifferential-no-tangen
-tplane.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ../figures/234/01totaldifferential-no-tangentpla
+ne.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
 > <../figures/234/01tangentplane.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01tangentplane.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01tangentplane.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
 Overfull \hbox (4.36559pt too wide) in paragraph at lines 654--657
 \OT1/LinuxLibertineT-TLF/m/n/10 The in-ter-sec-tions with the $\OML/cmm/m/it/10
@@ -2235,8 +2236,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [73 <../figures/234/01LevelSetProblem1.pdf> <../figures/234/01findthecriticalp
 oints.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/01findthecriticalpoints.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/01findthecriticalpoints.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
 >]
 <../figures/234/01coordinatesRotated.pdf, id=1969, 186.14441pt x 140.40746pt>
 File: ../figures/234/01coordinatesRotated.pdf Graphic file (type pdf)
@@ -2469,8 +2470,8 @@ Package pdftex.def Info: ../figures/234/02threecriticalpoints.pdf used on input
 (pdftex.def)             Requested size: 281.0493pt x 80.29979pt.
  [87 <../figures/234/02localmax.pdf> <../figures/234/02threecriticalpoints.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/02threecriticalpoints.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/02threecriticalpoints.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 349.
@@ -2994,8 +2995,8 @@ e 2.
 ) [118 <../figures/234/04Polar-partition.pdf> <../figures/234/04dAinPC.pdf> <..
 /figures/234/04polar-domain.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/04polar-domain.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/04polar-domain.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
 Overfull \hbox (4.62497pt too wide) in paragraph at lines 746--746
 [][]$\OMS/cmsy/m/n/9 ^^O$[] 
@@ -3195,8 +3196,8 @@ Package pdftex.def Info: ../figures/234/04average-over-a-fish.pdf used on input
  [125 <../figures/234/04-4Dgraph-cartoon.pdf> <../figures/234/04average-over-a-
 fish.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/04average-over-a-fish.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/04average-over-a-fish.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
 >] [126] <../figures/234/04density.png, id=3021, 200.75pt x 200.75pt>
 File: ../figures/234/04density.png Graphic file (type png)
 
@@ -3233,8 +3234,8 @@ ine 1576.
  [128 <../figures/234/04air-column.pdf> <../figures/234/04moment-of-inertia.pdf
 
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/04moment-of-inertia.pdf): PDF
- inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/04moment-of-inertia.pdf): PDF inc
+lusion: multiple pdfs with page group included in a single page
 >]
 <../figures/234/04distance-to-rotationaxis.pdf, id=3076, 120.45pt x 120.45pt>
 File: ../figures/234/04distance-to-rotationaxis.pdf Graphic file (type pdf)
@@ -3601,8 +3602,8 @@ Overfull \hbox (7.63478pt too wide) in paragraph at lines 160--160
 
 [139 <../figures/234/05newtons-law.pdf> <../figures/234/05magneticfield.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05magneticfield.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05magneticfield.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
 >] (../figures/234/05curve-partitioned.tex
 <../figures/234/05curve-partitioned.pdf, id=3311, 120.45pt x 71.09561pt>
 File: ../figures/234/05curve-partitioned.pdf Graphic file (type pdf)
@@ -3631,8 +3632,8 @@ Package pdftex.def Info: ../figures/234/05quartercircle.pdf used on input line
  [141 <../figures/234/05curve-and-tangent.pdf> <../figures/234/05quartercircle.
 pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05quartercircle.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05quartercircle.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
 >]
 Overfull \hbox (4.62497pt too wide) in paragraph at lines 287--287
 [][]$\OMS/cmsy/m/n/9 ^^O$[] 
@@ -3693,8 +3694,8 @@ nput line 457.
  [143 <../figures/234/05work.pdf> <../figures/234/05integral-of-vectorfield.pdf
 
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05integral-of-vectorfield.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05integral-of-vectorfield.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
 >]
 <../figures/234/05piecewise-defined-curve.pdf, id=3404, 332.99391pt x 142.2025p
 t>
@@ -3748,8 +3749,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ound-circlearc.pdf>] [147 <../figures/234/05there-two-ways.pdf> <../figures/234
 /05there-and-back.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05there-and-back.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05there-and-back.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
 >] [148]
 Overfull \hbox (3.23613pt too wide) in paragraph at lines 795--799
 \OT1/LinuxLibertineT-TLF/m/n/10 The point $\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 =
@@ -4025,8 +4026,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [161 <../figures/234/05patch-lines-of-constant-u-v.pdf> <../figures/234/05graph
 -patch.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05graph-patch.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05graph-patch.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >]
 <../figures/234/Mobius_with_patches.pdf, id=3767, 775.90689pt x 536.64467pt>
 File: ../figures/234/Mobius_with_patches.pdf Graphic file (type pdf)
@@ -4060,8 +4061,8 @@ Package pdftex.def Info: ../figures/234/05area-element.pdf used on input line 5
 pdf>] [163 <../figures/234/05normal-and-surface-element.pdf> <../figures/234/05
 area-element.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/05area-element.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/05area-element.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
 Overfull \hbox (1.3051pt too wide) in paragraph at lines 1711--1713
 [] []\OT1/LinuxLibertineT-TLF/m/it/10 Definition.[][] Let $[]$ be a sur-face pa
@@ -4293,8 +4294,8 @@ Package pdftex.def Info: ../figures/234/03answers003.pdf used on input line 131
 (pdftex.def)             Requested size: 80.29979pt x 166.04993pt.
  [186 <../figures/234/03answers001.pdf> <../figures/234/03answers002.pdf
 
-pdfTeX warning: pdflatex.exe (file ../figures/234/03answers002.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ../figures/234/03answers002.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
 > <../figures/234/03answers003.pdf>]
 <../figures/234/03answers004.pdf, id=4072, 215.86215pt x 81.5045pt>
 File: ../figures/234/03answers004.pdf Graphic file (type pdf)
@@ -4359,76 +4360,83 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 12938 strings out of 493054
- 221752 string characters out of 6138320
- 365147 words of memory out of 5000000
- 14282 multiletter control sequences out of 15000+600000
- 94957 words of font info for 183 fonts, out of 8000000 for 9000
+ 12923 strings out of 493117
+ 222550 string characters out of 6135433
+ 363314 words of memory out of 5000000
+ 14205 multiletter control sequences out of 15000+600000
+ 95185 words of font info for 183 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 40i,30n,77p,2728b,666s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_7f4ce4.enc}{c:/tex
-live/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}{c:/texlive/2015
-/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{c:/texlive/2015/texmf-di
-st/fonts/enc/dvips/libertine/lbtn_afusau.enc}{c:/texlive/2015/texmf-dist/fonts/
-enc/dvips/libertine/lbtn_4jqvtd.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips
-/libertine/lbtn_c6xmqr.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/libertin
-e/lbtn_xogrpz.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_za
-jy4r.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}
-{c:/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{c:/texli
-ve/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}<c:/texlive/2015/t
-exmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2015/texmf-
-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2015/texmf-dist
-/fonts/type1/public/libertine/LinBiolinumTBO.pfb><c:/texlive/2015/texmf-dist/fo
-nts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2015/texmf-dist/fonts/
-type1/public/libertine/LinLibertineMT.pfb><c:/texlive/2015/texmf-dist/fonts/typ
-e1/public/libertine/LinLibertineMTO.pfb><c:/texlive/2015/texmf-dist/fonts/type1
-/public/libertine/LinLibertineT.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
-lic/libertine/LinLibertineTB.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
-/libertine/LinLibertineTBI.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/l
-ibertine/LinLibertineTI.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cme
-xtra/cmbsy6.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra
-/cmbsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmb
-sy9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cmextra/cmex8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cmextra/cmex9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5
-.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cmextra/cmmib6.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cmextra/cmmib7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cmextra/cmmib8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cmextra/cmmib9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5
-.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/euler/eusm7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/latxfont/line10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/hoekwater/m
-anfnt-font/manfnt.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
-<c:/texlive/2015/texmf-dist/fonts/type1/public/esvect/vect6.pfb><c:/texlive/201
-5/texmf-dist/fonts/type1/public/esvect/vect7.pfb><c:/texlive/2015/texmf-dist/fo
-nts/type1/public/esvect/vect8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/publi
-c/esvect/vect9.pfb>
-Output written on free234.pdf (201 pages, 7707702 bytes).
+ 40i,30n,77p,2722b,666s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_7f4ce4.enc
+}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc}
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{
+/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_afusau.enc}{/
+usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_4jqvtd.enc}{/u
+sr/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/us
+r/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr
+/local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}{/usr/
+local/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{/usr/l
+ocal/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/lo
+cal/texlive/2014/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinumTBO.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinBiolinum
+TI.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/LinLibe
+rtineMT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libertine/Li
+nLibertineMTO.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/libert
+ine/LinLibertineT.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/li
+bertine/LinLibertineTB.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/libertine/LinLibertineTBI.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/euler/eusm10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/euler/eusm7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/amsfonts/latxfont/line10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/hoekwater/manfnt/manfnt.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/esvect/vect10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/esvect/vect6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/esvect/vect7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/esvec
+t/vect8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/esvect/vect9
+.pfb>
+Output written on free234.pdf (201 pages, 7711660 bytes).
 PDF statistics:
  4679 PDF objects out of 5155 (max. 8388607)
  3949 compressed objects within 40 object streams
