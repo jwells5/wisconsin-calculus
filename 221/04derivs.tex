@@ -901,31 +901,9 @@ w'= \frac{pu^{p-1}\cdot u'}{qw^{q-1}}=
 \]
 which is the Power Rule for $n=p/q$.
 
-
-
-
-
-
-
-
 This proof is flawed because we did not show that $w(x) = u(x)^{p/q}$ is
 differentiable:  we only showed what the derivative should be,
 \textit{if it exists. }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \subsection{Derivative of $x^n$ for integer $n$} 
   % This is beyond pointless to include here!!!
@@ -939,17 +917,6 @@ f'(x)
 \]
 We already knew this of course.
 
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Example -- differentiate a polynomial} 
 Using the Differentiation Rules we can easily differentiate any polynomial and
 hence any rational function.  For example, using the Sum Rule, the Power Rule,
@@ -961,9 +928,6 @@ is
 \[
 f'(x)=8x^3-3x^2.
 \]
-
-
-
 
 \subsection{Example -- differentiate a rational function} 
 By the Quotient Rule the derivative of the function
@@ -979,9 +943,6 @@ By comparing this example with the previous one, it seems to be the case that
 polynomials simplify when we differentiate them, while rational
 functions become more complicated.
 
-
-
-
 \subsection{Derivative of the square root} 
 The derivative of $f(x)=\sqrt{x}=x^{1/2}$ is
 \[
@@ -992,13 +953,6 @@ f'(x)
 \]
 where we used the Power Rule with $n=1/2$ and $u(x)=x$.
 
-
-
-
-
-
-
-
 \section{Problems} 
 \problemfont 
 \begin{multicols}{2}\setlength{\parindent}{0pt}
@@ -1008,23 +962,10 @@ where we used the Power Rule with $n=1/2$ and $u(x)=x$.
 Are your answers the same?
 
 
-
-
-
-
-
-
 \problem  Let $f(x)=(1+x^2)^4$. Find $f'(x)$ in two ways, first by 
 expanding to get an expression for $f(x)$ as a polynomial in $x$ and
 then differentiating, and then by using the Power Rule.  Are the
 answers the same?
-
-
-
-
-
-
-
 
 \problem Prove the statement in \S\ref{par:derivative-of-constant-multiple}, that $(cu)' = c(u')$ follows from the Product Rule. 
 
@@ -1316,7 +1257,9 @@ For higher derivatives one can write
 Be careful to distinguish the second derivative from the square of the first
 derivative. Usually
 \[
-\frac{d^2y}{dx^2}\ne\left(\frac{dy}{dx}\right)^2\text{\large\bfseries!!!!}
+\carefulnow\quad \carefulnow\quad \carefulnow\qquad 
+\frac{d^2y}{dx^2} \ne \left(\frac{dy}{dx}\right)^2 
+  \qquad\carefulnow\quad\carefulnow\quad \carefulnow
 \]
 
 
@@ -1802,8 +1745,8 @@ then produces the shaded triangular area.  The picture above the circle is a
 magnification of the shaded triangle.  The hypotenuse of the triangle is not
 straight since it is part of the unit circle, but the smaller you make
 $\Delta\theta$ the closer it will be to a straight line segment.  The lengths of
-the sides of the triangle are $\Delta\theta$, the change in $\sin\theta$ and the
-change of $\cos \theta$.  Since it is a right triangle you can express
+the sides of the triangle are $\Delta\theta$, the change in $\sin\theta$, and the
+change in $\cos \theta$.  Since it is a right triangle you can express
 \[
 \frac{\Delta\sin \theta} {\Delta\theta} \text{ and }
 \frac{\Delta\cos\theta} {\Delta\theta}
@@ -1814,7 +1757,7 @@ leads to our formulas for the derivatives of $\sin\theta$ and $\cos\theta$.
 
 
 
-Make sure you explain where the ``$-$'' in the derivative of $\cos\theta$ comes from.
+Make sure you explain where the minus-sign in the derivative of $\cos\theta$ comes from.
 
 
 
@@ -2405,38 +2348,75 @@ then the volume is growing at a rate of
 
 
 \subsection{The Chain Rule and composing more than two functions} 
+\label{sec:chain-rule-several-functions}
   % !!! Issue: This is an extremely opaque way of explaining iterated use of the chain rule.
-Often we have to apply the Chain Rule more than once to compute a
-derivative. Thus if $y=f(u)$, $u=g(v)$, and $v=h(x)$ we have
+  % expanded the example in August 2016.
+Often we have to apply the Chain Rule more than once to compute a derivative.  If the quantity $y$ depends on $u$, and $u$ depends on $v$, and $v$ in turn depends on $x$, then a change in $x$ will ultimately cause a change in $y$.  The rate at which $y$ changes as a consequence off the change in $x$ is given by the chain rule, which looks easiest in Leibniz' notation:%
+\marginpar{$x\to v\to u\to y$}
 \[
 \frac{dy}{dx}=\frac{dy}{du}\cdot \frac{du}{dv}\cdot \frac{dv}{dx}.
 \]
-In functional notation this is
+To write this in function notation we have to give names to the functions that describe how $y$ depends on $u$, etc.  Let's call these functions $f$, $g$, and $h$, i.e.~$y=f(u)$, $u=g(v)$, and $v=h(x)$.  Then in this notation
+\[
+y = f\Bigl(g\bigl(h(x)\bigr)\Bigr),
+\]
+and the chain rule says
 \[
 (f \circ g\circ h)'(x)=f'(g(h(x))\cdot g'(h(x))\cdot h'(x).
 \]
-Note that each of the three derivatives on the right is evaluated
-at a different point.  Thus if $b=h(a)$ and $c=g(b)$ the Chain
-Rule is
+Note that each of the three derivatives on the right is evaluated at a different point: $h'$ has to be evaluated at $x$, $g'$ has to evaluated at $h(x)$, and $f'$ must be evaluated at $g(h(x))$.  In Leibniz' notation we can include this information as follows: suppose that $b=h(a)$ and $c=g(b)$.  Then the Chain Rule says
 \[
 \left.\frac{dy}{dx}\right|_{x=a}=
 \left.\frac{dy}{du}\right|_{u=c}\cdot
 \left.\frac{du}{dv}\right|_{v=b}\cdot
 \left.\frac{dv}{dx}\right|_{x=a}.
 \]
-For example, if $\DS y=\frac1{1+\sqrt{9+x^2}}$, then $y=1/(1+u)$
-where $u=1+\sqrt{v}$ and $v=9+x^2$ so
+\subsection{Example--the three step chain rule using Leibniz' notation}
+\label{ex:three-step-chain-rule}
+Compute the derivative of 
 \[
-\frac{dy}{dx}=\frac{dy}{du}\cdot \frac{du}{dv}\cdot \frac{dv}{dx}
-=-\frac1{(1+u)^2}\cdot\frac1{2\sqrt{v}}\cdot 2x.
+ y=\frac1{1+\sqrt{9+x^2}}
 \]
-so
+at $x=4$.
+
+Here $y$ is a somewhat complicated function of $x$: it involves dividing, taking square roots, and squares.  We can break the dependence of $y$ on $x$ into a chain of three simpler functions by introducing two new variables $u$ and $v$:
+\[
+y=1/u, \qquad
+u=1+\sqrt{v}, \qquad
+\text{ and }v=9+x^2.
+\]
+With these variables $x=4$ implies $v = 9 + 4^2 = 25$ and $u=1+\sqrt{25} = 6$.
+
+The derivatives of each of these three functions are
+\begin{align*}
+\frac{dy}{du} &= \frac{d\bigl(1/u\bigr)}{du} = -\frac{1}{u^2}, \\
+\frac{du}{dv} &= \frac{d \bigl(1+\sqrt{v}\bigr)}{dv} = \frac{1}{2\sqrt{v}},  \\
+\frac{dv}{dx} &= \frac{d\bigl(9+x^2\bigr)}{dx} = 2x.
+\end{align*}
+The chain rule then tells us that
+\begin{equation}
+\frac{dy}{dx}=\frac{dy}{du}\cdot \frac{du}{dv}\cdot \frac{dv}{dx}
+=-\frac{1}{u^2}\cdot\frac1{2\sqrt{v}}\cdot 2x.
+\label{eq:three-step-chainrule-example}
+\end{equation}
+We can rewrite this by remembering how $u$ and $v$ depend on $x$, which leads to
+\[
+\frac{dy} {dx}
+= -\frac{1}{\bigl(1+\sqrt{v}\bigr)^2}\cdot\frac1{2\sqrt{v}}\cdot 2x
+= -\frac{1}{\bigl(1+\sqrt{9+x^2}\bigr)^2}\cdot\frac1{2\sqrt{9+x^2}}\cdot 2x.
+\]
+In this example we were asked to find $dy/dx$ when $x=4$. We could directly substitute $x=4$ in the last equation above, or we could go back to \eqref{eq:three-step-chainrule-example}, compute
+\[
+u=9+x^2 = 25, \qquad v=1+\sqrt{u}=1+5=6
+\]
+and thus
 \[
 \left.\frac{dy}{dx}\right|_{x=4}=
 \left.\frac{dy}{du}\right|_{u=6}\cdot
 \left.\frac{du}{dv}\right|_{v=25}\cdot
-\left.\frac{dv}{dx}\right|_{x=4} = - \frac17\cdot\frac1{10}\cdot
-8.
+\left.\frac{dv}{dx}\right|_{x=4}
+= - \frac1{6^2}\cdot\frac1{2\sqrt{25}}\cdot 8
+= -\frac{1} {45}.
 \]
 
 
@@ -2845,9 +2825,6 @@ we get $S=2$.  From (c) we know $V'(t)=3S(t)^2 S'(t)$, so $2 =
 \end{multicols}
 \noproblemfont
 
-
-
-
 \section{Implicit differentiation} 
 \label{sec:implicit-differentiation}
   % !!! Issue: This section needs to be almost completely rewritten.
@@ -2862,17 +2839,11 @@ We call this equation the \emph{defining equation} for the function
 $y=f(x)$.  To find $y=f(x)$ for a given value of $x$ you must solve
 the defining equation $F(x, y)=0$ for $y$.
 
-
-
-
 Here is a recipe for computing the derivative of an implicitly defined
 function.
 \begin{enumerate}
 \item Differentiate the equation $F(x, y)=0$; you may need the chain
   rule to deal with the occurrences of $y$ in $F(x, y)$;
-
-
-
 
 \item You can rearrange the terms in the result of step 1 so as to get
   an equation of the form
@@ -2882,25 +2853,16 @@ function.
   where $G$ and $H$ are expressions containing $x$ and $y$ but not the
   derivative.
 
-
-
-
 \item Solve the equation in step 2 for ${dy}/{dx}$:
   \begin{equation}\label{eq:04implicitderivativefound}
     \frac{dy}{dx} = -\frac{H(x, y)}{G(x, y)}
   \end{equation}
-
-
-
 
 \item If you also have an explicit description of the function (i.e.\
   a formula expressing $y=f(x)$ in terms of $x$) then you can
   substitute $y=f(x)$ in the expression
   \eqref{eq:04implicitderivativefound} to get a formula for $dy/dx$ in
   terms of $x$ only.
-
-
-
 
   Often no explicit formula for $y$ is available and you can't take
   this last step.  In that case \eqref {eq:04implicitderivativefound}
@@ -3900,3 +3862,8 @@ when the edge is 5 mm?
 \end{multicols}
 \noproblemfont
 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "free221"
+%%% End:
