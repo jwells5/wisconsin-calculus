@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file '06circle3.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{145.93734131bp}%
+    \setlength{\unitlength}{145.93733597bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,12 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.69070739)%
-    \put(0,0){\includegraphics[width=\unitlength]{06circle3.pdf}}%
-    \put(0.38783084,0.5076665){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vF$}}}%
+  \begin{picture}(1,0.69070738)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{06circle3.pdf}}%
+    \put(0.38783083,0.5076665){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\va(t)$}}}%
     \put(0.0528446,0.43854436){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vv(t)$}}}%
     \put(0.58346616,0.42526813){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\omega t$}}}%
-    \put(0.9174192,0.43697815){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$R$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{06circle3.pdf}}%
+    \put(0.91741918,0.43697815){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$R$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{06circle3.pdf}}%
     \put(0.26430132,0.57324013){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$X$}}}%
   \end{picture}%
 \endgroup%
