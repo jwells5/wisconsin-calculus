@@ -595,7 +595,7 @@ We substitute this in \eqref{eq:ratio-Df-Ds}, and get
 \]
 Now let $\Delta t\to0$:  the quantity on the left becomes what is called the
 \emph{arc length derivative} of the function $f$ along the curve
-$vx(t)$, and which is commonly denoted by $\frac{df}{ds}$
+$\vx(t)$, and which is commonly denoted by $\frac{df}{ds}$
 In the quantity on the right we recognize the derivative of $f$ with respect
 to $t$ (time), which leads to
 \begin{equation}
@@ -753,15 +753,74 @@ curve.  In a formula, it is defined to be
 
 \begin{multicols}{2}
 \problemfont
-\problem Let $\ell$ be the line given by
-\[
-  \vx(t) = \vek 1\\ 1\\ 0\tor+ t\vek-1\\2\\1\tor.
-\]
-\subprob Find the unit tangent vector, the curvature, and the tangent line to the
-line $\ell$ at the point where $t=2$.
+\problem    
+\subprob Find a parametric equation for the line $\ell$ through the points $A (3,0,1)$ and $B (2,1,2)$.
 
-\subprob Find the unit tangent vector, the curvature, and the tangent line to the
-line $\ell$ at any point on the line.
+\subprob Where does $\ell$ intersect the coordinate planes?
+\answer
+(a) $\vx(t) = \vek 3\\ 0\\1 \tor + t \vek -1\\ 1\\1 \tor = \vek 3-t\\ t\\ 1+t \tor$.
+      
+(b) Intersection with $xy$ plane when $z=0$, i.e.~when $t=-1$, at $(4, -1, 0)$. Intersection with $xz$ plane when $y=0$, when $t=0$, at $(3,0,1)$ (i.e.~at $A$). Intersection with $yz$ plane when $x=0$, when $t=3$, at $(0, 3, 4)$.
+\endanswer
+
+\problem
+\subprob Find a parametric equation for the line that contains the two points $A =(2,3,1)$ and $B =(3, 2, 3 )$. 
+
+\subprob The point $C = (c_1, 1, c_3)$ is on this line. What is $C$?
+\answer (a) $\vec{x}(t)=\vek 2 \\ 3 \\ 1 \tor+t\vek 1 \\ -1 \\ 2 \tor$
+
+(b) $C$ is the point $(4, 1, 5)$
+\endanswer
+\problem  Let $A$ be the point $(1,0)$ in the plane, and let $X(t)$ be the point $(t, t^2)$.
+
+\subprob Which curve is traced out by the point $X(t)$ as you vary the parameter $t$?
+
+\subprob Find a parametric representation for the line $\ell$ through $A$ and $X(t)$. (since the point $X(t)$ depends on $t$,
+    you will get a different line for each choice of $t$.)
+
+\subprob Let $t$ be any number. Where does the line $\ell$ intersect the $y$-axis?
+\answer
+(a) the parabola, $y=x^2$
+
+(b) The equation that we know for a parametrization of a line, $\vx=\va+t\vv$, contains the variables $\vx$ and $t$. We can't use those variables because they were already used in the problem. So we change them to, say, $\vy$ and $s$: we get 
+\[ 
+  \vy = \va + s\overrightarrow{AX} 
+  =\vek 1\\ 0 \tor + s \vek t-1 \\ t^2 \tor =\vek 1+s(t-1) \\ st^2\tor. 
+\]
+\includegraphics[width=0.7\textwidth]{01vectorproblem3.png}
+
+(c) What is given, and what is unknown? Here $t$ is given. Varying $s$ will slide the point $Y$ with position vector $\vy$ along the line $\ell$. So we have to find an $s$ for which $Y$ is on the $y$-axis, and, since $t$ is given, our answer will depend on $t$. The point $Y$ is on the $y$-axis if its $x$-coordinate vanishes. So, we solve
+\[ 
+  1+s(t-1)=0 \implies s = \frac{1}{1-t}.
+\] 
+Hence the intersection point is $Y$ with the above value of $s$
+\[ \vy = \vek 0\\ t^2/(1-t) \tor. \]
+\endanswer
+
+\problem
+Consider the plane curve given by $\vx(t) = \vek t^2 \\ t^3 \tor$.
+
+\subprob Find a parametric representation of the tangent line to the curve at the point with position vector $\vx(1)$.
+  
+\subprob Find a parametric representation of the tangent line to the curve at the point with position vector $\vx(a)$ for any value of the constant $a$.
+\answer 
+Chapter 2, section 3, tells you how to find the parametrization of a line.  Read that first before reading the rest of this answer.  To parametrize a line, you need one point on the line, and a vector in the direction of the line.
+
+(a) The velocity vector is $\vx'(t) = \vek 2t \\ 3t^2 \tor$, so the velocity vector at $t=1$ is $\vx'(1) = \vek2\\3 \tor$. 
+This vector is a tangent vector to the curve at the point $\vx(1) = \vek 1 \\1 \tor$. So the tangent
+at this point is the line through $\vx(1)$ with direction $\vx'(1)$: 
+\[ \vy(t) = \vek 1\\1\tor + t \vek 2\\3\tor\]
+The $t$ in this parametrization is not the same as the $t$ in the parametrization $\vx(t)$ for the curve.
+To avoid confusion, one sometimes chooses a different letter, for instance, 
+\[ \vy(s) = \vek 1\\1\tor + s \vek 2\\3\tor \]
+or, use a greek letter, 
+\[ \vy(\alpha) = \vek 1\\1\tor + \alpha \vek 2\\3\tor. \]
+ 
+(b) The velocity vector is still $\vx'(t) = \vek 2t \\ 3t^2 \tor$, so the velocity vector at $t=a$ is $\vx'(a) = \vek 2a\\3a^2 \tor$.
+This vector is a tangent vector to the curve at the point $\vx(a) = \vek a^2 \\a^3 \tor$.
+So the tangent at this point is the line through $\vx(a)$ with direction $\vx'(a)$:
+\[ \vy(t) = \vek a^2\\a^3\tor + t \vek 2a\\3a^2\tor \]
+\endanswer
 
 \problem What sign does $\omega$ have in 
 Figure~\ref{fig:circular-motion-the-force}~?  How would the figure change if we
@@ -856,6 +915,38 @@ $t=1$.  Where does this point intersect the $xy$-plane?
 
 \subprob For any given $t$ find the tangent line to the curve 
 at the point $X(t)$, and find where this curve intersects the $xy$-plane.  
+
+\answer
+
+At any point the velocity vector is $\vx' (t)=\vek 1\\2t\\3t^2\tor$.
+In particular when $t=1$ we get 
+\[
+  \vx(t)=\vek 1\\1\\1\tor, \qquad     \vx'(t)=\vek1\\ 2\\ 3\tor.
+\]
+Therefore the tangent at this point is given by 
+\[
+  \vx(t) \vek 1\\1\\1\tor + t \vek1\\ 2\\ 3\tor.
+\]
+This notation is however problematic, because it uses $\vx$ and $t$, which already have a meaning: $\vx$ is the vector function describing the curve, and $t$ tells us which point $X(t)$ we have in mind.  So we must choose different letters that have not been used yet, like $\vy$ and $s$.   A correct answer is then
+\[
+  \vy(s) = \vek 1\\1\\1\tor + s \vek1\\ 2\\ 3\tor.
+\]
+That solves part (a).
+
+Part (b) has a similar solution, except now the value of $t$ is not restricted to be $t=1$. 
+The parametric form of the tangent to the curve at the point $X(t)$ is given by
+\[
+  \vy(s) = \vek t\\t^2\\t^3\tor + s \vek 1\\ 2t\\ 3t^2\tor.
+\]
+The result depends on two parameters, $s$ and $t$.
+The parameter $t$ selects a point $X(t)$ on the curve;  given $t$, the parameter $s$ selects a point on the tangent to the curve at the point $X(t)$.
+
+Intersections with the $xy$-plane are found by setting the third coordinate of $\vy$ equal to zero.  You get $s=-t/3$, and thus 
+\[
+  \vy=\vek \tfrac23 t \\ \tfrac13 t^2 \\ 0 \tor
+\]
+
+\endanswer
 
 \problem Compute the length of one full turn of the helix by taking the
 parametrization given in \eqref{eq:helix-def} and computing the length of the
