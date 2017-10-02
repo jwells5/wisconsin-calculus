@@ -67,13 +67,7 @@ you find $3\times5\times\cos\theta = -12$, so $\cos\theta = - \frac{12}{15}=
 -0.8$, which implies $\theta = \arccos (-0.8) \approx 2.498\dots$ radians, or
 $\theta\approx 143.13\dots$ degrees.
 
-This turns out to be only half the answer:  we have forgotten that the equation
-$\cos\theta = -0.8$ has many more solutions than just $\arccos (-0.8)$.  One
-other solution is $-\arccos(-0.8)$.  This gives us two vectors $\vb$ with
-$\|\vb\|=5$ and $\|\vb\|=5$ and $\va\dpp\vb = -12$.
-
-A different approach goes like this: you could assume $\va=3\ves1$, which has
-length 3, and $\vb=\tvek b_1\\b_2\ttor$.  The condition that $\vb$ have length 5
+A different approach goes like this.  Suppose $\va$ is parallel to the $x_1$ axis; since $\va$ has length $3$, we can choose $\va=3\ves1$.  Now we look for a matching vector $\vb=\tvek b_1\\b_2\ttor$.  The condition that $\vb$ must have length 5
 then says $b_1^2 + b_2^2 = 5^2 = 25$, while the dot-product is $\va\dpp\vb =
 a_1b_1+a_2b_2 = 3b_1$.  Since the dot-product must be $-12$ we find
 $b_1=-\frac{12}{3}=-4$.  Using the length of $\vb$ leads to
@@ -89,7 +83,7 @@ No.  The inner product of two vectors is $\va\dpp\vb = \|\va\|\,\|\vb\|
 \cos\theta$, and therefore it can never be larger than $\|\va\|\,\|\vb\|$.
 \bigskip
 
-\item[{\bfseries(I12.13a)}]
+\item[{\bfseries(I12.14a)}]
 
 True:
 \begin{align*}
@@ -99,7 +93,7 @@ True:
 \end{align*}
 \bigskip
 
-\item[{\bfseries(I12.13b)}]
+\item[{\bfseries(I12.14b)}]
 
 True:  This is Pythagoras' theorem.  Here is an algebraic derivation:
 \begin{align*}
@@ -111,7 +105,7 @@ True:  This is Pythagoras' theorem.  Here is an algebraic derivation:
 \end{align*}
 \bigskip
 
-\item[{\bfseries(I12.13c)}]
+\item[{\bfseries(I12.14c)}]
 
 Not so.
 The same computation as for the previous problem shows
@@ -129,31 +123,31 @@ Therefore
 only is true if $\vb=\vvv0$.
 \bigskip
 
-\item[{\bfseries(I12.15a)}]
+\item[{\bfseries(I12.16a)}]
 
 \(  (\va+\vb)\cp(\va+\vb) =\vvv0 \)
 \bigskip
 
-\item[{\bfseries(I12.15b)}]
+\item[{\bfseries(I12.16b)}]
 
 \(  (\va+\vb+\vc)\cp(\va+\vb+\vc) =\vvv0 \)
 \bigskip
 
-\item[{\bfseries(I12.15c)}]
+\item[{\bfseries(I12.16c)}]
 
 \(
     (\va+\vb)\cp(\va-\vb) = 2\va\cp\vb.
 \)
 \bigskip
 
-\item[{\bfseries(I12.16a)}]
+\item[{\bfseries(I12.17a)}]
 
 $\va\dpp\vc=\va\dpp(\va\cp\vb) =0$, but for the two given vectors in the problem
 $\va\dpp\vc = -1\neq0$, so there cannot be a vector $\vb$ with $\va\cp\vb=\vc$
 as $\vc$ is not perpendicular to $\va$.
 \bigskip
 
-\item[{\bfseries(I12.16b)}]
+\item[{\bfseries(I12.17b)}]
 
 In this case $\va\perp\vc$, so the argument from the first part of this problem
 doesn't rule out that there might be a solution.  So let's try $\vb =
@@ -169,7 +163,92 @@ left.  We can choose an arbitrary $b_3$ and set $b_1 = -3-2b_3$, e.g.~$b_3=0$
 works, provided we choose $b_1 = -3$.
 \bigskip
 
-\item[{\bfseries(II17.7d)}]
+\item[{\bfseries(II17.1b)}]
+
+(a) $\vx(t) = \vek 3\\ 0\\1 \tor + t \vek -1\\ 1\\1 \tor = \vek 3-t\\ t\\ 1+t \tor$.
+
+(b) Intersection with $xy$ plane when $z=0$, i.e.~when $t=-1$, at $(4, -1, 0)$. Intersection with $xz$ plane when $y=0$, when $t=0$, at $(3,0,1)$ (i.e.~at $A$). Intersection with $yz$ plane when $x=0$, when $t=3$, at $(0, 3, 4)$.
+\bigskip
+
+\item[{\bfseries(II17.2b)}]
+ (a) $\vec{x}(t)=\vek 2 \\ 3 \\ 1 \tor+t\vek 1 \\ -1 \\ 2 \tor$
+
+(b) $C$ is the point $(4, 1, 5)$
+\bigskip
+
+\item[{\bfseries(II17.3c)}]
+
+(a) the parabola, $y=x^2$
+
+(b) The equation that we know for a parametrization of a line, $\vx=\va+t\vv$, contains the variables $\vx$ and $t$. We can't use those variables because they were already used in the problem. So we change them to, say, $\vy$ and $s$: we get
+\[
+  \vy = \va + s\overrightarrow{AX}
+  =\vek 1\\ 0 \tor + s \vek t-1 \\ t^2 \tor =\vek 1+s(t-1) \\ st^2\tor.
+\]
+\includegraphics[width=0.7\textwidth]{01vectorproblem3.png}
+
+(c) What is given, and what is unknown? Here $t$ is given. Varying $s$ will slide the point $Y$ with position vector $\vy$ along the line $\ell$. So we have to find an $s$ for which $Y$ is on the $y$-axis, and, since $t$ is given, our answer will depend on $t$. The point $Y$ is on the $y$-axis if its $x$-coordinate vanishes. So, we solve
+\[
+  1+s(t-1)=0 \implies s = \frac{1}{1-t}.
+\]
+Hence the intersection point is $Y$ with the above value of $s$
+\[ \vy = \vek 0\\ t^2/(1-t) \tor. \]
+\bigskip
+
+\item[{\bfseries(II17.4b)}]
+
+Chapter 2, section 3, tells you how to find the parametrization of a line.  Read that first before reading the rest of this answer.  To parametrize a line, you need one point on the line, and a vector in the direction of the line.
+
+(a) The velocity vector is $\vx'(t) = \vek 2t \\ 3t^2 \tor$, so the velocity vector at $t=1$ is $\vx'(1) = \vek2\\3 \tor$.
+This vector is a tangent vector to the curve at the point $\vx(1) = \vek 1 \\1 \tor$. So the tangent
+at this point is the line through $\vx(1)$ with direction $\vx'(1)$:
+\[ \vy(t) = \vek 1\\1\tor + t \vek 2\\3\tor\]
+The $t$ in this parametrization is not the same as the $t$ in the parametrization $\vx(t)$ for the curve.
+To avoid confusion, one sometimes chooses a different letter, for instance,
+\[ \vy(s) = \vek 1\\1\tor + s \vek 2\\3\tor \]
+or, use a greek letter,
+\[ \vy(\alpha) = \vek 1\\1\tor + \alpha \vek 2\\3\tor. \]
+
+(b) The velocity vector is still $\vx'(t) = \vek 2t \\ 3t^2 \tor$, so the velocity vector at $t=a$ is $\vx'(a) = \vek 2a\\3a^2 \tor$.
+This vector is a tangent vector to the curve at the point $\vx(a) = \vek a^2 \\a^3 \tor$.
+So the tangent at this point is the line through $\vx(a)$ with direction $\vx'(a)$:
+\[ \vy(t) = \vek a^2\\a^3\tor + t \vek 2a\\3a^2\tor \]
+\bigskip
+
+\item[{\bfseries(II17.7b)}]
+
+
+At any point the velocity vector is $\vx' (t)=\vek 1\\2t\\3t^2\tor$.
+In particular when $t=1$ we get
+\[
+  \vx(t)=\vek 1\\1\\1\tor, \qquad     \vx'(t)=\vek1\\ 2\\ 3\tor.
+\]
+Therefore the tangent at this point is given by
+\[
+  \vx(t) \vek 1\\1\\1\tor + t \vek1\\ 2\\ 3\tor.
+\]
+This notation is however problematic, because it uses $\vx$ and $t$, which already have a meaning: $\vx$ is the vector function describing the curve, and $t$ tells us which point $X(t)$ we have in mind.  So we must choose different letters that have not been used yet, like $\vy$ and $s$.   A correct answer is then
+\[
+  \vy(s) = \vek 1\\1\\1\tor + s \vek1\\ 2\\ 3\tor.
+\]
+That solves part (a).
+
+Part (b) has a similar solution, except now the value of $t$ is not restricted to be $t=1$.
+The parametric form of the tangent to the curve at the point $X(t)$ is given by
+\[
+  \vy(s) = \vek t\\t^2\\t^3\tor + s \vek 1\\ 2t\\ 3t^2\tor.
+\]
+The result depends on two parameters, $s$ and $t$.
+The parameter $t$ selects a point $X(t)$ on the curve;  given $t$, the parameter $s$ selects a point on the tangent to the curve at the point $X(t)$.
+
+Intersections with the $xy$-plane are found by setting the third coordinate of $\vy$ equal to zero.  You get $s=-t/3$, and thus
+\[
+  \vy=\vek \tfrac23 t \\ \tfrac13 t^2 \\ 0 \tor
+\]
+
+\bigskip
+
+\item[{\bfseries(II17.10d)}]
  $\kappa(x) = \dfrac{e^x}
 {\bigl(1+e^{2x}\bigr)^{3/2}}$.
 
@@ -179,7 +258,7 @@ $\kappa'(t) = \dfrac{e^t} {\bigl(1+e^{2t}\bigr)^{5/2}}
 curvature) occurs when $x=-\frac{1} {2}\ln{2}$.
 \bigskip
 
-\item[{\bfseries(II17.8a)}]
+\item[{\bfseries(II17.11a)}]
 
 To show that $\vm\dpp\vx(t)$ is constant we differentiate it with respect to time:
 \[

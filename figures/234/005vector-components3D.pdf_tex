@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.48.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file '005vector-components3D.pdf' (pdf, eps, ps)
 %%
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{294.90546875bp}%
+    \setlength{\unitlength}{294.90547943bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,15 +48,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.40769469)%
-    \put(0,0){\includegraphics[width=\unitlength]{005vector-components3D.pdf}}%
-    \put(0.33784599,0.03132822){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_2\ves2$}}}%
-    \put(0.14661726,0.02362945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_1\ves1$}}}%
-    \put(0.4355044,0.18324147){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_3\ves3$}}}%
-    \put(0.16510053,0.12891047){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves2$}}}%
-    \put(0.04487075,0.20494334){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves3$}}}%
-    \put(0.09369996,0.0855829){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves1$}}}%
-    \put(0.63569757,0.3376021){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.37172146\unitlength}\raggedright \parbox{2in}{The vector $\DS\va=\vek a_1\\a_2\\a_3\tor$ is\\\\ $\DS\va=a_1\ves1+a_2\ves2+a_3\ves3$}\end{minipage}}}%
-    \put(0.13217111,0.33156174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vek a_1\\a_2\\a_3\tor$}}}%
+  \begin{picture}(1,0.4076947)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{005vector-components3D.pdf}}%
+    \put(0.33784598,0.03132824){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_2\ves2$}}}%
+    \put(0.14661726,0.02362947){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_1\ves1$}}}%
+    \put(0.43550439,0.18324149){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$a_3\ves3$}}}%
+    \put(0.16510053,0.12891049){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves2$}}}%
+    \put(0.04487075,0.20494336){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves3$}}}%
+    \put(0.09369995,0.08558291){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ves1$}}}%
+    \put(0.64381204,0.22673779){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ }}}%
+    \put(0.63569756,0.33760211){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.37172146\unitlength}\raggedright \parbox{2in}{The vector $\DS\va=\vek a_1\\a_2\\a_3\tor$ is\\\\ $\DS\va=a_1\ves1+a_2\ves2+a_3\ves3$}\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{005vector-components3D.pdf}}%
+    \put(0.13217111,0.33156175){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vek a_1\\a_2\\a_3\tor$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{005vector-components3D.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,5 +1,5 @@
-% Time-stamp: Thu Dec 26 04:16:01 2013
 % !TEX root =  free234.tex
+
 
 \chapter{Vector Geometry in Three dimensional space}
 
@@ -621,13 +621,13 @@ point on the plane that we happen to know.
 
 
 \section{Problems}  
-\begin{multicols}{2}
+%\begin{multicols}{2}
 \problemfont  
 \problem \subprob Simplify the following 
 \begin{align*}
-  \va &= \vek 1\\-2\\3 \tor + 3\vek 0 \\ 1 \\3 \tor \\
+  \va &= \vek 1\\-2\\3 \tor + 3\vek 0 \\ 1 \\3 \tor &
   \vb &=  12\vek 1 \\ 1/3\tor - 3\vek 4 \\ 1\tor \\
-  \vc &= (1+t)\vek 1 \\ 1-t\tor - t\vek 1 \\ -t\tor \\
+  \vc &= (1+t)\vek 1 \\ 1-t\tor - t\vek 1 \\ -t\tor &
   \vd &= t\vek1\\0\\0\tor + t^2\vek0\\-1\\2\tor-\vek0\\0\\1\tor
 \end{align*}
 \subprob Write the vectors from part \textbf{(a)} using Gibbs' notation, i.e.~write
@@ -729,6 +729,13 @@ $s=3$.  The angle between the vectors is acute is the dot-product is
 positive.  This happens when $3-s>0$, i.e.~when $s<3$.
 \endanswer
 
+
+\begin{figure}[t] 
+  \centering
+  \includegraphics[width=0.75\textwidth]{01problem-cube-planes-angles.pdf}  
+  \caption{Figure for problem \ref{prb:cube-planes-angles}}
+  \label{fig:cube-planes-angles}  
+\end{figure}
 \problem\label{prb:cube-planes-angles} Figure  
 \ref{fig:cube-planes-angles} shows a cube whose sides have length 1.
 
@@ -752,7 +759,6 @@ of the planes and compute the angle between these two vectors.)
 
 \problem \subprob Draw two vectors $\va$ and $\vb$ for which  
 $\va$ has length 3, $\vb$ has length $5$, and for which $\va\dpp\vb=-12$.
-How many solutions are there?%
 \answer  
 The problem is open-ended because it doesn't specify what ``draw'' means.
 
@@ -781,19 +787,26 @@ No.  The inner product of two vectors is $\va\dpp\vb = \|\va\|\,\|\vb\|
 \cos\theta$, and therefore it can never be larger than $\|\va\|\,\|\vb\|$.
 \endanswer
 
+\problem In the following figure you see a point $X$ on the upper half of the circle with radius 1 that is centered at the origin, as well as the two intersection points $A$ and $B$ of the circle with the $x$-axis.  
+\begin{center}
+  \includegraphics[width=144pt]{005Thales.pdf}
+\end{center}
+If $x$ is the $x$ coordinate of the point $X$, then what is its $y$ coordinate?  Find the components of the vectors $\tpv AX$ and $\tpv BX$.  Use the dot product to prove \textit{Thales' theorem}, i.e. show that $AXB$ is a right triangle. 
+
 \problem Compute %---Is the cross product associative?
-\[
-  \va = (\vi\cp\vj)\cp\vj \quad \text{ and }\quad 
-  \vb = \vi\cp(\vj\cp\vj).
-\]
+\begin{align*}
+  \va &= (\vi\cp\vj)\cp\vj \\
+  \text{and }\vb &= \vi\cp(\vj\cp\vj).
+\end{align*}
 What does your answer say about the associative property for the cross product?
 (See \S~\ref{sec:cross-product-algebraic-properties}.)
 
 What about
-\[
-  \vc = (\vi\cp\vj)\cp\vk \quad \text{ and }\quad 
-  \vd = \vi\cp(\vj\cp\vk)?
-\]
+\begin{align*}
+  \vc &= (\vi\cp\vj)\cp\vk  \\
+  \text{and }\vd &= \vi\cp(\vj\cp\vk)?
+\end{align*}
+
 
 \problem Which of the following vector equations are true for any pair  
 of vectors $\va$ and $\vb$?  Either give a proof (using the algebraic
@@ -861,21 +874,7 @@ only is true if $\vb=\vvv0$.
 %%
 %%\subprob How would you get a similar formula for $y$?  Or $z$?
 
-\noproblemfont
-\end{multicols}
 
-\begin{figure}[t] 
-  \centering
-  \includegraphics[width=0.75\textwidth]{01problem-cube-planes-angles.pdf}  
-  \caption{Figure for problem \ref{prb:cube-planes-angles}}
-  \label{fig:cube-planes-angles}  
-\end{figure}
-%%  TO DO:
-%%  Include a story about a salt crystal NaClNaCl...etc.
-%%  Do angles between planes show up in spectroscopy?
-
-\begin{multicols}{2}
-\problemfont
 
 \problem True or False:  
 
@@ -959,7 +958,7 @@ product, and the algebraic properties from
 \S~\ref{sec:dotproduct-algebraic-properties}.
 
 \noproblemfont
-\end{multicols}
+%\end{multicols}
 
 
 % vim: fdc=3 columns=90 fdm=expr
