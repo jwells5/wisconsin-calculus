@@ -792,20 +792,31 @@ No.  The inner product of two vectors is $\va\dpp\vb = \|\va\|\,\|\vb\|
   \includegraphics[width=144pt]{005Thales.pdf}
 \end{center}
 If $x$ is the $x$ coordinate of the point $X$, then what is its $y$ coordinate?  Find the components of the vectors $\tpv AX$ and $\tpv BX$.  Use the dot product to prove \textit{Thales' theorem}, i.e. show that $AXB$ is a right triangle. 
+\answer
+$X$ has coordinates $(x, \sqrt{1-x^2})$; 
+${\tpv AX} = \vek 1+x \\ \sqrt{1-x^2} \tor $; 
+${\tpv BX} = \vek x-1 \\ \sqrt{1-x^2}\tor$.
+
+$\tpv AX \dpp \tpv BX = (1+x)  (x-1) + \bigl(\sqrt{1-x^2}\bigr)^2 =x^2-1 + 1-x^2 = 0$.  
+
+So $\tpv AX$ and $\tpv BX$ are perpendicular.
+
+
+\endanswer
 
 \problem Compute %---Is the cross product associative?
-\begin{align*}
-  \va &= (\vi\cp\vj)\cp\vj \\
-  \text{and }\vb &= \vi\cp(\vj\cp\vj).
-\end{align*}
+\[
+  \va = (\vi\cp\vj)\cp\vj 
+  \text{ and }\vb = \vi\cp(\vj\cp\vj).
+\]
 What does your answer say about the associative property for the cross product?
 (See \S~\ref{sec:cross-product-algebraic-properties}.)
 
 What about
-\begin{align*}
-  \vc &= (\vi\cp\vj)\cp\vk  \\
-  \text{and }\vd &= \vi\cp(\vj\cp\vk)?
-\end{align*}
+\[
+  \vc = (\vi\cp\vj)\cp\vk  
+  \text{ and }\vd = \vi\cp(\vj\cp\vk)?
+\]
 
 
 \problem Which of the following vector equations are true for any pair  
@@ -822,8 +833,7 @@ True:
 \end{align*}
 \endanswer
 
-\subprob  If  $\va\perp\vb$ then\\[1ex] 
-\null\hfill$\|\va+\vb\|^2 = \|\va\|^2 + \|\vb\|^2$~?% 
+\subprob  If  $\va\perp\vb$ then $\|\va+\vb\|^2 = \|\va\|^2 + \|\vb\|^2$~?% 
 \answer  
 True:  This is Pythagoras' theorem.  Here is an algebraic derivation:
 \begin{align*}
@@ -835,8 +845,7 @@ True:  This is Pythagoras' theorem.  Here is an algebraic derivation:
 \end{align*}
 \endanswer
 
-\subprob If  $\va\perp\vb$ then\\[1ex] 
-\null\hfill$\|\va-\vb\|^2 = \|\va\|^2 - \|\vb\|^2$  ~?%
+\subprob If  $\va\perp\vb$ then $\|\va-\vb\|^2 = \|\va\|^2 - \|\vb\|^2$  ~?%
 \answer  
 Not so.
 The same computation as for the previous problem shows
