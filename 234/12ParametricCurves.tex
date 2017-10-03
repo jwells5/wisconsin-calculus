@@ -991,9 +991,7 @@ $\kappa'(t) = \dfrac{e^t} {\bigl(1+e^{2t}\bigr)^{5/2}}
 curvature) occurs when $x=-\frac{1} {2}\ln{2}$.
 \endanswer
 
-\problem
-\subprob
-A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ always satisfies $\vv(t) = \vm \times \vx(t)$.  Show that the quantity $\vm\cdot \vx(t)$ is constant.
+\problem A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ always satisfies $\vv(t) = \vm \times \vx(t)$.  Show that the quantity $\vm\cdot \vx(t)$ is constant.
 \answer
 To show that $\vm\dpp\vx(t)$ is constant we differentiate it with respect to time:
 \[
@@ -1001,16 +999,58 @@ To show that $\vm\dpp\vx(t)$ is constant we differentiate it with respect to tim
 \]
 because the cross product $\vm\cp\vx(t)$ is always perpendicular to the vector $\vm$.
 \endanswer
-\subprob 
-A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ and acceleration $\va(t)$ always satisfy $\va(t) = \vm \cp \vv(t)$.
+
+\problem A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant vector $\vm$ such that the velocity $\vv(t)$ and acceleration $\va(t)$ always satisfy $\va(t) = \vm \cp \vv(t)$.
 
 Show that the quantity $\|\vv(t)\|^2$ is constant.
 
 Then show that the angle between $\vm$ and $\vv(t)$ is constant (hint: look at the dot product $\vm\dpp\vv(t)$).
 
-\subprob
-A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant number $C$ such that the acceleration $\va(t)$ always satisfies $\va(t) = -C \vx(t)$.  Show that the quantity $\vx(t)\cp\vv(t)$ is constant (where $\vv(t)$ is by definition the velocity vector).
+\problem A vector function $\vx(t)$ describes the motion of a point in space.  It is known that there is a constant number $K$ such that the acceleration $\va(t)$ always satisfies $\va(t) = -K \vx(t)$.  Show that the quantity 
+\[
+  f(t) = \|\vv(t)\|^2 + K \|\vx(t)\|^2
+\]
+is constant (where $\vv(t)$ is by definition the velocity vector) by computing $f'(t)$.
+\answer
+The product rule for dot-products implies that
+\[
+  \frac{d \|\vv(t)\|^2}{dt} 
+  = \frac{d \vv(t)\dpp \vv(t)}{dt}
+  =2\vv(t) \dpp \va(t)
+\]
+and also
+\[
+  \frac{d \|\vx(t)\|^2}{dt} 
+  = \frac{d \vx(t)\dpp \vx(t)}{dt}
+  =2\vv(t) \dpp \vx(t).
+\]
+Therefore 
+\[
+  f'(t) = 2\vv(t) \dpp \va(t) + K 2\vv(t) \dpp \vx(t).
+\]
+Factor out the common factor $2\vv(t)$ in both terms here to get
+\[
+  f'(t) = 2\vv(t) \dpp \bigl(\va(t) + K\vx(t)\bigr).
+\]
+Since we are given that $\va(t) = -K\vx(t)$, this last expression is zero.  Thus we have $f'(t) = 0$ for all $t$, which implies that $f(t)$ does not depend on time.
+\endanswer
 
+\problem Suppose a point $X(t)$ is moving through space, and suppose its position vector at time $t$ is $\vx(t)$.
+
+Assume that the position vector $\vx(t)$ and the acceleration $\va(t) = \vx''(t)$  are parallel at every instant in time $t$.  
+
+Explain why the vector $\vx(t) \times \vx'(t)$ does not depend on time by simplifying $\frac{d}{dt}\left(\vx(t)\times\vx'(t)\right)$.
+\answer
+  By the product rule for cross products of vector functions we have
+  \[
+    \frac{d \vx(t) \times \vx'(t)}{dt}
+    =\frac{d\vx}{dt} \times \vx'(t) + \vx(t)\times \frac{d\vx'}{dt} 
+    =\vx'(t) \times \vx'(t) + \vx(t) \times \vx''(t).
+  \]
+  The first term vanishes because the cross product of any vector with itself vanishes.  The second term also vanishes because $\vx(t)$ and $\vx''(t)$ are given to be parallel, and the cross product of two vectors that are parallel always vanishes.
+
+  Therefore the derivative of $\vx\times \vx'$ vanishes at every moment in time.  This implies that $\vx\times\vx'$ does not depend on time, i.e.~it is constant.
+\endanswer
 %% \problem Show: a curve is plane if and only if its torsion vanishes 
 %%($\tau = 0$).
 %%
@@ -1021,6 +1061,90 @@ A vector function $\vx(t)$ describes the motion of a point in space.  It is know
 %%$\vx(t-h)$, $\vx(t)$ and $\vx(t+h)$.  Compute $\DS \lim_{h\to 0}
 %%\frac{A(h)}{h^3}$.  Hint: use a Taylor expansion $\vx(t+h) = \vx(t) +
 %%h\vx'(t) + \frac{h^2}{2}\vx''(t) + o(h^2)$.
+
+\problem Let two points $A(2, 2, 1)$ and $B(2,0,3)$ be given.
+Find a parametric representation for the line through $A$ and $B$.
+\answer
+We need a point on the line (we choose $A$, although $B$ would be just as good).
+
+We need a vector in the direction of the line.  Here we can choose either $\tpv AB$ or $\tpv BA$.  Let's choose the first.
+
+We get
+\[
+\va = \tpv OA = \vek 2 \\ 2\\ 1 \tor,
+\qquad
+\tpv AB = \vek b_1 - a_1\\  b_2 - a_2\\ b_3 - a_3 \tor
+= \vek 2-2 \\ 0-2\\ 3-1 \tor = \vek 0 \\ -2 \\ 2\tor
+\]
+A parametric equation for the line is
+\[
+\vx(t) = \va + t \tpv AB
+= \vek 2 \\ 2\\ 1 \tor + t \vek 0 \\ -2 \\ 2\tor
+= \vek 2 \\ 2-2t \\ 1+2t \tor .
+\]
+\endanswer
+
+
+\problem The vector function $\vx(t) = \vek  \tan t \\ t \tor$ describes the motion of a point $X(t)$ in the plane.
+
+\subprob Compute the velocity, speed, and acceleration of the point at any time $t$.
+\answer
+The velocity and acceleration are vectors.  They are the first and second derivatives of the position vector, so
+\[
+  \vv(t) = \vx'(t) = \vek 1/\cos^2 t \\ 1\tor, \qquad
+  \va(t) = \vx''(t) = \vek 2 \sin t/\cos^3 t \\ 0\tor.
+\]
+The speed is the length of the velocity vector, i.e.
+\[
+  v(t) = \|\vv(t)\| = \sqrt{ \frac 1{\cos^4 t} + 1}.
+\]
+\endanswer
+
+\subprob At which moment(s) in time $t$ are the point's velocity and acceleration perpendicular?
+\answer
+  Velocity and acceleration are perpendicular if their dot-product vanishes.  We compute the dot-product:
+  \[
+    \vv(t)\cdot\va(t)
+    = \vek 1/\cos^2 t \\ 1\tor \cdot \vek 2 \sin t/\cos^3 t \\ 0\tor
+    = 2\frac{\sin t}{\cos^5 t}.
+  \]
+  This dot-product equals zero if $\sin t=0$, i.e.~when $t=0, \pm\pi, \pm2\pi, \pm3\pi, \dots$.
+\endanswer
+
+\subprob Where does the tangent line to the curve at the point $X(t)$ intersect the $x$ axis?
+\answer
+  A parametrization of the tangent at the point $X(t)$ is given by 
+  \[
+    \vy = \vx(t) + s \vv(t).
+  \]
+  Here $t$ determines at which point on the curve we are finding the tangent, and $s$ is the parameter along the tangent line.  So we get
+  \[
+    \vy = \vek \tan t \\ t \tor + s \vek 1/\cos^2 t \\ 1 \tor
+    = \vek  \tan t + s/\cos^2 t \\ t + s \tor.
+  \]
+  $\vy$ will be the position vector of a point on the $x$-axis if the second component of $\vy$ vanishes, i.e.~if $s=-t$.  Therefore the intersection point with the $x$-axis has position vector 
+  \[
+    \vy = \vek \tan t - t / \cos^2t \\ 0 \tor.
+  \]
+
+\endanswer
+
+\subprob Find an integral for the length of the part of the curve for which $0\le t\le \pi/4$ (no need to compute the integral).
+\answer
+    The length of the segment is the integral of ``\textit{speed }d(\textit{time}),'' i.e.
+\[
+  \text{length} 
+  = \int_0^{\pi/4} v(t)dt = \int_0^{\pi/4} \sqrt{\frac 1 {\cos^4 t} + 1} \, dt.
+\]
+Note: the original question asked for the length of the segment from $t=0$ to $t=\pi$.  This segment is infinitely long as it includes the $t$-value $t=\pi/2$, at which $\tan t \to\infty$.
+\endanswer
+
+\subprob How long is the part of the curve for which $0\le t < \pi/2$ (you can answer this question by drawing the curve instead of computing the integral).
+\answer
+This curve is infinitely long because $\tan t \to\infty$ as $t\to\pi/2$.
+\endanswer
+
+
 
 \noproblemfont
 \end{multicols}

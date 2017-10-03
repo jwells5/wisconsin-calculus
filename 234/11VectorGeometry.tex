@@ -956,9 +956,9 @@ works, provided we choose $b_1 = -3$.
 The \textit{law of cosines} says that in a triangle $\triangle ABC$
 for which you know the sides $AB$ and $AC$, as well as the angle
 $\angle A$, the length of the opposing side $BC$ is given by
-\begin{multline*}
-  (BC)^2 = (AB)^2 + (AC)^2\\  - 2(AB)(AC)\cos\angle A.
-\end{multline*}
+\[
+  (BC)^2 = (AB)^2 + (AC)^2  - 2(AB)(AC)\cos\angle A.
+\]
 Show how you can use the dot product to (re)prove this law.
 
 Hint: consider the vector equation $\tpv BC = \tpv AC - \tpv AB$.  You will need
@@ -966,8 +966,102 @@ both the geometric description \eqref{eq:dotproduct-geometric} of the dot
 product, and the algebraic properties from
 \S~\ref{sec:dotproduct-algebraic-properties}.
 
-\noproblemfont
-%\end{multicols}
+\bigskip
+
+\centerline{\bfseries Review problems}
+
+\problem  Consider the points $A (1,1,2)$, $B(-1,-1,2)$, $C (1, -1, -1)$, and $D (-1, 1, -1)$.
+
+\subprob
+Find the distance from the point $A $ to the plane through the points $B$, $C$, and $D$.
+\answer
+First find the equation for the plane through $B, C, D$:  a normal vector for the plane is 
+\[
+  \vn = \tpv BC \times \tpv BD = \vek 2\\0\\-3\tor \times \vek 0\\ 2 \\ -3\tor =
+  \vek 6 \\  6 \\ 4 \tor.
+\]
+We also need a point on the plane, we choose $B$ (could also have chosen $C$ or $D$). The equation for the plane then is $\vn\cdot\vx = \vn\cdot\vb$, i.e.
+\[
+  6x_1+6x_2+4x_3 = -6-6+8 = -4.
+\]
+The distance from the point $A$ to the plane is given by
+\[
+  \pm d = \frac{\vn \cdot(\va-\vb)}{\|\vn\|}
+  =\frac1{\sqrt{6^2+6^2+4^2}} \vek 6\\6\\ 4 \tor \cdot \vek 1-(-1) \\1-(-1)\\2-2 \tor
+  = \frac{10}{\sqrt{6^2+6^2+4^2}}
+  = \frac {10}{\sqrt{88}}.
+\]
+\endanswer
+
+
+\subprob
+Find the cosine of the angle between the plane through $BCD$ and the $xy$-plane. (Hint: what is a normal to the $xy$-plane?)
+\answer
+The angle between two planes is the angle between their normals.  A normal to $BCD$ is the vector $\vn$ from part (a) of this problem.  A normal to the $xy$-plane is $\vk = \tvek0\\0\\1\ttor$.
+
+The cosine of the angle between the two planes is
+\[
+  \cos \angle(BCD, xy\text{-plane})
+  = \cos \angle(\vn, \vk)
+  = \frac {\vn \cdot \vk}{\|\vn\|\, \|\vk\|}
+  = \frac {4}{\sqrt{88} \cdot 1}
+  = \frac {4}{\sqrt{88}}.
+\]
+\endanswer
+
+\subprob Do the points $ A$ and $E (-1,-1,-1)$ lie on the same side of the plane $BCD$?
+\answer
+  The sign of $\vn\cdot(\vx-\vb)$ tells us if the point with position vector $\vx$ lies on the side of the plane $BCD$ that $\vn$ points to.  So to see if $A$ and $E$ are on the same side, we compare the signs of $\vn\cdot(\va-\vb)$ and $\vn\cdot(\ve-\vb)$.
+
+  We have already computed $\vn\cdot(\va-\vb) = +10$; for the new point $E$ we have
+  \[
+    \vn\cdot(\ve-\vb) = \vek 6\\6\\4\tor \cdot \vek (-1)-(-1) \\(-1)-(-1)\\(-1)-2 \tor
+    =4\cdot(-3) = -12.
+  \]
+   So $\vn\cdot(\va-\vb) = +10$ and $\vn\cdot(\ve-\vb) = -12$ have opposite signs, which means that $A$ and $E$ lie on opposite sides of the plane $BCD$.
+\endanswer
+
+
+\subprob  Find a parametric representation for the line through $A$ and $C$, and determine where this line intersects the three coordinate planes (i.e.~the $xy$-plane, the $yz$-plane, and the $xz$-plane).
+\answer
+  The direction of the line is given by the vector $\tpv AC = \vc-\va = \tvek 0 \\ -2 \\ -3\ttor$.
+
+  A parametrization of the line is then given by
+  \[
+    \vx = \va + t\tpv AC = 
+    \vek 1 \\ 1 \\ 1 \tor + t \vek 0 \\ -2 \\ -2 \tor
+    = \vek 1 \\ 1-2t \\ 1-2t \tor.
+  \]
+  
+  We see that $\vx$ lies on the $xy$ plane when its third component vanishes, i.e.~when $1-2t=0$.  This happens for $t=\frac12$.  The point where the line intersects the $xy$-plane is therefore $(1, 0, 0)$.  
+
+  To see where the line intersects the $xz$-plane, we check when the second component of $\vx$ vanishes.  The second component is the same as the third, namely $1-2t$, so we again get $t=\frac12$, and the intersection point is $(1, 0, 0)$.
+
+  Finally, the first component of $\vx$ is $1$ for all values of $t$, so it never vanishes.  This line does not intersect the $yz$-plane.
+
+\endanswer
+
+\problem Let two points $A(2, 2, 1)$ and $B(2,0,3)$ be given.
+Find an equation for the plane through $A$, $B$, and the origin.
+
+\answer
+We have three points on the plane $A$, $B$, and the origin $O (0,0,0)$
+From these we compute a normal
+\[
+\vn = \tpv OA \times \tpv OB
+= \vek 2\\2\\1\tor \times \vek 2\\0\\3\tor
+= \vek -1 \\ -4 \\ -4 \tor.
+\]
+The equation for the plane is then $\vn\cdot\vx = \vn\cdot\vp$, where $\vp$ is the position vector of any point we know to be on the plane:  we can choose $\vp$ to be either $\tpv OA$, $\tpv OB$, or $\vvv0$ (the position vector of the origin).  We choose $\vp=\vvv0$ because that is the easiest, but the other choices should give the same answer.  Thus we find the equation for the plane to be
+\[
+-x_1 -4x_2-4x_3=0.
+\]
+If you don't like all the minus signs, then you can multiply both sides with $-1$, which gives you $x_1+4x_2+4x_2=0$.
+
+\endanswer
+
+
+
 
 
 % vim: fdc=3 columns=90 fdm=expr

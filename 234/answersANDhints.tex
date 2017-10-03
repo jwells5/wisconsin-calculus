@@ -176,6 +176,88 @@ left.  We can choose an arbitrary $b_3$ and set $b_1 = -3-2b_3$, e.g.~$b_3=0$
 works, provided we choose $b_1 = -3$.
 \bigskip
 
+\item[{\bfseries(I12.19a)}]
+
+First find the equation for the plane through $B, C, D$:  a normal vector for the plane is
+\[
+  \vn = \tpv BC \times \tpv BD = \vek 2\\0\\-3\tor \times \vek 0\\ 2 \\ -3\tor =
+  \vek 6 \\  6 \\ 4 \tor.
+\]
+We also need a point on the plane, we choose $B$ (could also have chosen $C$ or $D$). The equation for the plane then is $\vn\cdot\vx = \vn\cdot\vb$, i.e.
+\[
+  6x_1+6x_2+4x_3 = -6-6+8 = -4.
+\]
+The distance from the point $A$ to the plane is given by
+\[
+  \pm d = \frac{\vn \cdot(\va-\vb)}{\|\vn\|}
+  =\frac1{\sqrt{6^2+6^2+4^2}} \vek 6\\6\\ 4 \tor \cdot \vek 1-(-1) \\1-(-1)\\2-2 \tor
+  = \frac{10}{\sqrt{6^2+6^2+4^2}}
+  = \frac {10}{\sqrt{88}}.
+\]
+\bigskip
+
+\item[{\bfseries(I12.19b)}]
+
+The angle between two planes is the angle between their normals.  A normal to $BCD$ is the vector $\vn$ from part (a) of this problem.  A normal to the $xy$-plane is $\vk = \tvek0\\0\\1\ttor$.
+
+The cosine of the angle between the two planes is
+\[
+  \cos \angle(BCD, xy\text{-plane})
+  = \cos \angle(\vn, \vk)
+  = \frac {\vn \cdot \vk}{\|\vn\|\, \|\vk\|}
+  = \frac {4}{\sqrt{88} \cdot 1}
+  = \frac {4}{\sqrt{88}}.
+\]
+\bigskip
+
+\item[{\bfseries(I12.19c)}]
+
+  The sign of $\vn\cdot(\vx-\vb)$ tells us if the point with position vector $\vx$ lies on the side of the plane $BCD$ that $\vn$ points to.  So to see if $A$ and $E$ are on the same side, we compare the signs of $\vn\cdot(\va-\vb)$ and $\vn\cdot(\ve-\vb)$.
+
+  We have already computed $\vn\cdot(\va-\vb) = +10$; for the new point $E$ we have
+  \[
+    \vn\cdot(\ve-\vb) = \vek 6\\6\\4\tor \cdot \vek (-1)-(-1) \\(-1)-(-1)\\(-1)-2 \tor
+    =4\cdot(-3) = -12.
+  \]
+   So $\vn\cdot(\va-\vb) = +10$ and $\vn\cdot(\ve-\vb) = -12$ have opposite signs, which means that $A$ and $E$ lie on opposite sides of the plane $BCD$.
+\bigskip
+
+\item[{\bfseries(I12.19d)}]
+
+  The direction of the line is given by the vector $\tpv AC = \vc-\va = \tvek 0 \\ -2 \\ -3\ttor$.
+
+  A parametrization of the line is then given by
+  \[
+    \vx = \va + t\tpv AC =
+    \vek 1 \\ 1 \\ 1 \tor + t \vek 0 \\ -2 \\ -2 \tor
+    = \vek 1 \\ 1-2t \\ 1-2t \tor.
+  \]
+
+  We see that $\vx$ lies on the $xy$ plane when its third component vanishes, i.e.~when $1-2t=0$.  This happens for $t=\frac12$.  The point where the line intersects the $xy$-plane is therefore $(1, 0, 0)$.
+
+  To see where the line intersects the $xz$-plane, we check when the second component of $\vx$ vanishes.  The second component is the same as the third, namely $1-2t$, so we again get $t=\frac12$, and the intersection point is $(1, 0, 0)$.
+
+  Finally, the first component of $\vx$ is $1$ for all values of $t$, so it never vanishes.  This line does not intersect the $yz$-plane.
+
+\bigskip
+
+\item[{\bfseries(I12.20)}]
+
+We have three points on the plane $A$, $B$, and the origin $O (0,0,0)$
+From these we compute a normal
+\[
+\vn = \tpv OA \times \tpv OB
+= \vek 2\\2\\1\tor \times \vek 2\\0\\3\tor
+= \vek -1 \\ -4 \\ -4 \tor.
+\]
+The equation for the plane is then $\vn\cdot\vx = \vn\cdot\vp$, where $\vp$ is the position vector of any point we know to be on the plane:  we can choose $\vp$ to be either $\tpv OA$, $\tpv OB$, or $\vvv0$ (the position vector of the origin).  We choose $\vp=\vvv0$ because that is the easiest, but the other choices should give the same answer.  Thus we find the equation for the plane to be
+\[
+-x_1 -4x_2-4x_3=0.
+\]
+If you don't like all the minus signs, then you can multiply both sides with $-1$, which gives you $x_1+4x_2+4x_2=0$.
+
+\bigskip
+
 \item[{\bfseries(II17.1b)}]
 
 (a) $\vx(t) = \vek 3\\ 0\\1 \tor + t \vek -1\\ 1\\1 \tor = \vek 3-t\\ t\\ 1+t \tor$.
@@ -271,13 +353,129 @@ $\kappa'(t) = \dfrac{e^t} {\bigl(1+e^{2t}\bigr)^{5/2}}
 curvature) occurs when $x=-\frac{1} {2}\ln{2}$.
 \bigskip
 
-\item[{\bfseries(II17.11a)}]
+\item[{\bfseries(II17.11)}]
 
 To show that $\vm\dpp\vx(t)$ is constant we differentiate it with respect to time:
 \[
 \frac{d \vm\dpp\vx(t)} {dt} = \vm\dpp\vx'(t) = \vm\dpp\bigl(\vm\cp\vx(t)\bigr) = 0,
 \]
 because the cross product $\vm\cp\vx(t)$ is always perpendicular to the vector $\vm$.
+\bigskip
+
+\item[{\bfseries(II17.13)}]
+
+The product rule for dot-products implies that
+\[
+  \frac{d \|\vv(t)\|^2}{dt}
+  = \frac{d \vv(t)\dpp \vv(t)}{dt}
+  =2\vv(t) \dpp \va(t)
+\]
+and also
+\[
+  \frac{d \|\vx(t)\|^2}{dt}
+  = \frac{d \vx(t)\dpp \vx(t)}{dt}
+  =2\vv(t) \dpp \vx(t).
+\]
+Therefore
+\[
+  f'(t) = 2\vv(t) \dpp \va(t) + K 2\vv(t) \dpp \vx(t).
+\]
+Factor out the common factor $2\vv(t)$ in both terms here to get
+\[
+  f'(t) = 2\vv(t) \dpp \bigl(\va(t) + K\vx(t)\bigr).
+\]
+Since we are given that $\va(t) = -K\vx(t)$, this last expression is zero.  Thus we have $f'(t) = 0$ for all $t$, which implies that $f(t)$ does not depend on time.
+\bigskip
+
+\item[{\bfseries(II17.14)}]
+
+  By the product rule for cross products of vector functions we have
+  \[
+    \frac{d \vx(t) \times \vx'(t)}{dt}
+    =\frac{d\vx}{dt} \times \vx'(t) + \vx(t)\times \frac{d\vx'}{dt}
+    =\vx'(t) \times \vx'(t) + \vx(t) \times \vx''(t).
+  \]
+  The first term vanishes because the cross product of any vector with itself vanishes.  The second term also vanishes because $\vx(t)$ and $\vx''(t)$ are given to be parallel, and the cross product of two vectors that are parallel always vanishes.
+
+  Therefore the derivative of $\vx\times \vx'$ vanishes at every moment in time.  This implies that $\vx\times\vx'$ does not depend on time, i.e.~it is constant.
+\bigskip
+
+\item[{\bfseries(II17.15)}]
+
+We need a point on the line (we choose $A$, although $B$ would be just as good).
+
+We need a vector in the direction of the line.  Here we can choose either $\tpv AB$ or $\tpv BA$.  Let's choose the first.
+
+We get
+\[
+\va = \tpv OA = \vek 2 \\ 2\\ 1 \tor,
+\qquad
+\tpv AB = \vek b_1 - a_1\\  b_2 - a_2\\ b_3 - a_3 \tor
+= \vek 2-2 \\ 0-2\\ 3-1 \tor = \vek 0 \\ -2 \\ 2\tor
+\]
+A parametric equation for the line is
+\[
+\vx(t) = \va + t \tpv AB
+= \vek 2 \\ 2\\ 1 \tor + t \vek 0 \\ -2 \\ 2\tor
+= \vek 2 \\ 2-2t \\ 1+2t \tor .
+\]
+\bigskip
+
+\item[{\bfseries(II17.16a)}]
+
+The velocity and acceleration are vectors.  They are the first and second derivatives of the position vector, so
+\[
+  \vv(t) = \vx'(t) = \vek 1/\cos^2 t \\ 1\tor, \qquad
+  \va(t) = \vx''(t) = \vek 2 \sin t/\cos^3 t \\ 0\tor.
+\]
+The speed is the length of the velocity vector, i.e.
+\[
+  v(t) = \|\vv(t)\| = \sqrt{ \frac 1{\cos^4 t} + 1}.
+\]
+\bigskip
+
+\item[{\bfseries(II17.16b)}]
+
+  Velocity and acceleration are perpendicular if their dot-product vanishes.  We compute the dot-product:
+  \[
+    \vv(t)\cdot\va(t)
+    = \vek 1/\cos^2 t \\ 1\tor \cdot \vek 2 \sin t/\cos^3 t \\ 0\tor
+    = 2\frac{\sin t}{\cos^5 t}.
+  \]
+  This dot-product equals zero if $\sin t=0$, i.e.~when $t=0, \pm\pi, \pm2\pi, \pm3\pi, \dots$.
+\bigskip
+
+\item[{\bfseries(II17.16c)}]
+
+  A parametrization of the tangent at the point $X(t)$ is given by
+  \[
+    \vy = \vx(t) + s \vv(t).
+  \]
+  Here $t$ determines at which point on the curve we are finding the tangent, and $s$ is the parameter along the tangent line.  So we get
+  \[
+    \vy = \vek \tan t \\ t \tor + s \vek 1/\cos^2 t \\ 1 \tor
+    = \vek  \tan t + s/\cos^2 t \\ t + s \tor.
+  \]
+  $\vy$ will be the position vector of a point on the $x$-axis if the second component of $\vy$ vanishes, i.e.~if $s=-t$.  Therefore the intersection point with the $x$-axis has position vector
+  \[
+    \vy = \vek \tan t - t / \cos^2t \\ 0 \tor.
+  \]
+
+\bigskip
+
+\item[{\bfseries(II17.16d)}]
+
+    The length of the segment is the integral of ``\textit{speed }d(\textit{time}),'' i.e.
+\[
+  \text{length}
+  = \int_0^{\pi/4} v(t)dt = \int_0^{\pi/4} \sqrt{\frac 1 {\cos^4 t} + 1} \, dt.
+\]
+Note: the original question asked for the length of the segment from $t=0$ to $t=\pi$.  This segment is infinitely long as it includes the $t$-value $t=\pi/2$, at which $\tan t \to\infty$.
+\bigskip
+
+\item[{\bfseries(II17.16e)}]
+
+This curve is infinitely long because $\tan t \to\infty$ as $t\to\pi/2$.
 \bigskip
 
 \item[{\bfseries(III5.1)}]
