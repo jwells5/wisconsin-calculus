@@ -164,3 +164,13 @@ pythontex-files-*/
 # Latexian
 TSWLatexianTemp*
 
+# emacs temporary files
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
