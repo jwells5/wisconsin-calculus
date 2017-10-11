@@ -250,7 +250,7 @@ Let $r$ be the radius in polar coordinates, as defined in
 Let $\theta$ be the polar angle function, defined in
 \S~\ref{sec:functions-in-PC-theta} of Chapter III.
 
-\subprob In the left half plane the function $\theta$ is defined by
+\subprob In the right half plane the function $\theta$ is defined by
 \[
 \theta(x,y) = \arctan\frac{y} {x}.
 \]
@@ -259,7 +259,7 @@ Use this expression to find its partial derivatives, $\pdd\theta x$ and $\pdd\th
 $\DS\pdd\theta x = -\frac{y} {x^2+y^2}$, $\DS\pdd\theta x = \frac{x} {x^2+y^2}$.
 \endanswer
 
-\subprob Check that the angle function also satisfies
+\subprob {\tiny\textdbend} Check that the angle function also satisfies
 \[
 x\sin\theta = y\cos \theta
 \]
@@ -791,7 +791,10 @@ $y(t)$ in the function $f(x, y) = 2x+3y$.
 
 
 \subsubsection*{Answer 1 -- without using the chain rule} We can simply compute
-$S(t) = \cos\omega t + \sin \omega t$ and differentiate:
+\[
+  S(t) =2x(t) + y(t) = 2\cos\omega t + 3\sin \omega t 
+\]
+and differentiate:
 \begin{equation}
   \frac{dS}{dt} = \frac{d}{dt}\Bigl\{2\cos \omega t + 3\sin \omega t\Bigr\}
   = -2\omega\sin \omega t + 3\omega \cos\omega t.
