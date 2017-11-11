@@ -1444,9 +1444,10 @@ definite, negative definite, indefinite or degenerate.
 \problem If $a$ is a constant, then for which values 
 of $a$ is the form $Q(x, y) = x^2 + 2axy + y^2$ positive/negative
 definite, indefinite, or degenerate?
-\answer  Complete the square and you get
+\answer  
+Complete the square and you get
 \[
-Q(x, y) = \bigl(x-ay\bigr)^2 + \bigl(1- a^2\bigr)y^2. 
+Q(x, y) = \bigl(x+ay\bigr)^2 + \bigl(1- a^2\bigr)y^2. 
 \]
 When $1-a^2>0$, i.e.\ when $-1<a<1$ the form is positive definite.
 When $a=\pm 1$ the form is a perfect square, namely, 
@@ -1456,8 +1457,8 @@ x^2 \pm 2xy + y^2 = \bigl(x\pm y\bigr)^2.
 When $1-a^2<0$, i.e.\ when $a>1$ or $a<-1$, the form is indefinite:
 \[
 x^2 + 2axy + y^2 = 
-\Bigl(x-ay-\sqrt{a^2-1}y\Bigr)
-\Bigl(x-ay+\sqrt{a^2-1}y\Bigr)
+\Bigl(x+ay-\sqrt{a^2-1}y\Bigr)
+\Bigl(x+ay+\sqrt{a^2-1}y\Bigr)
 =(x-k_+y)(x-k_-y),
 \]
 where $k_\pm = -a \pm \sqrt{a^2-1}$.
