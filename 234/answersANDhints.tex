@@ -1944,17 +1944,17 @@ $x\neq0$, $y\neq0$ and $z\neq0$ moreover, given $x$ and $y$ the only $z$
 which satisfies the constraint is $z=1/(2xy)$.  Thus we must minimize the
 following function of two variables
 \[
-A(x,y) = xy + \frac{1} {2x} + \frac{1} {2y}
+A(x,y) = 2xy + \frac{1} {x} + \frac{1} {y}
 \]
 over all $x>0$, $y>0$.
 
 A minimum must be an interior minimum (can't be on the $x$ or $y$-axis
 since these are excluded), and thus must be a critical point.
 \[
-\pdd Ax = y-\frac{1} {2x^2}, \qquad
-\pdd Ay = x - \frac{1} {2y^2}.
+\pdd Ax = 2y-\frac{1} {x^2}, \qquad
+\pdd Ay = 2x - \frac{1} {y^2}.
 \]
-Solving $A_x=A_y=0$ for $(x,y)$ leads to $x=y=\sqrt[3]2$, so the solution
+Solving $A_x=A_y=0$ for $(x,y)$ leads to $x=y=2^{1/3} = \sqrt[3]2$, so the solution
 is a cube $1/\sqrt[3]{2}$ on a side
 \bigskip
 
@@ -1988,7 +1988,7 @@ y(2x+2z) = \lambda xyz = x(2y+2z) \implies
 \]
 Therefore we find that either $z=0$ or $x=y$.
 But $z=0$ is not possible, because $(x,y,z)$ must satisfy the
-constraint $xyz=0$.  Therefore we get $x=y$.
+constraint $xyz=\frac12$.  Therefore we get $x=y$.
 
 If you multiply the second Lagrange equation with $y$ and the third
 with $z$ then the same reasoning as above tells you that $y=z$.
@@ -1999,10 +1999,9 @@ has sides $x=y=z=2^{-1/3}$.
 
 As always, Lagrange's method does not rule out the possibility that
 the cube we have found actually maximizes the surface area, rather
-than minimizing it.  That this is actually not the case is something
+than minimizing it.  That this is not the case is something
 you would have to prove by other means.  We will not do that in this
 course.
-
 \bigskip
 
 \item[{\bfseries(V13.3)}]
