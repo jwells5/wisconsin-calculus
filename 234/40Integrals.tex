@@ -817,10 +817,11 @@ confusing, and should really never be done.
 \left(\int_0^2 g(y)\; dy\right)
 \; .
 \]
-Explain your answer  (if you claim ``true'' give a proof, if you claim ``false'' give
-a counterexample.)
+Explain your answer (if you claim ``true'' give a proof, if you claim ``false'' give a counterexample.)
 \answer
 Not true!
+The order in which $dx$ and $dy$ appear tells you which is the inner integral and which is the outer.  Since $dx$ comes first, the inner integral is with respect to $x$, and therefore the bounds for $x$ are $0\leq x \leq 2$.
+
 To give a counterexample for the statement in the problem, almost any
 two functions $f$ and $g$ will do.  For instance, if you choose $f(x) = x$, $g(y)=1$, then you get
 \[
@@ -841,7 +842,7 @@ but
 \subprob Is the following true or false? 
   \textit{For any two functions $f(x)$ and $g(y)$ one has}
 \[
-\int_0^2 \int_0^1 f(x) g(y) \; dy\; dx
+\int_0^2 \int_0^1 f(x) g(y) \; dx\; dy
 = 
 \left(\int_0^1 f(x) \; dx\right)
 \; \cdot\; 
@@ -853,20 +854,20 @@ integration bounds.)
 \answer
 True!
 \[
-  \int_0^1\int_0^2 f(x)g(y) dy dx
-  =\int_0^1\left\{ \int_0^2 f(x)g(y) dy \right\}dx .
+  \int_0^2\int_0^1 f(x)g(y) dx dy
+  =\int_0^2\left\{ \int_0^1 f(x)g(y) dx \right\}dy .
 \]
-Since $f(x)$ does not depend on $y$, we have
+Since $g(y)$ does not depend on $x$, we have
 \[
-\int_0^2 f(x)g(y) dy=f(x) \int_0^2 g(y)\, dy.
+\int_0^1 f(x)g(y) dx=g(y) \int_0^1 f(x)\, dx.
 \]
 Therefore 
 \[
-  \int_0^1\left\{ \int_0^2 f(x)g(y) dy \right\}dx 
-  =\int_0^1 f(x) \left\{\int_0^2 g(y) dy \right\}dx .
+  \int_0^2\left\{ \int_0^1 f(x)g(y) dx \right\}dy 
+  =\int_0^2 g(y) \left\{\int_0^1 f(x) dx \right\}dy .
 \]
-The integral $\int_0^2 g(y)dy$ is a constant, and does therefore not depend on $x$,
-so we can factor it out of the $x$-integral:
+The integral $\int_0^1 f(x)dx$ is a constant, and does therefore not depend on $y$,
+so we can factor it out of the $y$-integral:
 \[
   \int_0^1 f(x) \left\{\int_0^2 g(y) dy \right\}dx
   = \int_0^1 f(x)\, dx \cdot \int_0^2 g(y)\, dy,
@@ -886,9 +887,9 @@ which is what we had to show.
 \]
 Again, explain your answer.
 \answer
-This is false, and there is no simple way of fixing it.  To see that this fails
-evaluate both sides with $f(x) = 1$ and $g(y)$.  On the left you get the area of
-the disc $D$, which is $\pi$, and on the right you get $2\cdot2=4$.
+This is false, but it is a fairly common mistake, probably resulting from the following quick but wrong line of thought:  {\itshape in the disc $D$ the smallest $x$value is $x=-1$ on the left, and the largest $x$ is $x=+1$ on the right; the smallest and largest $y$ are $y=-1$ and $y=+1$, therefore the double integral should be $\int_{-1}^1\int_{-1}^1 \cdots dx\,dy$. }  This is not right, because the integral  $\int_{-1}^1\int_{-1}^1 \cdots dx\,dy$ is over the region defined by the inequalities $-1\leq x\leq 1$, $-1\leq y\leq 1$, which is a square (it's the smallest square that fits around the disc $D$).
+
+To give a counterexample which shows that this fails, you could evaluate both sides with $f(x) = 1$ and $g(y)=1$.  On the left you get the area of the disc $D$, which is $\pi$, and on the right you get $2\cdot2=4$.
 \endanswer
 
 
@@ -1072,8 +1073,8 @@ with vertices $(0,0)$, $(4,0)$, $(4,1)$ and $(0,1)$.
 
 \problem Suppose $f(x)$ is a positive function defined on an interval 
 $a\le x\le b$.  
-Let $A$ be the area under the graph of $y=f(x)$, ($a\le c\le b$), and
-let $B$ be the area under the graph of $y=f(x)^2$ ($a\le c\le b$)
+Let $A$ be the area under the graph of $y=f(x)$, ($a\le x\le b$), and
+let $B$ be the area under the graph of $y=f(x)^2$ ($a\le x\le b$)
 Express the following integrals in terms of $A$ and $B$:
 \[
 I_1 = \int_a^b \int_0^{f(x)} dy\, dx,
